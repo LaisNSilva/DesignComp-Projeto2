@@ -1,0 +1,71 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Aula13 is
+  -- Total de bits das entradas e saidas
+  generic ( larguraDados : natural := 8; -- AGORA É 8 
+		  larguraEnderecoRAM : natural := 8; 
+		  larguraInstrucao : natural := 15; 
+		  larguraEnderecoROM : natural := 8;
+		  larguraDados_PC : natural := 9;
+        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
+  );
+  port   (
+   CLOCK_50 : in std_logic;
+   KEY: in std_logic_vector(3 downto 0);
+	FPGA_RESET_N: in std_logic;
+	 --BARRAMENTO_DADOS_SAIDA: out std_logic_vector(larguraDados-1 downto 0);
+	 --BARRAMENTO_DADOS_ENTRADA: out std_logic_vector(larguraDados-1 downto 0);
+	 --BARRAMENTO_DADOS_ENDERECOS: out std_logic_vector(8 downto 0)
+   SW: in std_logic_vector(9 downto 0);
+	HEX0 : out std_logic_vector (6 DOWNTO 0);
+	HEX1 : out std_logic_vector (6 DOWNTO 0);
+	HEX2 : out std_logic_vector (6 DOWNTO 0);
+	HEX3 : out std_logic_vector (6 DOWNTO 0);
+	HEX4 : out std_logic_vector (6 DOWNTO 0);
+	HEX5 : out std_logic_vector (6 DOWNTO 0);
+	PC_OUT: out std_logic_vector (8 DOWNTO 0);
+	
+	REG_A: out std_logic_vector (7 DOWNTO 0);
+
+   LEDR  : out std_logic_vector(9 downto 0)
+  );
+end entity;
+
+
+architecture arquitetura of Aula13 is
+
+
+	 signal Saida_DecBorda_KEY1 : std_logic;
+	 signal saidaclk_reg1seg : std_logic;
+	 signal Saida_DecBorda_KEY2 : std_logic;
+	 
+	 
+	 
+
+begin
+
+-- Instanciando os componentes:
+
+-- Para simular, fica mais simples tirar o edgeDetector
+--gravar:  if simulacao generate
+CLK <= CLOCK_50;
+--else generate
+detectorSub0: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
+--end generate;
+
+detectorSub1: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => Saida_DecBorda_KEY1);
+
+detectorSub2: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(2)), saida => Saida_DecBorda_KEY2);
+
+
+  
+  
+  
+  
+  
+  
+  end architecture;
