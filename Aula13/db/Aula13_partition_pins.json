@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RESULTADO[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[8]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[9]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[10]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[11]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[12]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[13]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[14]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[15]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[16]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[17]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[18]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[19]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[20]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[21]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[22]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[23]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[24]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[25]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[26]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[27]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[28]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[29]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[30]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULTADO[31]",
+					"strict" : false
+				},
+				{
+					"name" : "REG_RS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "REG_RS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "REG_RT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "REG_RT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OPERACAO_ULA",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

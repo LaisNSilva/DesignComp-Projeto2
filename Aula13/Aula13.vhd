@@ -7,13 +7,20 @@ entity Aula13 is
 		  larguraEnderecoRAM : natural := 8; 
 		  larguraInstrucao : natural := 32; 
 		  larguraEnderecoROM : natural := 32;
-		  memoryAddrWidth:  natural := 6
+		  memoryAddrWidth:  natural := 6;
 		  larguraDados_PC : natural := 32;
 		  larguraEndRegs : natural := 5;
         simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
    CLOCK_50 : in std_logic;
+	ESCRITA_REG_RD : in std_logic;
+	OPERACAO_ULA : in std_logic;
+	RESULTADO : out std_logic_vector(31 downto 0);
+	REG_RS : out std_logic_vector(31 downto 0);
+	REG_RT : out std_logic_vector(31 downto 0)
+	
+	
    
   );
 end entity;
@@ -21,19 +28,15 @@ end entity;
 
 architecture arquitetura of Aula13 is
 
-
+	 signal CLK : std_logic;
 	 signal Saida_Somador : std_logic_vector(31 downto 0);
 	 signal Saida_PC : std_logic_vector(31 downto 0);
 	 signal Saida_Mem_Instrucao : std_logic_vector(31 downto 0);
 	 signal Saida_ULA : std_logic_vector(31 downto 0);
-	 signal Escrita_RD : std_logic_vector(31 downto 0);
 	 signal Dado_lido_RegA : std_logic_vector(31 downto 0);
 	 signal Dado_lido_RegB : std_logic_vector(31 downto 0);
-	 signal Sel_ULA : std_logic;
 	 
-	 
-	 
-	 
+	  
 
 begin
 
@@ -65,17 +68,18 @@ BANCO_REGISTRADORES : entity work.bancoRegistradores generic map (larguraDados =
 
         dadoEscritaC    => Saida_ULA,
 
-        escreveC        => Escrita_RD,
+        escreveC        => ESCRITA_REG_RD,
         saidaA          => Dado_lido_RegA,
-        saidaB          => Dado_lido_RegB,
+        saidaB          => Dado_lido_RegB
     );
 	 
 	 
- ULA : entity work.ULASomaSub  generic map(larguraDados => VALOR_LOCAL)
-          port map (entradaA => Dado_lido_RegA, entradaB =>  Dado_lido_RegB, saida => Saida_ULA, seletor => Sel_ULA);
+ ULA : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
+          port map (entradaA => Dado_lido_RegA, entradaB =>  Dado_lido_RegB, saida => Saida_ULA, seletor => OPERACAO_ULA);
   
-  
-  
+ RESULTADO <= Saida_ULA;
+ REG_RS <= Dado_lido_RegA;
+ REG_RT <= Dado_lido_RegB;
   
   
   end architecture;
