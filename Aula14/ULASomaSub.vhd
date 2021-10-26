@@ -7,7 +7,8 @@ entity ULASomaSub is
     port (
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
       seletor:  in STD_LOGIC;
-      saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0)
+      saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+		flag_0: out std_logic
     );
 end entity;
 
@@ -18,4 +19,9 @@ architecture comportamento of ULASomaSub is
       soma      <= STD_LOGIC_VECTOR(unsigned(entradaA) + unsigned(entradaB));
       subtracao <= STD_LOGIC_VECTOR(unsigned(entradaA) - unsigned(entradaB));
       saida <= soma when (seletor = '1') else subtracao;
+		
+		
+		flag_0 <= '1' when (subtracao = "0000" and seletor = '0') else
+					 '0';
+
 end architecture;

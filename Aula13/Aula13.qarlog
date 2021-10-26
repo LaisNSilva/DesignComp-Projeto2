@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/Descomp/DesignComp-Projeto2/Aula13/Aula13.qarlog
+
+Archive:	C:/Descomp/DesignComp-Projeto2/Aula13/Aula13.qar
+Date:		Thu Oct 21 22:01:57 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Descomp/DesignComp-Projeto2/Aula13/Aula13.mif
+C:/Descomp/DesignComp-Projeto2/Aula13/Aula13.qpf
+C:/Descomp/DesignComp-Projeto2/Aula13/Aula13.qsf
+C:/Descomp/DesignComp-Projeto2/Aula13/Aula13.vhd
+C:/Descomp/DesignComp-Projeto2/Aula13/ROMMIPS.vhd
+C:/Descomp/DesignComp-Projeto2/Aula13/ULASomaSub.vhd
+C:/Descomp/DesignComp-Projeto2/Aula13/Waveform.vwf
+C:/Descomp/DesignComp-Projeto2/Aula13/bancoRegistradores.vhd
+C:/Descomp/DesignComp-Projeto2/Aula13/registradorGenerico_PC.vhd
+C:/Descomp/DesignComp-Projeto2/Aula13/somadorGenerico.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
