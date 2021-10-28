@@ -1,0 +1,27 @@
+Quartus Prime Archive log --	C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.qarlog
+
+Archive:	C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.qar
+Date:		Wed Oct 27 22:23:53 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.mif
+C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.qpf
+C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.qsf
+C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/DecodBinario_7Seg.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/RAMMIPS.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/ROMMIPS.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/ULASomaSub.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/UnidadeControle.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/Waveform.vwf
+C:/Descomp/DesignComp-Projeto2/Aula14/bancoRegistradores.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/edgeDetector.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/muxGenerico2x1.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/registradorGenerico_PC.vhd
+C:/Descomp/DesignComp-Projeto2/Aula14/somadorGenerico.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -227,16 +227,16 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
 					 
  
 					 
- LED(0) <= Saida_PC(0);
- LED(1) <= Saida_PC(1);
- LED(2) <= Saida_PC(2);
- LED(3) <= Saida_PC(3);
- LED(4) <= Saida_PC(4);
- LED(5) <= Saida_PC(5);
- LED(6) <= Saida_PC(6);
- LED(7) <= Saida_PC(7);
- LED(8) <= Saida_PC(8);
- LED(9) <= Saida_PC(9);
+ LEDR(0) <= Saida_PC(0);
+ LEDR(1) <= Saida_PC(1);
+ LEDR(2) <= Saida_PC(2);
+ LEDR(3) <= Saida_PC(3);
+ LEDR(4) <= Saida_PC(4);
+ LEDR(5) <= Saida_PC(5);
+ LEDR(6) <= Saida_PC(6);
+ LEDR(7) <= Saida_PC(7);
+ LEDR(8) <= Saida_PC(8);
+ LEDR(9) <= Saida_PC(9);
 		  
   
   
