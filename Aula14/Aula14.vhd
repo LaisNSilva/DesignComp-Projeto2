@@ -25,7 +25,8 @@ entity Aula14 is
 	RESULTADO : out std_logic_vector(31 downto 0);
 	REG_RS : out std_logic_vector(31 downto 0);
 	REG_RT : out std_logic_vector(31 downto 0);
-	LEDR   : out std_logic_vector(9 downto 0)
+	LEDR   : out std_logic_vector(9 downto 0);
+	PC_OUT: out std_logic_vector(31 downto 0)
    
   );
 end entity;
@@ -243,6 +244,7 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
  RESULTADO <= Saida_ULA;
  REG_RS <= Dado_lido_RegA;
  REG_RT <= Dado_lido_RegB;
+ PC_OUT <= Saida_PC;
   
   
   end architecture;

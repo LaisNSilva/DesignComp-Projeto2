@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "10/27/2021 22:23:36"
+-- DATE "11/03/2021 15:30:58"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -50,7 +50,8 @@ ENTITY 	Aula14 IS
 	RESULTADO : OUT std_logic_vector(31 DOWNTO 0);
 	REG_RS : OUT std_logic_vector(31 DOWNTO 0);
 	REG_RT : OUT std_logic_vector(31 DOWNTO 0);
-	LEDR : OUT std_logic_vector(9 DOWNTO 0)
+	LEDR : OUT std_logic_vector(9 DOWNTO 0);
+	PC_OUT : OUT std_logic_vector(31 DOWNTO 0)
 	);
 END Aula14;
 
@@ -77,6 +78,7 @@ SIGNAL ww_RESULTADO : std_logic_vector(31 DOWNTO 0);
 SIGNAL ww_REG_RS : std_logic_vector(31 DOWNTO 0);
 SIGNAL ww_REG_RT : std_logic_vector(31 DOWNTO 0);
 SIGNAL ww_LEDR : std_logic_vector(9 DOWNTO 0);
+SIGNAL ww_PC_OUT : std_logic_vector(31 DOWNTO 0);
 SIGNAL \KEY[2]~input_o\ : std_logic;
 SIGNAL \KEY[3]~input_o\ : std_logic;
 SIGNAL \FPGA_RESET_N~input_o\ : std_logic;
@@ -228,6 +230,38 @@ SIGNAL \LEDR[6]~output_o\ : std_logic;
 SIGNAL \LEDR[7]~output_o\ : std_logic;
 SIGNAL \LEDR[8]~output_o\ : std_logic;
 SIGNAL \LEDR[9]~output_o\ : std_logic;
+SIGNAL \PC_OUT[0]~output_o\ : std_logic;
+SIGNAL \PC_OUT[1]~output_o\ : std_logic;
+SIGNAL \PC_OUT[2]~output_o\ : std_logic;
+SIGNAL \PC_OUT[3]~output_o\ : std_logic;
+SIGNAL \PC_OUT[4]~output_o\ : std_logic;
+SIGNAL \PC_OUT[5]~output_o\ : std_logic;
+SIGNAL \PC_OUT[6]~output_o\ : std_logic;
+SIGNAL \PC_OUT[7]~output_o\ : std_logic;
+SIGNAL \PC_OUT[8]~output_o\ : std_logic;
+SIGNAL \PC_OUT[9]~output_o\ : std_logic;
+SIGNAL \PC_OUT[10]~output_o\ : std_logic;
+SIGNAL \PC_OUT[11]~output_o\ : std_logic;
+SIGNAL \PC_OUT[12]~output_o\ : std_logic;
+SIGNAL \PC_OUT[13]~output_o\ : std_logic;
+SIGNAL \PC_OUT[14]~output_o\ : std_logic;
+SIGNAL \PC_OUT[15]~output_o\ : std_logic;
+SIGNAL \PC_OUT[16]~output_o\ : std_logic;
+SIGNAL \PC_OUT[17]~output_o\ : std_logic;
+SIGNAL \PC_OUT[18]~output_o\ : std_logic;
+SIGNAL \PC_OUT[19]~output_o\ : std_logic;
+SIGNAL \PC_OUT[20]~output_o\ : std_logic;
+SIGNAL \PC_OUT[21]~output_o\ : std_logic;
+SIGNAL \PC_OUT[22]~output_o\ : std_logic;
+SIGNAL \PC_OUT[23]~output_o\ : std_logic;
+SIGNAL \PC_OUT[24]~output_o\ : std_logic;
+SIGNAL \PC_OUT[25]~output_o\ : std_logic;
+SIGNAL \PC_OUT[26]~output_o\ : std_logic;
+SIGNAL \PC_OUT[27]~output_o\ : std_logic;
+SIGNAL \PC_OUT[28]~output_o\ : std_logic;
+SIGNAL \PC_OUT[29]~output_o\ : std_logic;
+SIGNAL \PC_OUT[30]~output_o\ : std_logic;
+SIGNAL \PC_OUT[31]~output_o\ : std_logic;
 SIGNAL \KEY[0]~input_o\ : std_logic;
 SIGNAL \CLOCK_50~input_o\ : std_logic;
 SIGNAL \detectorSub0|saidaQ~0_combout\ : std_logic;
@@ -717,7 +751,61 @@ SIGNAL \SOMADOR|Add0~2\ : std_logic;
 SIGNAL \SOMADOR|Add0~21_sumout\ : std_logic;
 SIGNAL \SOMADOR|Add0~22\ : std_logic;
 SIGNAL \SOMADOR|Add0~25_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~26\ : std_logic;
+SIGNAL \SOMADOR|Add0~29_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~30\ : std_logic;
+SIGNAL \SOMADOR|Add0~33_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~34\ : std_logic;
+SIGNAL \SOMADOR|Add0~37_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~38\ : std_logic;
+SIGNAL \SOMADOR|Add0~41_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~42\ : std_logic;
+SIGNAL \SOMADOR|Add0~45_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~46\ : std_logic;
+SIGNAL \SOMADOR|Add0~49_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~50\ : std_logic;
+SIGNAL \SOMADOR|Add0~53_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~54\ : std_logic;
+SIGNAL \SOMADOR|Add0~57_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~58\ : std_logic;
+SIGNAL \SOMADOR|Add0~61_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~62\ : std_logic;
+SIGNAL \SOMADOR|Add0~65_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~66\ : std_logic;
+SIGNAL \SOMADOR|Add0~69_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~70\ : std_logic;
+SIGNAL \SOMADOR|Add0~73_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~74\ : std_logic;
+SIGNAL \SOMADOR|Add0~77_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~78\ : std_logic;
+SIGNAL \SOMADOR|Add0~81_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~82\ : std_logic;
+SIGNAL \SOMADOR|Add0~85_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~86\ : std_logic;
+SIGNAL \SOMADOR|Add0~89_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~90\ : std_logic;
+SIGNAL \SOMADOR|Add0~93_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~94\ : std_logic;
+SIGNAL \SOMADOR|Add0~97_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~98\ : std_logic;
+SIGNAL \SOMADOR|Add0~101_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~102\ : std_logic;
+SIGNAL \SOMADOR|Add0~105_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~106\ : std_logic;
+SIGNAL \SOMADOR|Add0~109_sumout\ : std_logic;
+SIGNAL \SOMADOR|Add0~110\ : std_logic;
+SIGNAL \SOMADOR|Add0~113_sumout\ : std_logic;
 SIGNAL \PC|DOUT\ : std_logic_vector(31 DOWNTO 0);
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~117_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~309_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~373_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~52_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~116_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~308_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~372_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~51_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~115_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~307_q\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~371_q\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~50_q\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~114_q\ : std_logic;
@@ -799,38 +887,6 @@ SIGNAL \ULA|ALT_INV_Add0~13_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add0~9_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add0~5_sumout\ : std_logic;
 SIGNAL \ULA|ALT_INV_Add0~1_sumout\ : std_logic;
-SIGNAL \PC|ALT_INV_DOUT\ : std_logic_vector(9 DOWNTO 2);
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~98_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~37_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~69_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1190_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1186_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1182_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1178_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1174_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1170_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1166_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1162_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1158_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1154_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1150_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1146_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1142_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1138_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1134_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1130_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1126_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1122_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1118_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1114_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1110_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1106_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1102_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1098_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1094_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1090_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1086_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1082_combout\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1078_combout\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1074_combout\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1070_combout\ : std_logic;
@@ -900,43 +956,6 @@ SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~118_q\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~310_q\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~374_q\ : std_logic;
 SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~53_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~117_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~309_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~373_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~52_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~116_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~308_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~372_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~51_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~115_q\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~307_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~116_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~55_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~87_q\ : std_logic;
-SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[22]~21_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~115_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~56_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~88_q\ : std_logic;
-SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[20]~20_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~114_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~54_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~86_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~113_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~57_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~89_q\ : std_logic;
-SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[19]~19_combout\ : std_logic;
-SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[17]~18_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~112_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~51_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~83_q\ : std_logic;
-SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[18]~17_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~111_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~52_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~84_q\ : std_logic;
-SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[16]~16_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~110_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~50_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~82_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~109_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~53_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~85_q\ : std_logic;
@@ -997,19 +1016,39 @@ SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[0]~0_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~34_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~66_q\ : std_logic;
 SIGNAL \UNIDADE_DE_CONTROLE|ALT_INV_Mux3~0_combout\ : std_logic;
+SIGNAL \PC|ALT_INV_DOUT\ : std_logic_vector(31 DOWNTO 2);
 SIGNAL \MEMORIA_INSTRUCAO|ALT_INV_memROM~0_combout\ : std_logic;
-SIGNAL \BANCO_REGISTRADORES|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \detectorSub0|ALT_INV_saidaQ~q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~131_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~65_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~97_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~64_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~96_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~129_combout\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~63_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~95_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~62_q\ : std_logic;
-SIGNAL \MEMORIA_DADOS|ALT_INV_ram~94_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~98_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~37_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~69_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1190_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1186_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1182_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1178_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1174_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1170_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1166_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1162_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1158_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1154_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1150_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1146_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1142_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1138_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1134_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1130_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1126_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1122_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1118_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1114_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1110_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1106_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1102_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1098_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1094_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1090_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1086_combout\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_registrador~1082_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~127_combout\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~61_q\ : std_logic;
 SIGNAL \MEMORIA_DADOS|ALT_INV_ram~93_q\ : std_logic;
@@ -1031,6 +1070,45 @@ SIGNAL \MEMORIA_INSTRUCAO|ALT_INV_memROM~2_combout\ : std_logic;
 SIGNAL \MEMORIA_INSTRUCAO|ALT_INV_memROM~1_combout\ : std_logic;
 SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[23]~23_combout\ : std_logic;
 SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[21]~22_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~116_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~55_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~87_q\ : std_logic;
+SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[22]~21_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~115_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~56_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~88_q\ : std_logic;
+SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[20]~20_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~114_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~54_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~86_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~113_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~57_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~89_q\ : std_logic;
+SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[19]~19_combout\ : std_logic;
+SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[17]~18_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~112_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~51_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~83_q\ : std_logic;
+SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[18]~17_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~111_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~52_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~84_q\ : std_logic;
+SIGNAL \MUX_RAM_ULA|ALT_INV_saida_MUX[16]~16_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~110_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~50_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~82_q\ : std_logic;
+SIGNAL \BANCO_REGISTRADORES|ALT_INV_Equal0~0_combout\ : std_logic;
+SIGNAL \detectorSub0|ALT_INV_saidaQ~q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~131_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~65_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~97_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~64_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~96_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~129_combout\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~63_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~95_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~62_q\ : std_logic;
+SIGNAL \MEMORIA_DADOS|ALT_INV_ram~94_q\ : std_logic;
 SIGNAL \ALT_INV_KEY[0]~input_o\ : std_logic;
 SIGNAL \ALT_INV_KEY[1]~input_o\ : std_logic;
 
@@ -1049,9 +1127,20 @@ RESULTADO <= ww_RESULTADO;
 REG_RS <= ww_REG_RS;
 REG_RT <= ww_REG_RT;
 LEDR <= ww_LEDR;
+PC_OUT <= ww_PC_OUT;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\BANCO_REGISTRADORES|ALT_INV_registrador~117_q\ <= NOT \BANCO_REGISTRADORES|registrador~117_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~309_q\ <= NOT \BANCO_REGISTRADORES|registrador~309_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~373_q\ <= NOT \BANCO_REGISTRADORES|registrador~373_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~52_q\ <= NOT \BANCO_REGISTRADORES|registrador~52_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~116_q\ <= NOT \BANCO_REGISTRADORES|registrador~116_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~308_q\ <= NOT \BANCO_REGISTRADORES|registrador~308_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~372_q\ <= NOT \BANCO_REGISTRADORES|registrador~372_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~51_q\ <= NOT \BANCO_REGISTRADORES|registrador~51_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~115_q\ <= NOT \BANCO_REGISTRADORES|registrador~115_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~307_q\ <= NOT \BANCO_REGISTRADORES|registrador~307_q\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~371_q\ <= NOT \BANCO_REGISTRADORES|registrador~371_q\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~50_q\ <= NOT \BANCO_REGISTRADORES|registrador~50_q\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~114_q\ <= NOT \BANCO_REGISTRADORES|registrador~114_q\;
@@ -1133,39 +1222,6 @@ ww_devpor <= devpor;
 \ULA|ALT_INV_Add0~9_sumout\ <= NOT \ULA|Add0~9_sumout\;
 \ULA|ALT_INV_Add0~5_sumout\ <= NOT \ULA|Add0~5_sumout\;
 \ULA|ALT_INV_Add0~1_sumout\ <= NOT \ULA|Add0~1_sumout\;
-\PC|ALT_INV_DOUT\(6) <= NOT \PC|DOUT\(6);
-\PC|ALT_INV_DOUT\(7) <= NOT \PC|DOUT\(7);
-\MEMORIA_DADOS|ALT_INV_ram~98_combout\ <= NOT \MEMORIA_DADOS|ram~98_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~37_q\ <= NOT \MEMORIA_DADOS|ram~37_q\;
-\MEMORIA_DADOS|ALT_INV_ram~69_q\ <= NOT \MEMORIA_DADOS|ram~69_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1190_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1190_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1186_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1186_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1182_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1182_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1178_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1178_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1174_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1174_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1170_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1170_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1166_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1166_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1162_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1162_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1158_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1158_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1154_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1154_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1150_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1150_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1146_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1146_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1142_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1142_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1138_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1138_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1134_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1134_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1130_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1130_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1126_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1126_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1122_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1122_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1118_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1118_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1114_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1114_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1110_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1110_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1106_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1106_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1102_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1102_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1098_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1098_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1094_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1094_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1090_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1090_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1086_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1086_combout\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~1082_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1082_combout\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~1078_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1078_combout\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~1074_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1074_combout\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~1070_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1070_combout\;
@@ -1235,43 +1291,6 @@ ww_devpor <= devpor;
 \BANCO_REGISTRADORES|ALT_INV_registrador~310_q\ <= NOT \BANCO_REGISTRADORES|registrador~310_q\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~374_q\ <= NOT \BANCO_REGISTRADORES|registrador~374_q\;
 \BANCO_REGISTRADORES|ALT_INV_registrador~53_q\ <= NOT \BANCO_REGISTRADORES|registrador~53_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~117_q\ <= NOT \BANCO_REGISTRADORES|registrador~117_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~309_q\ <= NOT \BANCO_REGISTRADORES|registrador~309_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~373_q\ <= NOT \BANCO_REGISTRADORES|registrador~373_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~52_q\ <= NOT \BANCO_REGISTRADORES|registrador~52_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~116_q\ <= NOT \BANCO_REGISTRADORES|registrador~116_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~308_q\ <= NOT \BANCO_REGISTRADORES|registrador~308_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~372_q\ <= NOT \BANCO_REGISTRADORES|registrador~372_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~51_q\ <= NOT \BANCO_REGISTRADORES|registrador~51_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~115_q\ <= NOT \BANCO_REGISTRADORES|registrador~115_q\;
-\BANCO_REGISTRADORES|ALT_INV_registrador~307_q\ <= NOT \BANCO_REGISTRADORES|registrador~307_q\;
-\MEMORIA_DADOS|ALT_INV_ram~116_combout\ <= NOT \MEMORIA_DADOS|ram~116_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~55_q\ <= NOT \MEMORIA_DADOS|ram~55_q\;
-\MEMORIA_DADOS|ALT_INV_ram~87_q\ <= NOT \MEMORIA_DADOS|ram~87_q\;
-\MUX_RAM_ULA|ALT_INV_saida_MUX[22]~21_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[22]~21_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~115_combout\ <= NOT \MEMORIA_DADOS|ram~115_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~56_q\ <= NOT \MEMORIA_DADOS|ram~56_q\;
-\MEMORIA_DADOS|ALT_INV_ram~88_q\ <= NOT \MEMORIA_DADOS|ram~88_q\;
-\MUX_RAM_ULA|ALT_INV_saida_MUX[20]~20_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[20]~20_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~114_combout\ <= NOT \MEMORIA_DADOS|ram~114_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~54_q\ <= NOT \MEMORIA_DADOS|ram~54_q\;
-\MEMORIA_DADOS|ALT_INV_ram~86_q\ <= NOT \MEMORIA_DADOS|ram~86_q\;
-\MEMORIA_DADOS|ALT_INV_ram~113_combout\ <= NOT \MEMORIA_DADOS|ram~113_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~57_q\ <= NOT \MEMORIA_DADOS|ram~57_q\;
-\MEMORIA_DADOS|ALT_INV_ram~89_q\ <= NOT \MEMORIA_DADOS|ram~89_q\;
-\MUX_RAM_ULA|ALT_INV_saida_MUX[19]~19_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[19]~19_combout\;
-\MUX_RAM_ULA|ALT_INV_saida_MUX[17]~18_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[17]~18_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~112_combout\ <= NOT \MEMORIA_DADOS|ram~112_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~51_q\ <= NOT \MEMORIA_DADOS|ram~51_q\;
-\MEMORIA_DADOS|ALT_INV_ram~83_q\ <= NOT \MEMORIA_DADOS|ram~83_q\;
-\MUX_RAM_ULA|ALT_INV_saida_MUX[18]~17_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[18]~17_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~111_combout\ <= NOT \MEMORIA_DADOS|ram~111_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~52_q\ <= NOT \MEMORIA_DADOS|ram~52_q\;
-\MEMORIA_DADOS|ALT_INV_ram~84_q\ <= NOT \MEMORIA_DADOS|ram~84_q\;
-\MUX_RAM_ULA|ALT_INV_saida_MUX[16]~16_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[16]~16_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~110_combout\ <= NOT \MEMORIA_DADOS|ram~110_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~50_q\ <= NOT \MEMORIA_DADOS|ram~50_q\;
-\MEMORIA_DADOS|ALT_INV_ram~82_q\ <= NOT \MEMORIA_DADOS|ram~82_q\;
 \MEMORIA_DADOS|ALT_INV_ram~109_combout\ <= NOT \MEMORIA_DADOS|ram~109_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~53_q\ <= NOT \MEMORIA_DADOS|ram~53_q\;
 \MEMORIA_DADOS|ALT_INV_ram~85_q\ <= NOT \MEMORIA_DADOS|ram~85_q\;
@@ -1337,18 +1356,39 @@ ww_devpor <= devpor;
 \PC|ALT_INV_DOUT\(4) <= NOT \PC|DOUT\(4);
 \PC|ALT_INV_DOUT\(5) <= NOT \PC|DOUT\(5);
 \PC|ALT_INV_DOUT\(3) <= NOT \PC|DOUT\(3);
-\BANCO_REGISTRADORES|ALT_INV_Equal0~0_combout\ <= NOT \BANCO_REGISTRADORES|Equal0~0_combout\;
-\detectorSub0|ALT_INV_saidaQ~q\ <= NOT \detectorSub0|saidaQ~q\;
-\MEMORIA_DADOS|ALT_INV_ram~131_combout\ <= NOT \MEMORIA_DADOS|ram~131_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~65_q\ <= NOT \MEMORIA_DADOS|ram~65_q\;
-\MEMORIA_DADOS|ALT_INV_ram~97_q\ <= NOT \MEMORIA_DADOS|ram~97_q\;
-\MEMORIA_DADOS|ALT_INV_ram~64_q\ <= NOT \MEMORIA_DADOS|ram~64_q\;
-\MEMORIA_DADOS|ALT_INV_ram~96_q\ <= NOT \MEMORIA_DADOS|ram~96_q\;
-\MEMORIA_DADOS|ALT_INV_ram~129_combout\ <= NOT \MEMORIA_DADOS|ram~129_combout\;
-\MEMORIA_DADOS|ALT_INV_ram~63_q\ <= NOT \MEMORIA_DADOS|ram~63_q\;
-\MEMORIA_DADOS|ALT_INV_ram~95_q\ <= NOT \MEMORIA_DADOS|ram~95_q\;
-\MEMORIA_DADOS|ALT_INV_ram~62_q\ <= NOT \MEMORIA_DADOS|ram~62_q\;
-\MEMORIA_DADOS|ALT_INV_ram~94_q\ <= NOT \MEMORIA_DADOS|ram~94_q\;
+\PC|ALT_INV_DOUT\(6) <= NOT \PC|DOUT\(6);
+\PC|ALT_INV_DOUT\(7) <= NOT \PC|DOUT\(7);
+\MEMORIA_DADOS|ALT_INV_ram~98_combout\ <= NOT \MEMORIA_DADOS|ram~98_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~37_q\ <= NOT \MEMORIA_DADOS|ram~37_q\;
+\MEMORIA_DADOS|ALT_INV_ram~69_q\ <= NOT \MEMORIA_DADOS|ram~69_q\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1190_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1190_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1186_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1186_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1182_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1182_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1178_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1178_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1174_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1174_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1170_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1170_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1166_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1166_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1162_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1162_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1158_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1158_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1154_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1154_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1150_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1150_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1146_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1146_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1142_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1142_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1138_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1138_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1134_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1134_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1130_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1130_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1126_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1126_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1122_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1122_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1118_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1118_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1114_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1114_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1110_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1110_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1106_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1106_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1102_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1102_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1098_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1098_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1094_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1094_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1090_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1090_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1086_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1086_combout\;
+\BANCO_REGISTRADORES|ALT_INV_registrador~1082_combout\ <= NOT \BANCO_REGISTRADORES|registrador~1082_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~127_combout\ <= NOT \MEMORIA_DADOS|ram~127_combout\;
 \MEMORIA_DADOS|ALT_INV_ram~61_q\ <= NOT \MEMORIA_DADOS|ram~61_q\;
 \MEMORIA_DADOS|ALT_INV_ram~93_q\ <= NOT \MEMORIA_DADOS|ram~93_q\;
@@ -1365,6 +1405,28 @@ ww_devpor <= devpor;
 \MEMORIA_DADOS|ALT_INV_ram~119_combout\ <= NOT \MEMORIA_DADOS|ram~119_combout\;
 \detectorSub1|ALT_INV_saida~combout\ <= NOT \detectorSub1|saida~combout\;
 \detectorSub1|ALT_INV_saidaQ~q\ <= NOT \detectorSub1|saidaQ~q\;
+\PC|ALT_INV_DOUT\(31) <= NOT \PC|DOUT\(31);
+\PC|ALT_INV_DOUT\(30) <= NOT \PC|DOUT\(30);
+\PC|ALT_INV_DOUT\(29) <= NOT \PC|DOUT\(29);
+\PC|ALT_INV_DOUT\(28) <= NOT \PC|DOUT\(28);
+\PC|ALT_INV_DOUT\(27) <= NOT \PC|DOUT\(27);
+\PC|ALT_INV_DOUT\(26) <= NOT \PC|DOUT\(26);
+\PC|ALT_INV_DOUT\(25) <= NOT \PC|DOUT\(25);
+\PC|ALT_INV_DOUT\(24) <= NOT \PC|DOUT\(24);
+\PC|ALT_INV_DOUT\(23) <= NOT \PC|DOUT\(23);
+\PC|ALT_INV_DOUT\(22) <= NOT \PC|DOUT\(22);
+\PC|ALT_INV_DOUT\(21) <= NOT \PC|DOUT\(21);
+\PC|ALT_INV_DOUT\(20) <= NOT \PC|DOUT\(20);
+\PC|ALT_INV_DOUT\(19) <= NOT \PC|DOUT\(19);
+\PC|ALT_INV_DOUT\(18) <= NOT \PC|DOUT\(18);
+\PC|ALT_INV_DOUT\(17) <= NOT \PC|DOUT\(17);
+\PC|ALT_INV_DOUT\(16) <= NOT \PC|DOUT\(16);
+\PC|ALT_INV_DOUT\(15) <= NOT \PC|DOUT\(15);
+\PC|ALT_INV_DOUT\(14) <= NOT \PC|DOUT\(14);
+\PC|ALT_INV_DOUT\(13) <= NOT \PC|DOUT\(13);
+\PC|ALT_INV_DOUT\(12) <= NOT \PC|DOUT\(12);
+\PC|ALT_INV_DOUT\(11) <= NOT \PC|DOUT\(11);
+\PC|ALT_INV_DOUT\(10) <= NOT \PC|DOUT\(10);
 \PC|ALT_INV_DOUT\(9) <= NOT \PC|DOUT\(9);
 \PC|ALT_INV_DOUT\(8) <= NOT \PC|DOUT\(8);
 \MEMORIA_INSTRUCAO|ALT_INV_memROM~3_combout\ <= NOT \MEMORIA_INSTRUCAO|memROM~3_combout\;
@@ -1372,6 +1434,45 @@ ww_devpor <= devpor;
 \MEMORIA_INSTRUCAO|ALT_INV_memROM~1_combout\ <= NOT \MEMORIA_INSTRUCAO|memROM~1_combout\;
 \MUX_RAM_ULA|ALT_INV_saida_MUX[23]~23_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[23]~23_combout\;
 \MUX_RAM_ULA|ALT_INV_saida_MUX[21]~22_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[21]~22_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~116_combout\ <= NOT \MEMORIA_DADOS|ram~116_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~55_q\ <= NOT \MEMORIA_DADOS|ram~55_q\;
+\MEMORIA_DADOS|ALT_INV_ram~87_q\ <= NOT \MEMORIA_DADOS|ram~87_q\;
+\MUX_RAM_ULA|ALT_INV_saida_MUX[22]~21_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[22]~21_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~115_combout\ <= NOT \MEMORIA_DADOS|ram~115_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~56_q\ <= NOT \MEMORIA_DADOS|ram~56_q\;
+\MEMORIA_DADOS|ALT_INV_ram~88_q\ <= NOT \MEMORIA_DADOS|ram~88_q\;
+\MUX_RAM_ULA|ALT_INV_saida_MUX[20]~20_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[20]~20_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~114_combout\ <= NOT \MEMORIA_DADOS|ram~114_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~54_q\ <= NOT \MEMORIA_DADOS|ram~54_q\;
+\MEMORIA_DADOS|ALT_INV_ram~86_q\ <= NOT \MEMORIA_DADOS|ram~86_q\;
+\MEMORIA_DADOS|ALT_INV_ram~113_combout\ <= NOT \MEMORIA_DADOS|ram~113_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~57_q\ <= NOT \MEMORIA_DADOS|ram~57_q\;
+\MEMORIA_DADOS|ALT_INV_ram~89_q\ <= NOT \MEMORIA_DADOS|ram~89_q\;
+\MUX_RAM_ULA|ALT_INV_saida_MUX[19]~19_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[19]~19_combout\;
+\MUX_RAM_ULA|ALT_INV_saida_MUX[17]~18_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[17]~18_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~112_combout\ <= NOT \MEMORIA_DADOS|ram~112_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~51_q\ <= NOT \MEMORIA_DADOS|ram~51_q\;
+\MEMORIA_DADOS|ALT_INV_ram~83_q\ <= NOT \MEMORIA_DADOS|ram~83_q\;
+\MUX_RAM_ULA|ALT_INV_saida_MUX[18]~17_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[18]~17_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~111_combout\ <= NOT \MEMORIA_DADOS|ram~111_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~52_q\ <= NOT \MEMORIA_DADOS|ram~52_q\;
+\MEMORIA_DADOS|ALT_INV_ram~84_q\ <= NOT \MEMORIA_DADOS|ram~84_q\;
+\MUX_RAM_ULA|ALT_INV_saida_MUX[16]~16_combout\ <= NOT \MUX_RAM_ULA|saida_MUX[16]~16_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~110_combout\ <= NOT \MEMORIA_DADOS|ram~110_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~50_q\ <= NOT \MEMORIA_DADOS|ram~50_q\;
+\MEMORIA_DADOS|ALT_INV_ram~82_q\ <= NOT \MEMORIA_DADOS|ram~82_q\;
+\BANCO_REGISTRADORES|ALT_INV_Equal0~0_combout\ <= NOT \BANCO_REGISTRADORES|Equal0~0_combout\;
+\detectorSub0|ALT_INV_saidaQ~q\ <= NOT \detectorSub0|saidaQ~q\;
+\MEMORIA_DADOS|ALT_INV_ram~131_combout\ <= NOT \MEMORIA_DADOS|ram~131_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~65_q\ <= NOT \MEMORIA_DADOS|ram~65_q\;
+\MEMORIA_DADOS|ALT_INV_ram~97_q\ <= NOT \MEMORIA_DADOS|ram~97_q\;
+\MEMORIA_DADOS|ALT_INV_ram~64_q\ <= NOT \MEMORIA_DADOS|ram~64_q\;
+\MEMORIA_DADOS|ALT_INV_ram~96_q\ <= NOT \MEMORIA_DADOS|ram~96_q\;
+\MEMORIA_DADOS|ALT_INV_ram~129_combout\ <= NOT \MEMORIA_DADOS|ram~129_combout\;
+\MEMORIA_DADOS|ALT_INV_ram~63_q\ <= NOT \MEMORIA_DADOS|ram~63_q\;
+\MEMORIA_DADOS|ALT_INV_ram~95_q\ <= NOT \MEMORIA_DADOS|ram~95_q\;
+\MEMORIA_DADOS|ALT_INV_ram~62_q\ <= NOT \MEMORIA_DADOS|ram~62_q\;
+\MEMORIA_DADOS|ALT_INV_ram~94_q\ <= NOT \MEMORIA_DADOS|ram~94_q\;
 \ALT_INV_KEY[0]~input_o\ <= NOT \KEY[0]~input_o\;
 \ALT_INV_KEY[1]~input_o\ <= NOT \KEY[1]~input_o\;
 
@@ -3150,6 +3251,390 @@ PORT MAP (
 	i => \PC|DOUT\(9),
 	devoe => ww_devoe,
 	o => \LEDR[9]~output_o\);
+
+\PC_OUT[0]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => GND,
+	devoe => ww_devoe,
+	o => \PC_OUT[0]~output_o\);
+
+\PC_OUT[1]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => GND,
+	devoe => ww_devoe,
+	o => \PC_OUT[1]~output_o\);
+
+\PC_OUT[2]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(2),
+	devoe => ww_devoe,
+	o => \PC_OUT[2]~output_o\);
+
+\PC_OUT[3]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(3),
+	devoe => ww_devoe,
+	o => \PC_OUT[3]~output_o\);
+
+\PC_OUT[4]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(4),
+	devoe => ww_devoe,
+	o => \PC_OUT[4]~output_o\);
+
+\PC_OUT[5]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(5),
+	devoe => ww_devoe,
+	o => \PC_OUT[5]~output_o\);
+
+\PC_OUT[6]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(6),
+	devoe => ww_devoe,
+	o => \PC_OUT[6]~output_o\);
+
+\PC_OUT[7]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(7),
+	devoe => ww_devoe,
+	o => \PC_OUT[7]~output_o\);
+
+\PC_OUT[8]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(8),
+	devoe => ww_devoe,
+	o => \PC_OUT[8]~output_o\);
+
+\PC_OUT[9]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(9),
+	devoe => ww_devoe,
+	o => \PC_OUT[9]~output_o\);
+
+\PC_OUT[10]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(10),
+	devoe => ww_devoe,
+	o => \PC_OUT[10]~output_o\);
+
+\PC_OUT[11]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(11),
+	devoe => ww_devoe,
+	o => \PC_OUT[11]~output_o\);
+
+\PC_OUT[12]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(12),
+	devoe => ww_devoe,
+	o => \PC_OUT[12]~output_o\);
+
+\PC_OUT[13]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(13),
+	devoe => ww_devoe,
+	o => \PC_OUT[13]~output_o\);
+
+\PC_OUT[14]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(14),
+	devoe => ww_devoe,
+	o => \PC_OUT[14]~output_o\);
+
+\PC_OUT[15]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(15),
+	devoe => ww_devoe,
+	o => \PC_OUT[15]~output_o\);
+
+\PC_OUT[16]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(16),
+	devoe => ww_devoe,
+	o => \PC_OUT[16]~output_o\);
+
+\PC_OUT[17]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(17),
+	devoe => ww_devoe,
+	o => \PC_OUT[17]~output_o\);
+
+\PC_OUT[18]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(18),
+	devoe => ww_devoe,
+	o => \PC_OUT[18]~output_o\);
+
+\PC_OUT[19]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(19),
+	devoe => ww_devoe,
+	o => \PC_OUT[19]~output_o\);
+
+\PC_OUT[20]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(20),
+	devoe => ww_devoe,
+	o => \PC_OUT[20]~output_o\);
+
+\PC_OUT[21]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(21),
+	devoe => ww_devoe,
+	o => \PC_OUT[21]~output_o\);
+
+\PC_OUT[22]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(22),
+	devoe => ww_devoe,
+	o => \PC_OUT[22]~output_o\);
+
+\PC_OUT[23]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(23),
+	devoe => ww_devoe,
+	o => \PC_OUT[23]~output_o\);
+
+\PC_OUT[24]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(24),
+	devoe => ww_devoe,
+	o => \PC_OUT[24]~output_o\);
+
+\PC_OUT[25]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(25),
+	devoe => ww_devoe,
+	o => \PC_OUT[25]~output_o\);
+
+\PC_OUT[26]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(26),
+	devoe => ww_devoe,
+	o => \PC_OUT[26]~output_o\);
+
+\PC_OUT[27]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(27),
+	devoe => ww_devoe,
+	o => \PC_OUT[27]~output_o\);
+
+\PC_OUT[28]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(28),
+	devoe => ww_devoe,
+	o => \PC_OUT[28]~output_o\);
+
+\PC_OUT[29]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(29),
+	devoe => ww_devoe,
+	o => \PC_OUT[29]~output_o\);
+
+\PC_OUT[30]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(30),
+	devoe => ww_devoe,
+	o => \PC_OUT[30]~output_o\);
+
+\PC_OUT[31]~output\ : cyclonev_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \PC|DOUT\(31),
+	devoe => ww_devoe,
+	o => \PC_OUT[31]~output_o\);
 
 \KEY[0]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -10803,6 +11288,7 @@ PORT MAP (
 \SOMADOR|Add0~25\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \SOMADOR|Add0~25_sumout\ = SUM(( \PC|DOUT\(9) ) + ( GND ) + ( \SOMADOR|Add0~22\ ))
+-- \SOMADOR|Add0~26\ = CARRY(( \PC|DOUT\(9) ) + ( GND ) + ( \SOMADOR|Add0~22\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -10813,7 +11299,8 @@ GENERIC MAP (
 PORT MAP (
 	datad => \PC|ALT_INV_DOUT\(9),
 	cin => \SOMADOR|Add0~22\,
-	sumout => \SOMADOR|Add0~25_sumout\);
+	sumout => \SOMADOR|Add0~25_sumout\,
+	cout => \SOMADOR|Add0~26\);
 
 \PC|DOUT[9]\ : dffeas
 -- pragma translate_off
@@ -10828,6 +11315,686 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \PC|DOUT\(9));
+
+\SOMADOR|Add0~29\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~29_sumout\ = SUM(( \PC|DOUT\(10) ) + ( GND ) + ( \SOMADOR|Add0~26\ ))
+-- \SOMADOR|Add0~30\ = CARRY(( \PC|DOUT\(10) ) + ( GND ) + ( \SOMADOR|Add0~26\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(10),
+	cin => \SOMADOR|Add0~26\,
+	sumout => \SOMADOR|Add0~29_sumout\,
+	cout => \SOMADOR|Add0~30\);
+
+\PC|DOUT[10]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~29_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(10));
+
+\SOMADOR|Add0~33\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~33_sumout\ = SUM(( \PC|DOUT\(11) ) + ( GND ) + ( \SOMADOR|Add0~30\ ))
+-- \SOMADOR|Add0~34\ = CARRY(( \PC|DOUT\(11) ) + ( GND ) + ( \SOMADOR|Add0~30\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(11),
+	cin => \SOMADOR|Add0~30\,
+	sumout => \SOMADOR|Add0~33_sumout\,
+	cout => \SOMADOR|Add0~34\);
+
+\PC|DOUT[11]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~33_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(11));
+
+\SOMADOR|Add0~37\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~37_sumout\ = SUM(( \PC|DOUT\(12) ) + ( GND ) + ( \SOMADOR|Add0~34\ ))
+-- \SOMADOR|Add0~38\ = CARRY(( \PC|DOUT\(12) ) + ( GND ) + ( \SOMADOR|Add0~34\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(12),
+	cin => \SOMADOR|Add0~34\,
+	sumout => \SOMADOR|Add0~37_sumout\,
+	cout => \SOMADOR|Add0~38\);
+
+\PC|DOUT[12]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~37_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(12));
+
+\SOMADOR|Add0~41\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~41_sumout\ = SUM(( \PC|DOUT\(13) ) + ( GND ) + ( \SOMADOR|Add0~38\ ))
+-- \SOMADOR|Add0~42\ = CARRY(( \PC|DOUT\(13) ) + ( GND ) + ( \SOMADOR|Add0~38\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(13),
+	cin => \SOMADOR|Add0~38\,
+	sumout => \SOMADOR|Add0~41_sumout\,
+	cout => \SOMADOR|Add0~42\);
+
+\PC|DOUT[13]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~41_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(13));
+
+\SOMADOR|Add0~45\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~45_sumout\ = SUM(( \PC|DOUT\(14) ) + ( GND ) + ( \SOMADOR|Add0~42\ ))
+-- \SOMADOR|Add0~46\ = CARRY(( \PC|DOUT\(14) ) + ( GND ) + ( \SOMADOR|Add0~42\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(14),
+	cin => \SOMADOR|Add0~42\,
+	sumout => \SOMADOR|Add0~45_sumout\,
+	cout => \SOMADOR|Add0~46\);
+
+\PC|DOUT[14]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~45_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(14));
+
+\SOMADOR|Add0~49\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~49_sumout\ = SUM(( \PC|DOUT\(15) ) + ( GND ) + ( \SOMADOR|Add0~46\ ))
+-- \SOMADOR|Add0~50\ = CARRY(( \PC|DOUT\(15) ) + ( GND ) + ( \SOMADOR|Add0~46\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(15),
+	cin => \SOMADOR|Add0~46\,
+	sumout => \SOMADOR|Add0~49_sumout\,
+	cout => \SOMADOR|Add0~50\);
+
+\PC|DOUT[15]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~49_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(15));
+
+\SOMADOR|Add0~53\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~53_sumout\ = SUM(( \PC|DOUT\(16) ) + ( GND ) + ( \SOMADOR|Add0~50\ ))
+-- \SOMADOR|Add0~54\ = CARRY(( \PC|DOUT\(16) ) + ( GND ) + ( \SOMADOR|Add0~50\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(16),
+	cin => \SOMADOR|Add0~50\,
+	sumout => \SOMADOR|Add0~53_sumout\,
+	cout => \SOMADOR|Add0~54\);
+
+\PC|DOUT[16]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~53_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(16));
+
+\SOMADOR|Add0~57\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~57_sumout\ = SUM(( \PC|DOUT\(17) ) + ( GND ) + ( \SOMADOR|Add0~54\ ))
+-- \SOMADOR|Add0~58\ = CARRY(( \PC|DOUT\(17) ) + ( GND ) + ( \SOMADOR|Add0~54\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(17),
+	cin => \SOMADOR|Add0~54\,
+	sumout => \SOMADOR|Add0~57_sumout\,
+	cout => \SOMADOR|Add0~58\);
+
+\PC|DOUT[17]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~57_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(17));
+
+\SOMADOR|Add0~61\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~61_sumout\ = SUM(( \PC|DOUT\(18) ) + ( GND ) + ( \SOMADOR|Add0~58\ ))
+-- \SOMADOR|Add0~62\ = CARRY(( \PC|DOUT\(18) ) + ( GND ) + ( \SOMADOR|Add0~58\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(18),
+	cin => \SOMADOR|Add0~58\,
+	sumout => \SOMADOR|Add0~61_sumout\,
+	cout => \SOMADOR|Add0~62\);
+
+\PC|DOUT[18]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~61_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(18));
+
+\SOMADOR|Add0~65\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~65_sumout\ = SUM(( \PC|DOUT\(19) ) + ( GND ) + ( \SOMADOR|Add0~62\ ))
+-- \SOMADOR|Add0~66\ = CARRY(( \PC|DOUT\(19) ) + ( GND ) + ( \SOMADOR|Add0~62\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(19),
+	cin => \SOMADOR|Add0~62\,
+	sumout => \SOMADOR|Add0~65_sumout\,
+	cout => \SOMADOR|Add0~66\);
+
+\PC|DOUT[19]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~65_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(19));
+
+\SOMADOR|Add0~69\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~69_sumout\ = SUM(( \PC|DOUT\(20) ) + ( GND ) + ( \SOMADOR|Add0~66\ ))
+-- \SOMADOR|Add0~70\ = CARRY(( \PC|DOUT\(20) ) + ( GND ) + ( \SOMADOR|Add0~66\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(20),
+	cin => \SOMADOR|Add0~66\,
+	sumout => \SOMADOR|Add0~69_sumout\,
+	cout => \SOMADOR|Add0~70\);
+
+\PC|DOUT[20]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~69_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(20));
+
+\SOMADOR|Add0~73\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~73_sumout\ = SUM(( \PC|DOUT\(21) ) + ( GND ) + ( \SOMADOR|Add0~70\ ))
+-- \SOMADOR|Add0~74\ = CARRY(( \PC|DOUT\(21) ) + ( GND ) + ( \SOMADOR|Add0~70\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(21),
+	cin => \SOMADOR|Add0~70\,
+	sumout => \SOMADOR|Add0~73_sumout\,
+	cout => \SOMADOR|Add0~74\);
+
+\PC|DOUT[21]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~73_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(21));
+
+\SOMADOR|Add0~77\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~77_sumout\ = SUM(( \PC|DOUT\(22) ) + ( GND ) + ( \SOMADOR|Add0~74\ ))
+-- \SOMADOR|Add0~78\ = CARRY(( \PC|DOUT\(22) ) + ( GND ) + ( \SOMADOR|Add0~74\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(22),
+	cin => \SOMADOR|Add0~74\,
+	sumout => \SOMADOR|Add0~77_sumout\,
+	cout => \SOMADOR|Add0~78\);
+
+\PC|DOUT[22]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~77_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(22));
+
+\SOMADOR|Add0~81\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~81_sumout\ = SUM(( \PC|DOUT\(23) ) + ( GND ) + ( \SOMADOR|Add0~78\ ))
+-- \SOMADOR|Add0~82\ = CARRY(( \PC|DOUT\(23) ) + ( GND ) + ( \SOMADOR|Add0~78\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(23),
+	cin => \SOMADOR|Add0~78\,
+	sumout => \SOMADOR|Add0~81_sumout\,
+	cout => \SOMADOR|Add0~82\);
+
+\PC|DOUT[23]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~81_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(23));
+
+\SOMADOR|Add0~85\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~85_sumout\ = SUM(( \PC|DOUT\(24) ) + ( GND ) + ( \SOMADOR|Add0~82\ ))
+-- \SOMADOR|Add0~86\ = CARRY(( \PC|DOUT\(24) ) + ( GND ) + ( \SOMADOR|Add0~82\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(24),
+	cin => \SOMADOR|Add0~82\,
+	sumout => \SOMADOR|Add0~85_sumout\,
+	cout => \SOMADOR|Add0~86\);
+
+\PC|DOUT[24]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~85_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(24));
+
+\SOMADOR|Add0~89\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~89_sumout\ = SUM(( \PC|DOUT\(25) ) + ( GND ) + ( \SOMADOR|Add0~86\ ))
+-- \SOMADOR|Add0~90\ = CARRY(( \PC|DOUT\(25) ) + ( GND ) + ( \SOMADOR|Add0~86\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(25),
+	cin => \SOMADOR|Add0~86\,
+	sumout => \SOMADOR|Add0~89_sumout\,
+	cout => \SOMADOR|Add0~90\);
+
+\PC|DOUT[25]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~89_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(25));
+
+\SOMADOR|Add0~93\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~93_sumout\ = SUM(( \PC|DOUT\(26) ) + ( GND ) + ( \SOMADOR|Add0~90\ ))
+-- \SOMADOR|Add0~94\ = CARRY(( \PC|DOUT\(26) ) + ( GND ) + ( \SOMADOR|Add0~90\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(26),
+	cin => \SOMADOR|Add0~90\,
+	sumout => \SOMADOR|Add0~93_sumout\,
+	cout => \SOMADOR|Add0~94\);
+
+\PC|DOUT[26]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~93_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(26));
+
+\SOMADOR|Add0~97\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~97_sumout\ = SUM(( \PC|DOUT\(27) ) + ( GND ) + ( \SOMADOR|Add0~94\ ))
+-- \SOMADOR|Add0~98\ = CARRY(( \PC|DOUT\(27) ) + ( GND ) + ( \SOMADOR|Add0~94\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(27),
+	cin => \SOMADOR|Add0~94\,
+	sumout => \SOMADOR|Add0~97_sumout\,
+	cout => \SOMADOR|Add0~98\);
+
+\PC|DOUT[27]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~97_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(27));
+
+\SOMADOR|Add0~101\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~101_sumout\ = SUM(( \PC|DOUT\(28) ) + ( GND ) + ( \SOMADOR|Add0~98\ ))
+-- \SOMADOR|Add0~102\ = CARRY(( \PC|DOUT\(28) ) + ( GND ) + ( \SOMADOR|Add0~98\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(28),
+	cin => \SOMADOR|Add0~98\,
+	sumout => \SOMADOR|Add0~101_sumout\,
+	cout => \SOMADOR|Add0~102\);
+
+\PC|DOUT[28]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~101_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(28));
+
+\SOMADOR|Add0~105\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~105_sumout\ = SUM(( \PC|DOUT\(29) ) + ( GND ) + ( \SOMADOR|Add0~102\ ))
+-- \SOMADOR|Add0~106\ = CARRY(( \PC|DOUT\(29) ) + ( GND ) + ( \SOMADOR|Add0~102\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(29),
+	cin => \SOMADOR|Add0~102\,
+	sumout => \SOMADOR|Add0~105_sumout\,
+	cout => \SOMADOR|Add0~106\);
+
+\PC|DOUT[29]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~105_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(29));
+
+\SOMADOR|Add0~109\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~109_sumout\ = SUM(( \PC|DOUT\(30) ) + ( GND ) + ( \SOMADOR|Add0~106\ ))
+-- \SOMADOR|Add0~110\ = CARRY(( \PC|DOUT\(30) ) + ( GND ) + ( \SOMADOR|Add0~106\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(30),
+	cin => \SOMADOR|Add0~106\,
+	sumout => \SOMADOR|Add0~109_sumout\,
+	cout => \SOMADOR|Add0~110\);
+
+\PC|DOUT[30]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~109_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(30));
+
+\SOMADOR|Add0~113\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \SOMADOR|Add0~113_sumout\ = SUM(( \PC|DOUT\(31) ) + ( GND ) + ( \SOMADOR|Add0~110\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111111111111111100000000000000000000000011111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datad => \PC|ALT_INV_DOUT\(31),
+	cin => \SOMADOR|Add0~110\,
+	sumout => \SOMADOR|Add0~113_sumout\);
+
+\PC|DOUT[31]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \detectorSub0|saida~combout\,
+	d => \SOMADOR|Add0~113_sumout\,
+	clrn => \detectorSub1|ALT_INV_saida~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT\(31));
 
 \KEY[2]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -11154,6 +12321,70 @@ ww_LEDR(7) <= \LEDR[7]~output_o\;
 ww_LEDR(8) <= \LEDR[8]~output_o\;
 
 ww_LEDR(9) <= \LEDR[9]~output_o\;
+
+ww_PC_OUT(0) <= \PC_OUT[0]~output_o\;
+
+ww_PC_OUT(1) <= \PC_OUT[1]~output_o\;
+
+ww_PC_OUT(2) <= \PC_OUT[2]~output_o\;
+
+ww_PC_OUT(3) <= \PC_OUT[3]~output_o\;
+
+ww_PC_OUT(4) <= \PC_OUT[4]~output_o\;
+
+ww_PC_OUT(5) <= \PC_OUT[5]~output_o\;
+
+ww_PC_OUT(6) <= \PC_OUT[6]~output_o\;
+
+ww_PC_OUT(7) <= \PC_OUT[7]~output_o\;
+
+ww_PC_OUT(8) <= \PC_OUT[8]~output_o\;
+
+ww_PC_OUT(9) <= \PC_OUT[9]~output_o\;
+
+ww_PC_OUT(10) <= \PC_OUT[10]~output_o\;
+
+ww_PC_OUT(11) <= \PC_OUT[11]~output_o\;
+
+ww_PC_OUT(12) <= \PC_OUT[12]~output_o\;
+
+ww_PC_OUT(13) <= \PC_OUT[13]~output_o\;
+
+ww_PC_OUT(14) <= \PC_OUT[14]~output_o\;
+
+ww_PC_OUT(15) <= \PC_OUT[15]~output_o\;
+
+ww_PC_OUT(16) <= \PC_OUT[16]~output_o\;
+
+ww_PC_OUT(17) <= \PC_OUT[17]~output_o\;
+
+ww_PC_OUT(18) <= \PC_OUT[18]~output_o\;
+
+ww_PC_OUT(19) <= \PC_OUT[19]~output_o\;
+
+ww_PC_OUT(20) <= \PC_OUT[20]~output_o\;
+
+ww_PC_OUT(21) <= \PC_OUT[21]~output_o\;
+
+ww_PC_OUT(22) <= \PC_OUT[22]~output_o\;
+
+ww_PC_OUT(23) <= \PC_OUT[23]~output_o\;
+
+ww_PC_OUT(24) <= \PC_OUT[24]~output_o\;
+
+ww_PC_OUT(25) <= \PC_OUT[25]~output_o\;
+
+ww_PC_OUT(26) <= \PC_OUT[26]~output_o\;
+
+ww_PC_OUT(27) <= \PC_OUT[27]~output_o\;
+
+ww_PC_OUT(28) <= \PC_OUT[28]~output_o\;
+
+ww_PC_OUT(29) <= \PC_OUT[29]~output_o\;
+
+ww_PC_OUT(30) <= \PC_OUT[30]~output_o\;
+
+ww_PC_OUT(31) <= \PC_OUT[31]~output_o\;
 END structure;
 
 

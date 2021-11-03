@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/27/2021 22:23:35"
+-- Generated on "11/03/2021 15:30:57"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula14
 -- 
@@ -44,6 +44,7 @@ SIGNAL HEX4 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX5 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL PC_OUT : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL REG_RS : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL REG_RT : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL RESULTADO : STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -59,6 +60,7 @@ COMPONENT Aula14
 	HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+	PC_OUT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	REG_RS : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	REG_RT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	RESULTADO : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
@@ -78,6 +80,7 @@ BEGIN
 	HEX5 => HEX5,
 	KEY => KEY,
 	LEDR => LEDR,
+	PC_OUT => PC_OUT,
 	REG_RS => REG_RS,
 	REG_RT => REG_RT,
 	RESULTADO => RESULTADO

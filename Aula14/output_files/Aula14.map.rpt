@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Aula14
-Wed Oct 27 22:23:30 2021
+Wed Nov 03 15:29:57 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -67,14 +67,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 27 22:23:30 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 03 15:29:56 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula14                                      ;
 ; Top-level Entity Name           ; Aula14                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 202                                         ;
-; Total pins                      ; 154                                         ;
+; Total registers                 ; 224                                         ;
+; Total pins                      ; 186                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -188,7 +188,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -216,25 +217,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------------------+
 ; Resource                                    ; Usage                           ;
 +---------------------------------------------+---------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 203                             ;
+; Estimate of Logic utilization (ALMs needed) ; 214                             ;
 ;                                             ;                                 ;
-; Combinational ALUT usage for logic          ; 255                             ;
+; Combinational ALUT usage for logic          ; 277                             ;
 ;     -- 7 input functions                    ; 32                              ;
 ;     -- 6 input functions                    ; 37                              ;
 ;     -- 5 input functions                    ; 11                              ;
 ;     -- 4 input functions                    ; 44                              ;
-;     -- <=3 input functions                  ; 131                             ;
+;     -- <=3 input functions                  ; 153                             ;
 ;                                             ;                                 ;
-; Dedicated logic registers                   ; 202                             ;
+; Dedicated logic registers                   ; 224                             ;
 ;                                             ;                                 ;
-; I/O pins                                    ; 154                             ;
+; I/O pins                                    ; 186                             ;
 ;                                             ;                                 ;
 ; Total DSP Blocks                            ; 0                               ;
 ;                                             ;                                 ;
 ; Maximum fan-out node                        ; edgeDetector:detectorSub0|saida ;
-; Maximum fan-out                             ; 200                             ;
-; Total fan-out                               ; 2106                            ;
-; Average fan-out                             ; 2.75                            ;
+; Maximum fan-out                             ; 222                             ;
+; Total fan-out                               ; 2278                            ;
+; Average fan-out                             ; 2.61                            ;
 +---------------------------------------------+---------------------------------+
 
 
@@ -243,7 +244,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Entity Name            ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+------------------------+--------------+
-; |Aula14                                     ; 255 (0)             ; 202 (0)                   ; 0                 ; 0          ; 154  ; 0            ; |Aula14                                        ; Aula14                 ; work         ;
+; |Aula14                                     ; 277 (0)             ; 224 (0)                   ; 0                 ; 0          ; 186  ; 0            ; |Aula14                                        ; Aula14                 ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX0|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|DecodBinario_7Seg:DECOD_HEX0           ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX1|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|DecodBinario_7Seg:DECOD_HEX1           ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX2|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|DecodBinario_7Seg:DECOD_HEX2           ; DecodBinario_7Seg      ; work         ;
@@ -258,8 +259,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |edgeDetector:detectorSub0|              ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|edgeDetector:detectorSub0              ; edgeDetector           ; work         ;
 ;    |edgeDetector:detectorSub1|              ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|edgeDetector:detectorSub1              ; edgeDetector           ; work         ;
 ;    |muxGenerico2x1:MUX_RAM_ULA|             ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|muxGenerico2x1:MUX_RAM_ULA             ; muxGenerico2x1         ; work         ;
-;    |registradorGenerico_PC:PC|              ; 1 (1)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|registradorGenerico_PC:PC              ; registradorGenerico_PC ; work         ;
-;    |somadorGenerico:SOMADOR|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|somadorGenerico:SOMADOR                ; somadorGenerico        ; work         ;
+;    |registradorGenerico_PC:PC|              ; 1 (1)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Aula14|registradorGenerico_PC:PC              ; registradorGenerico_PC ; work         ;
+;    |somadorGenerico:SOMADOR|                ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Aula14|somadorGenerico:SOMADOR                ; somadorGenerico        ; work         ;
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1039,7 +1040,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1059 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1060 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1061 ; Lost fanout                                   ;
-; registradorGenerico_PC:PC|DOUT[10..31]                  ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~326  ; Stuck at GND due to stuck port clock          ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~327  ; Stuck at GND due to stuck port clock          ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~328  ; Stuck at GND due to stuck port clock          ;
@@ -1168,7 +1168,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~164  ; Stuck at GND due to stuck port clock          ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~101  ; Stuck at GND due to stuck port clock          ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~165  ; Stuck at GND due to stuck port clock          ;
-; Total Number of Removed Registers = 920                 ;                                               ;
+; Total Number of Removed Registers = 898                 ;                                               ;
 +---------------------------------------------------------+-----------------------------------------------+
 
 
@@ -1177,10 +1177,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 202   ;
+; Total registers                              ; 224   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 128   ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 30    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 192   ;
 ; Number of registers using Preset             ; 0     ;
@@ -1436,14 +1436,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 202                         ;
-;     CLR               ; 8                           ;
+; arriav_ff             ; 224                         ;
+;     CLR               ; 30                          ;
 ;     ENA               ; 64                          ;
 ;     ENA SLD           ; 128                         ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 257                         ;
-;     arith             ; 40                          ;
-;         1 data inputs ; 7                           ;
+; arriav_lcell_comb     ; 279                         ;
+;     arith             ; 62                          ;
+;         1 data inputs ; 29                          ;
 ;         2 data inputs ; 1                           ;
 ;         4 data inputs ; 31                          ;
 ;         5 data inputs ; 1                           ;
@@ -1457,10 +1457,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 13                          ;
 ;         5 data inputs ; 10                          ;
 ;         6 data inputs ; 37                          ;
-; boundary_port         ; 154                         ;
+; boundary_port         ; 186                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.30                        ;
-; Average LUT depth     ; 4.72                        ;
+; Average LUT depth     ; 4.53                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1479,12 +1479,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 27 22:23:22 2021
+    Info: Processing started: Wed Nov 03 15:29:49 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula14 -c Aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula14.vhd
-    Info (12022): Found design unit 1: Aula14-arquitetura File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 34
+    Info (12022): Found design unit 1: Aula14-arquitetura File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 35
     Info (12023): Found entity 1: Aula14 File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
     Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto2/Aula14/registradorGenerico_PC.vhd Line: 16
@@ -1518,22 +1518,22 @@ Info (12021): Found 3 design units, including 1 entities, in source file edgedet
     Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto2/Aula14/edgeDetector.vhd Line: 23
     Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto2/Aula14/edgeDetector.vhd Line: 4
 Info (12127): Elaborating entity "Aula14" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Aula14.vhd(48): object "Saida_Mux_Beq" assigned a value but never read File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 48
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 65
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 72
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 75
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:MEMORIA_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 78
+Warning (10036): Verilog HDL or VHDL warning at Aula14.vhd(49): object "Saida_Mux_Beq" assigned a value but never read File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 49
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 66
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 73
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 76
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:MEMORIA_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 79
 Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/DesignComp-Projeto2/Aula14/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_BR" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 82
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BANCO_REGISTRADORES" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 88
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_ENTRADA_ULA" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 123
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 129
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_BR" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 83
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BANCO_REGISTRADORES" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 89
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_ENTRADA_ULA" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 124
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 130
 Warning (10620): VHDL warning at ULASomaSub.vhd(24): comparison between unequal length operands always returns FALSE File: C:/Descomp/DesignComp-Projeto2/Aula14/ULASomaSub.vhd Line: 24
-Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UNIDADE_DE_CONTROLE" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 133
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 139
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UNIDADE_DE_CONTROLE" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 134
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 140
 Warning (10639): VHDL warning at RAMMIPS.vhd(24): constant value overflow File: C:/Descomp/DesignComp-Projeto2/Aula14/RAMMIPS.vhd Line: 24
 Warning (10445): VHDL Subtype or Type Declaration warning at RAMMIPS.vhd(24): subtype or type has null range File: C:/Descomp/DesignComp-Projeto2/Aula14/RAMMIPS.vhd Line: 24
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 171
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 172
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Aula14/RAMMIPS.vhd Line: 27
     Info (276007): RAM logic "bancoRegistradores:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Aula14/bancoRegistradores.vhd Line: 50
@@ -1606,21 +1606,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "REG_RS[31]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 26
     Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 28
     Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 28
+    Warning (13410): Pin "PC_OUT[0]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 29
+    Warning (13410): Pin "PC_OUT[1]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 29
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 790 registers lost all their fanouts during netlist optimizations.
+Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 23
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 23
     Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/Descomp/DesignComp-Projeto2/Aula14/Aula14.vhd Line: 24
-Info (21057): Implemented 586 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 640 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 148 output pins
-    Info (21061): Implemented 432 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
-    Info: Peak virtual memory: 4897 megabytes
-    Info: Processing ended: Wed Oct 27 22:23:30 2021
+    Info (21059): Implemented 180 output pins
+    Info (21061): Implemented 454 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 80 warnings
+    Info: Peak virtual memory: 4901 megabytes
+    Info: Processing ended: Wed Nov 03 15:29:57 2021
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 

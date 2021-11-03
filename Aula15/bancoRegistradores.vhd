@@ -32,8 +32,21 @@ architecture comportamento of bancoRegistradores is
     subtype palavra_t is std_logic_vector((larguraDados-1) downto 0);
     type memoria_t is array(2**larguraEndBancoRegs-1 downto 0) of palavra_t;
 
+function initMemory
+        return memoria_t is variable tmp : memoria_t := (others => (others => '0'));
+  begin
+        -- Inicializa os endereços:
+        tmp(8)  := 32x"00";  -- $t0 = 0x00
+        tmp(9)  := 32x"0A";  -- $t1 = 0x0A
+        tmp(10) := 32x"0B";  -- $t2 = 0x0B
+        tmp(11) := 32x"0A";  -- $t3 = 0x0A
+        tmp(12) := 32x"0D";  -- $t4 = 0x0D
+        tmp(13) := 32x"16";  -- $t5 = 0x16
+        return tmp;
+    end initMemory;
+
     -- Declaracao dos registradores:
-    shared variable registrador : memoria_t;
+    shared variable registrador : memoria_t := initMemory;
     constant zero : std_logic_vector(larguraDados-1 downto 0) := (others => '0');
 begin
     process(clk) is
@@ -44,9 +57,7 @@ begin
             end if;
         end if;
     end process;
-
-    -- IF endereco = 0 : retorna ZERO
+    -- Se endereco = 0 : retorna ZERO
     saidaB <= zero when to_integer(unsigned(enderecoB)) = to_integer(unsigned(zero)) else registrador(to_integer(unsigned(enderecoB)));
     saidaA <= zero when to_integer(unsigned(enderecoA)) = to_integer(unsigned(zero)) else registrador(to_integer(unsigned(enderecoA)));
 end architecture;
-

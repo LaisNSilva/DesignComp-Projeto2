@@ -25,7 +25,8 @@ entity Aula15 is
 	RESULTADO : out std_logic_vector(31 downto 0);
 	REG_RS : out std_logic_vector(31 downto 0);
 	REG_RT : out std_logic_vector(31 downto 0);
-	LEDR   : out std_logic_vector(9 downto 0)
+	LEDR   : out std_logic_vector(9 downto 0);
+	PC_OUT: out std_logic_vector(31 downto 0)
    
   );
 end entity;
@@ -44,7 +45,7 @@ architecture arquitetura of Aula15 is
 	 signal Saida_Mem_Dados : std_logic_vector(31 downto 0);
 	 signal flag : std_logic;
 	 signal Saida_Somador_Beq : std_logic_vector(31 downto 0);
-	 signal Saida_Unid_Cont : std_logic_vector(8 downto 0);
+	 signal Saida_Unid_Cont : std_logic_vector(9 downto 0);
 	 signal Saida_Mux_Beq : std_logic_vector(31 downto 0);
 	 signal Saida_Mux_Banco : std_logic_vector(4 downto 0);
 	 signal Saida_Mux_Entrada_ULA : std_logic_vector(31 downto 0);
@@ -52,6 +53,7 @@ architecture arquitetura of Aula15 is
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 signal Saida_DecBorda_KEY1 : std_logic;
 	 signal Saida_Mux_Prox_PC : std_logic_vector(31 downto 0);
+	 signal Saida_Unid_Cont_ULA : std_logic;
 	  
 
 begin
@@ -71,7 +73,7 @@ detectorSub1: work.edgeDetector(bordaSubida) -- reset PC
 
 
 PC : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
-          port map (DIN => Saida_Mux_Prox_PC, DOUT => Saida_PC, ENABLE => '1', RST => Saida_DecBorda_KEY1, CLK => CLK);
+          port map (DIN => Saida_Mux_Prox_PC, DOUT => Saida_PC, ENABLE => '1', RST => '0', CLK => CLK);
 			 
 SOMADOR :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
         port map( entradaA => "00000000000000000000000000000100", entradaB =>  Saida_PC, saida => Saida_Somador);
@@ -83,7 +85,7 @@ MEMORIA_INSTRUCAO : entity work.ROMMIPS   generic map (dataWidth => larguraInstr
 MUX_BR: entity work.muxGenerico2x1  generic map (larguraDados => larguraEndRegs)
         port map( entradaA_MUX => Saida_Mem_Instrucao(20 downto 16),
                  entradaB_MUX =>  Saida_Mem_Instrucao(15 downto 11),
-                 seletor_MUX => Saida_Unid_Cont(7),
+                 seletor_MUX => Saida_Unid_Cont(8),
                  saida_MUX => Saida_Mux_Banco); 
 					  
 BANCO_REGISTRADORES : entity work.bancoRegistradores generic map (larguraDados => larguraDados, larguraEndBancoRegs=>larguraEndRegs)
@@ -97,7 +99,7 @@ BANCO_REGISTRADORES : entity work.bancoRegistradores generic map (larguraDados =
 
         dadoEscritaC    => Saida_Mux_RAM_ULA,
 
-        escreveC        => Saida_Unid_Cont(6),
+        escreveC        => Saida_Unid_Cont(7),
         saidaA          => Dado_lido_RegA,
         saidaB          => Dado_lido_RegB
     );
@@ -124,11 +126,19 @@ Imediato_Estendido <= Saida_Mem_Instrucao(15) &
 MUX_ENTRADA_ULA: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Dado_lido_RegB,
                  entradaB_MUX =>  Imediato_Estendido,
-                 seletor_MUX => Saida_Unid_Cont(5),
+                 seletor_MUX => Saida_Unid_Cont(6),
                  saida_MUX => Saida_Mux_Entrada_ULA); 								
 	
  ULA : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
-          port map (entradaA => Dado_lido_RegA, entradaB =>  Saida_Mux_Entrada_ULA, saida => Saida_ULA, seletor => Saida_Unid_Cont(4), flag_0 => flag);
+          port map (entradaA => Dado_lido_RegA, entradaB =>  Saida_Mux_Entrada_ULA, saida => Saida_ULA, seletor => Saida_Unid_Cont_ULA, flag_0 => flag);
+
+UNIDADE_CONT_ULA: entity work.UnidadeControle_ULA 
+		port map (
+			CodigoBinario => Saida_Unid_Cont(5 downto 4),
+			funct => Saida_Mem_Instrucao(5 downto 0),
+			Saida => Saida_Unid_Cont_ULA
+			); 			 
+			 
   
  
 UNIDADE_DE_CONTROLE: entity work.UnidadeControle 
@@ -165,7 +175,7 @@ MUX_beq :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados
 MUX_Prox_PC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_Mux_Beq,
                  entradaB_MUX =>  Saida_Somador(31 downto 28) & Saida_Mem_Instrucao(25 downto 0) & "00",
-                 seletor_MUX => Saida_Unid_Cont(8),
+                 seletor_MUX => Saida_Unid_Cont(9),
                  saida_MUX => Saida_Mux_Prox_PC);
 					  
 SOMADOR_beq :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
@@ -250,6 +260,7 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
  RESULTADO <= Saida_ULA;
  REG_RS <= Dado_lido_RegA;
  REG_RT <= Dado_lido_RegB;
+ Pc_OUT <= Saida_PC;
   
   
   end architecture;
