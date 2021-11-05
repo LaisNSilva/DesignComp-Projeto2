@@ -1,5 +1,5 @@
 Flow report for Aula15
-Wed Nov 03 17:59:09 2021
+Thu Nov 04 16:29:30 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 03 17:59:09 2021       ;
+; Flow Status                     ; Successful - Thu Nov 04 16:29:30 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Aula15                                      ;
 ; Top-level Entity Name           ; Aula15                                      ;
@@ -108,7 +108,12 @@ https://fpgasoftware.intel.com/eula.
 ; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4900 MB             ; 00:00:16                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:18                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,6 +125,11 @@ https://fpgasoftware.intel.com/eula.
 ; Analysis & Synthesis ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-196HIJ1  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,6 +137,11 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Aula15 -c Aula15
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula15 -c Aula15 --vector_source=C:/Descomp/DesignComp-Projeto2/Aula15/Waveform.vwf --testbench_file=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/ Aula15 -c Aula15
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula15 -c Aula15 --vector_source=C:/Descomp/DesignComp-Projeto2/Aula15/Waveform.vwf --testbench_file=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/ Aula15 -c Aula15
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula15 -c Aula15 --vector_source=C:/Descomp/DesignComp-Projeto2/Aula15/Waveform.vwf --testbench_file=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Waveform.vwf.vht
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula15 -c Aula15 --vector_source=C:/Descomp/DesignComp-Projeto2/Aula15/Waveform.vwf --testbench_file=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/ Aula15 -c Aula15
 

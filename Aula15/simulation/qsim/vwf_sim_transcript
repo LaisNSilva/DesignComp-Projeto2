@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Nov 03 17:59:07 2021
+    Info: Processing started: Thu Nov 04 16:29:29 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Aula15 -c Aula15 --vector_source=C:/Descomp/DesignComp-Projeto2/Aula15/Waveform.vwf --testbench_file=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Waveform.vwf.vht
 Info (119006): Selected device 5CEBA4F23C7 for design "Aula15"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -56,15 +56,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Nov 03 17:59:08 2021
+    Info: Processing started: Thu Nov 04 16:29:30 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/ Aula15 -c Aula15
 Info (119006): Selected device 5CEBA4F23C7 for design "Aula15"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Aula15.vho in folder "C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4720 megabytes
-    Info: Processing ended: Wed Nov 03 17:59:09 2021
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Nov 04 16:29:30 2021
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -87,7 +87,7 @@ Reading pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:09 on Nov 03,2021
+# Start time: 16:29:31 on Nov 04,2021
 # vcom -work work Aula15.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -97,27 +97,28 @@ Reading pref.tcl
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
+
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity Aula15
 # -- Compiling architecture structure of Aula15
 
-# End time: 17:59:10 on Nov 03,2021, Elapsed time: 0:00:01
+# End time: 16:29:31 on Nov 04,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:59:10 on Nov 03,2021
+# Start time: 16:29:31 on Nov 04,2021
 # vcom -work work Waveform.vwf.vht 
-# -- Loading package STANDARD
 
+# -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Aula15_vhd_vec_tst
 # -- Compiling architecture Aula15_arch of Aula15_vhd_vec_tst
-# End time: 17:59:10 on Nov 03,2021, Elapsed time: 0:00:00
+# End time: 16:29:31 on Nov 04,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Aula15_vhd_vec_tst 
-# Start time: 17:59:10 on Nov 03,2021
+# Start time: 16:29:31 on Nov 04,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -139,7 +140,7 @@ Reading pref.tcl
 # Expect performance to be adversely affected.
 # after#34
 
-# End time: 17:59:12 on Nov 03,2021, Elapsed time: 0:00:02
+# End time: 16:29:33 on Nov 04,2021, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -152,7 +153,7 @@ Reading C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Aula15.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Aula15_20211103175912.sim.vwf
+Writing the resulting VWF to C:/Descomp/DesignComp-Projeto2/Aula15/simulation/qsim/Aula15_20211104162933.sim.vwf
 
 Finished VCD to VWF conversion.
 

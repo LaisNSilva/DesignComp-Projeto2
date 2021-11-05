@@ -26,11 +26,22 @@ architecture comportamento of ULA_Completa is
 	 ULA_B0 : entity work.ULA_B0_B30
         port map( entradaA => entradaA(0),
 						entradaB => entradaB(0), 
-						Cin => '0', 
+						Cin => inverte_B, 
 						inverte_B => inverte_B,
                   seletor => seletor,
+						entrada_SLT => 
                  resultado => bit_0, 
 					  Cout => Cout_bit_0); 	
-		  
+					  
+		ULA_B1 : entity work.ULA_B0_B30
+		port map( entradaA => entradaA(1),
+		entradaB => entradaB(1), 
+		Cin => '0', 
+		inverte_B => inverte_B,
+		seletor => seletor,
+		entrada_SLT => '0',
+		resultado => bit_0, 
+		Cout => Cout_bit_0); 	
+
      
 end architecture;

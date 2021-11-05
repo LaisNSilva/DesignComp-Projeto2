@@ -5,7 +5,7 @@ use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
 entity ULA_B0_B30 is
     generic ( larguraDados : natural := 1 );
     port (
-      entradaA, entradaB, Cin, inverte_B:  in STD_LOGIC;
+      entradaA, entradaB, Cin, inverte_B, entrada_SLT:  in STD_LOGIC;
       seletor:  in STD_LOGIC_VECTOR(1 downto 0);
       resultado, Cout:    out STD_LOGIC;
     );
@@ -43,7 +43,7 @@ architecture comportamento of ULA_B0_B30 is
         port map( entradaA_MUX => mux_and,
                  entradaB_MUX =>  mux_or,
 					  entradaC_MUX => mux_soma_sub,
-					  entradaD_MUX => ,
+					  entradaD_MUX => entrada_SLT,
                  seletor_MUX => seletor,
                  saida_MUX => saida_mux);
 					  
