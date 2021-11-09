@@ -7,7 +7,7 @@ entity ULA_B0_B30 is
     port (
       entradaA, entradaB, Cin, inverte_B, entrada_SLT:  in STD_LOGIC;
       seletor:  in STD_LOGIC_VECTOR(1 downto 0);
-      resultado, Cout:    out STD_LOGIC;
+      resultado, Cout:  out STD_LOGIC
     );
 end entity;
 
@@ -24,7 +24,7 @@ architecture comportamento of ULA_B0_B30 is
         mux_and    <= entradaA and B_sinal;
 		  mux_or <= entradaA or B_sinal;
 		  
-		  MUX_INVERTE_B :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+		  MUX_INVERTE_B :  entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => entradaB,
                  entradaB_MUX =>  not(entradaB),
                  seletor_MUX => inverte_B,

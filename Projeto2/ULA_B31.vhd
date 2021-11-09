@@ -5,20 +5,19 @@ use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
 entity ULA_B31 is
     generic ( larguraDados : natural := 1 );
     port (
-      entradaA, entradaB, Cin, inverte_B:  in STD_LOGIC;
+      entradaA, entradaB, Cin, inverte_B, entrada_SLT:  in STD_LOGIC;
       seletor:  in STD_LOGIC_VECTOR(1 downto 0);
-      resultado, Cout:    out STD_LOGIC;
+      resultado, result_slt:    out STD_LOGIC
     );
 end entity;
 
-architecture comportamento of ULA_B0_B30 is
+architecture comportamento of ULA_B31 is
 	signal mux_and :  STD_LOGIC;
 	signal mux_or : STD_LOGIC;
 	signal mux_soma_sub : STD_LOGIC;
 	signal vai_um : STD_LOGIC;
 	signal B_sinal : STD_LOGIC;
 	signal overflow : STD_LOGIC;
-	signal mux_slt : STD_LOGIC;
 	
 	signal saida_mux : STD_LOGIC;
 	
@@ -28,7 +27,7 @@ architecture comportamento of ULA_B0_B30 is
 		  
 		  
 		  
-		  MUX_INVERTE_B :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+		  MUX_INVERTE_B :  entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => entradaB,
                  entradaB_MUX =>  not(entradaB),
                  seletor_MUX => inverte_B,
@@ -42,21 +41,22 @@ architecture comportamento of ULA_B0_B30 is
 					  soma=> mux_soma_sub,
                  C_out=> vai_um);
 					  
+					  
 		  overflow <= Cin xor vai_um;
 		  
-		  mux_slt <= mux_soma_sub xor overflow;
 					  
 		  
 		  MUX :  entity work.muxGenerico4x1  
         port map( entradaA_MUX => mux_and,
                  entradaB_MUX =>  mux_or,
 					  entradaC_MUX => mux_soma_sub,
-					  entradaD_MUX => mux_slt,
+					  entradaD_MUX => entrada_SLT,
                  seletor_MUX => seletor,
                  saida_MUX => saida_mux);
 					  
+		 result_slt <= mux_soma_sub xor overflow;			  
 		 resultado <= saida_mux;
-		 Cout <= vai_um;
+		
 				
 				
   
