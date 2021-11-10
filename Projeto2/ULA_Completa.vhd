@@ -271,7 +271,7 @@ port map( entradaA => entradaA(21),
 			seletor => seletor,
 			entrada_SLT => '0',
 			resultado => saida(21), 
-			Cout => Cout_bit_1);
+			Cout => Cout_bit_21);
 		
 ULA_B22 : entity work.ULA_B0_B30
 port map( entradaA => entradaA(22),

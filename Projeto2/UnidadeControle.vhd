@@ -11,11 +11,11 @@ architecture arch of UnidadeControle is
 begin
 
 	with CodigoBinario (5 downto 0) select
-		Saida <= "0110100000" when "000000", 
-				"0010011010" when "100011",
-			   "0001010001" when "101011",
-			   "0000000100" when "000100",
-			   "1000000000"	when "000010",
+		Saida <= "0110000010" when "000000", 
+				"0010101000" when "100011",
+			   "0001000100" when "101011",
+			   "0000010001" when "000100",
+			   "1000000000" when "000010",
 				"0000000000" when others;
 	
 end architecture;

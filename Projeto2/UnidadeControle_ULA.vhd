@@ -3,18 +3,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity UnidadeControle_ULA is
 	port (
-			CodigoBinario : in  STD_LOGIC_VECTOR(1 downto 0);
+			ULAop : in  STD_LOGIC_VECTOR(1 downto 0);
 			funct : in STD_LOGIC_VECTOR(5 downto 0);
-			Saida: out STD_LOGIC);
+			ULActrl: out STD_LOGIC_VECTOR(2 downto 0));
 end entity;
 
 architecture arch of UnidadeControle_ULA is
 begin
 
-	with CodigoBinario (1 downto 0) select
-		Saida <= '1' when "01", 
-				'0' when "00",
-			   not(funct(1)) when "10",
-				'0' when others;
+		ULActrl <= "010" when (ULAop = "00" and funct = "000000") else 
+					  "110" when (ULAop = "01" and funct = "000000") else
+					  "010" when (ULAop = "10" and funct = "100000") else
+					  "110" when (ULAop = "10" and funct = "100010") else
+					  "000" when (ULAop = "10" and funct = "100100") else
+					  "001" when (ULAop = "10" and funct = "100101") else
+					  "111" when (ULAop = "10" and funct = "101010") else
+					  "000";
 	
 end architecture;

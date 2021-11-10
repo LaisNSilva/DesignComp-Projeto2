@@ -26,7 +26,8 @@ entity Projeto2 is
 	REG_RS : out std_logic_vector(31 downto 0);
 	REG_RT : out std_logic_vector(31 downto 0);
 	LEDR   : out std_logic_vector(9 downto 0);
-	PC_OUT: out std_logic_vector(31 downto 0)
+	PC_OUT: out std_logic_vector(31 downto 0);
+	TESTE_ULA: out std_logic_vector(31 downto 0)	
    
   );
 end entity;
@@ -53,7 +54,7 @@ architecture arquitetura of Projeto2 is
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 signal Saida_DecBorda_KEY1 : std_logic;
 	 signal Saida_Mux_Prox_PC : std_logic_vector(31 downto 0);
-	 signal Saida_Unid_Cont_ULA : std_logic;
+	 signal Saida_Unid_Cont_ULA : std_logic_vector(2 downto 0);
 	  
 
 begin
@@ -129,16 +130,24 @@ MUX_ENTRADA_ULA: entity work.muxGenerico2x1  generic map (larguraDados => largur
                  seletor_MUX => Saida_Unid_Cont(6),
                  saida_MUX => Saida_Mux_Entrada_ULA); 								
 	
- ULA : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
-          port map (entradaA => Dado_lido_RegA, entradaB =>  Saida_Mux_Entrada_ULA, saida => Saida_ULA, seletor => Saida_Unid_Cont_ULA, flag_0 => flag);
 
+	 
 UNIDADE_CONT_ULA: entity work.UnidadeControle_ULA 
 		port map (
-			CodigoBinario => Saida_Unid_Cont(5 downto 4),
+			ULAop => Saida_Unid_Cont(1 downto 0),
 			funct => Saida_Mem_Instrucao(5 downto 0),
-			Saida => Saida_Unid_Cont_ULA
+			ULActrl => Saida_Unid_Cont_ULA
 			); 			 
-			 
+
+ULA : entity work.ULA_Completa  generic map(larguraDados => larguraDados)
+          port map (
+				entradaA => Dado_lido_RegA,
+				entradaB => Saida_Mux_Entrada_ULA,  
+				seletor => Saida_Unid_Cont_ULA(1 downto 0),
+				inverte_B => Saida_Unid_Cont_ULA(2), 
+				saida => Saida_ULA,  
+				flag_0 => flag
+			 );			
   
  
 UNIDADE_DE_CONTROLE: entity work.UnidadeControle 
@@ -154,22 +163,22 @@ UNIDADE_DE_CONTROLE: entity work.UnidadeControle
 			addr => Saida_ULA,
 			dado_in => Dado_lido_RegB,
 			dado_out => Saida_Mem_Dados,
-			we => Saida_Unid_Cont(0),
-			re => Saida_Unid_Cont(1),
+			we => Saida_Unid_Cont(2),
+			re => Saida_Unid_Cont(3),
 			habilita => '1'
         );
 		  
 MUX_RAM_ULA :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_ULA,
                  entradaB_MUX =>  Saida_Mem_Dados,
-                 seletor_MUX => Saida_Unid_Cont(3),
+                 seletor_MUX => Saida_Unid_Cont(5),
                  saida_MUX => Saida_Mux_RAM_ULA); 	
 		  
 		  
 MUX_beq :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_Somador,
                  entradaB_MUX =>  Saida_Somador_Beq,
-                 seletor_MUX => flag and Saida_Unid_Cont(2),
+                 seletor_MUX => flag and Saida_Unid_Cont(4),
                  saida_MUX => Saida_Mux_Beq);
 					  
 MUX_Prox_PC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
@@ -261,6 +270,7 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
  REG_RS <= Dado_lido_RegA;
  REG_RT <= Dado_lido_RegB;
  Pc_OUT <= Saida_PC;
+ TESTE_ULA <= Saida_ULA;
   
   
   end architecture;
