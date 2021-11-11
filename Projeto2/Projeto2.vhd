@@ -20,14 +20,15 @@ entity Projeto2 is
 	HEX3 : out std_logic_vector (6 DOWNTO 0);
 	HEX4 : out std_logic_vector (6 DOWNTO 0);
 	HEX5 : out std_logic_vector (6 DOWNTO 0);
-	KEY: in std_logic_vector(3 downto 0);
-	FPGA_RESET_N: in std_logic;
-	RESULTADO : out std_logic_vector(31 downto 0);
-	REG_RS : out std_logic_vector(31 downto 0);
-	REG_RT : out std_logic_vector(31 downto 0);
-	LEDR   : out std_logic_vector(9 downto 0);
-	PC_OUT: out std_logic_vector(31 downto 0);
-	TESTE_ULA: out std_logic_vector(31 downto 0)	
+	SW: in std_logic_vector(9 downto 0);
+	KEY: in std_logic_vector(3 downto 0)
+	--FPGA_RESET_N: in std_logic;
+--	RESULTADO : out std_logic_vector(31 downto 0);
+--	REG_RS : out std_logic_vector(31 downto 0);
+--	REG_RT : out std_logic_vector(31 downto 0);
+--	LEDR   : out std_logic_vector(9 downto 0);
+--	PC_OUT: out std_logic_vector(31 downto 0);
+--	TESTE_ULA: out std_logic_vector(31 downto 0)	
    
   );
 end entity;
@@ -55,6 +56,7 @@ architecture arquitetura of Projeto2 is
 	 signal Saida_DecBorda_KEY1 : std_logic;
 	 signal Saida_Mux_Prox_PC : std_logic_vector(31 downto 0);
 	 signal Saida_Unid_Cont_ULA : std_logic_vector(2 downto 0);
+	 signal Saida_MUX_DSP : std_logic_vector(31 downto 0);
 	  
 
 begin
@@ -62,15 +64,22 @@ begin
 -- Instanciando os componentes:
 
 
---CLK <= CLOCK_50;
-CLK <= Saida_DecBorda_KEY0;
+gravar:  if simulacao generate
+CLK <= KEY(0);
+else generate
+detectorSub0: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+end generate;
 
--- port map completo edgeDetector
-detectorSub0: work.edgeDetector(bordaSubida) -- clock
-        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
-
-detectorSub1: work.edgeDetector(bordaSubida) -- reset PC
-        port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => Saida_DecBorda_KEY1);
+----CLK <= CLOCK_50;
+--CLK <= Saida_DecBorda_KEY0;
+--
+---- port map completo edgeDetector
+--detectorSub0: work.edgeDetector(bordaSubida) -- clock
+--        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
+--
+--detectorSub1: work.edgeDetector(bordaSubida) -- reset PC
+--        port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => Saida_DecBorda_KEY1);
 
 
 PC : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
@@ -160,12 +169,11 @@ UNIDADE_DE_CONTROLE: entity work.UnidadeControle
    port map 
 			(
 			clk => CLK,
-			addr => Saida_ULA,
-			dado_in => Dado_lido_RegB,
-			dado_out => Saida_Mem_Dados,
-			we => Saida_Unid_Cont(2),
-			re => Saida_Unid_Cont(3),
-			habilita => '1'
+			Endereco => Saida_ULA,
+			Dado_in => Dado_lido_RegB,
+			Dado_out => Saida_Mem_Dados,
+			we => Saida_Unid_Cont(2)
+--			le => Saida_Unid_Cont(3),
         );
 		  
 MUX_RAM_ULA :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
@@ -191,11 +199,20 @@ SOMADOR_beq :  entity work.somadorGenerico  generic map (larguraDados => largura
         port map( entradaA => Saida_Somador, entradaB => Imediato_Estendido(29 downto 0) & "00" , saida => Saida_Somador_Beq);
 		  
 		  
+		  
+		  
+MUX_DISP :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+        port map( entradaA_MUX => Saida_ULA,
+                 entradaB_MUX =>  Saida_PC,
+                 seletor_MUX => SW(0),
+                 saida_MUX => Saida_MUX_DSP);
+		  
+		  
 --------- HEX0-----------
 			 
 			 
 DECOD_HEX0 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_Mux_RAM_ULA(3 downto 0),
+        port map(dadoHex => Saida_MUX_DSP(3 downto 0),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -205,7 +222,7 @@ DECOD_HEX0 :  entity work.DecodBinario_7seg
 
 			 
 DECOD_HEX1 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_Mux_RAM_ULA(7 downto 4),
+        port map(dadoHex => Saida_MUX_DSP(7 downto 4),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -215,7 +232,7 @@ DECOD_HEX1 :  entity work.DecodBinario_7seg
 
 			 
 DECOD_HEX2 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_Mux_RAM_ULA(11 downto 8),
+        port map(dadoHex => Saida_MUX_DSP(11 downto 8),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -225,7 +242,7 @@ DECOD_HEX2 :  entity work.DecodBinario_7seg
 
 			 
 DECOD_HEX3 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_Mux_RAM_ULA(15 downto 12),
+        port map(dadoHex => Saida_MUX_DSP(15 downto 12),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -235,7 +252,7 @@ DECOD_HEX3 :  entity work.DecodBinario_7seg
 
 			 
 DECOD_HEX4 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_Mux_RAM_ULA(19 downto 16),
+        port map(dadoHex => Saida_ULA(19 downto 16),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -245,7 +262,7 @@ DECOD_HEX4 :  entity work.DecodBinario_7seg
 
 			 
 DECOD_HEX5 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_Mux_RAM_ULA(23 downto 20),
+        port map(dadoHex => Saida_ULA(23 downto 20),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -253,24 +270,24 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
 					 
  
 					 
- LEDR(0) <= Saida_PC(0);
- LEDR(1) <= Saida_PC(1);
- LEDR(2) <= Saida_PC(2);
- LEDR(3) <= Saida_PC(3);
- LEDR(4) <= Saida_PC(4);
- LEDR(5) <= Saida_PC(5);
- LEDR(6) <= Saida_PC(6);
- LEDR(7) <= Saida_PC(7);
- LEDR(8) <= Saida_PC(8);
- LEDR(9) <= Saida_PC(9);
+-- LEDR(0) <= Saida_PC(0);
+-- LEDR(1) <= Saida_PC(1);
+-- LEDR(2) <= Saida_PC(2);
+-- LEDR(3) <= Saida_PC(3);
+-- LEDR(4) <= Saida_PC(4);
+-- LEDR(5) <= Saida_PC(5);
+-- LEDR(6) <= Saida_PC(6);
+-- LEDR(7) <= Saida_PC(7);
+-- LEDR(8) <= Saida_PC(8);
+-- LEDR(9) <= Saida_PC(9);
 		  
   
   
- RESULTADO <= Saida_ULA;
- REG_RS <= Dado_lido_RegA;
- REG_RT <= Dado_lido_RegB;
- Pc_OUT <= Saida_PC;
- TESTE_ULA <= Saida_ULA;
+ --RESULTADO <= Saida_ULA;
+-- REG_RS <= Dado_lido_RegA;
+-- REG_RT <= Dado_lido_RegB;
+-- Pc_OUT <= Saida_PC;
+-- TESTE_ULA <= Saida_ULA;
   
   
   end architecture;

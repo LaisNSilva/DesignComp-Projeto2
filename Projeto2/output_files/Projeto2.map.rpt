@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Wed Nov 10 18:01:32 2021
+Thu Nov 11 15:49:50 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -158,52 +158,53 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 150. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_beq
 151. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_Prox_PC
 152. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR_beq
-153. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
-154. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
-155. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
-156. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
-157. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
-158. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
-159. Port Connectivity Checks: "somadorGenerico:SOMADOR_beq"
-160. Port Connectivity Checks: "muxGenerico2x1:MUX_Prox_PC"
-161. Port Connectivity Checks: "RAMMIPS:MEMORIA_DADOS"
-162. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B31:ULA_B31"
-163. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B30"
-164. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B29"
-165. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B28"
-166. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B27"
-167. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B26"
-168. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B25"
-169. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B24"
-170. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B23"
-171. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B22"
-172. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B21"
-173. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B20"
-174. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B19"
-175. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B18"
-176. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B17"
-177. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B16"
-178. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B15"
-179. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B14"
-180. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B13"
-181. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B12"
-182. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B11"
-183. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B10"
-184. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B9"
-185. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B8"
-186. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B7"
-187. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B6"
-188. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B5"
-189. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B4"
-190. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B3"
-191. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B2"
-192. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B1"
-193. Port Connectivity Checks: "somadorGenerico:SOMADOR"
-194. Port Connectivity Checks: "registradorGenerico_PC:PC"
-195. Port Connectivity Checks: "edgeDetector:detectorSub1"
-196. Post-Synthesis Netlist Statistics for Top Partition
-197. Elapsed Time Per Partition
-198. Analysis & Synthesis Messages
+153. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_DISP
+154. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX5"
+155. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX4"
+156. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX3"
+157. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
+158. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
+159. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
+160. Port Connectivity Checks: "muxGenerico2x1:MUX_DISP"
+161. Port Connectivity Checks: "somadorGenerico:SOMADOR_beq"
+162. Port Connectivity Checks: "muxGenerico2x1:MUX_Prox_PC"
+163. Port Connectivity Checks: "UnidadeControle:UNIDADE_DE_CONTROLE"
+164. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B31:ULA_B31"
+165. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B30"
+166. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B29"
+167. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B28"
+168. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B27"
+169. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B26"
+170. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B25"
+171. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B24"
+172. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B23"
+173. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B22"
+174. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B21"
+175. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B20"
+176. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B19"
+177. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B18"
+178. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B17"
+179. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B16"
+180. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B15"
+181. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B14"
+182. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B13"
+183. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B12"
+184. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B11"
+185. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B10"
+186. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B9"
+187. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B8"
+188. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B7"
+189. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B6"
+190. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B5"
+191. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B4"
+192. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B3"
+193. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B2"
+194. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B1"
+195. Port Connectivity Checks: "somadorGenerico:SOMADOR"
+196. Port Connectivity Checks: "registradorGenerico_PC:PC"
+197. Post-Synthesis Netlist Statistics for Top Partition
+198. Elapsed Time Per Partition
+199. Analysis & Synthesis Messages
 
 
 
@@ -230,14 +231,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 10 18:01:31 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 11 15:49:50 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto2                                    ;
 ; Top-level Entity Name           ; Projeto2                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 159                                         ;
-; Total pins                      ; 218                                         ;
+; Total registers                 ; 2127                                        ;
+; Total pins                      ; 57                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -258,6 +259,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
 ; Top-level entity name                                                           ; Projeto2           ; Projeto2           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                             ; All                ;                    ;
 ; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
 ; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -343,70 +345,75 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; Projeto2.vhd                     ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd               ;         ;
-; DecodBinario_7Seg.vhd            ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/DecodBinario_7Seg.vhd      ;         ;
-; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd                ;         ;
-; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd                ;         ;
-; UnidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd        ;         ;
-; UnidadeControle_ULA.vhd          ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd    ;         ;
-; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd     ;         ;
-; edgeDetector.vhd                 ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/edgeDetector.vhd           ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd         ;         ;
-; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd         ;         ;
-; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd ;         ;
-; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/somadorGenerico.vhd        ;         ;
-; ULA_B0_B30.vhd                   ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd             ;         ;
-; Somador_Completo_1bit.vhd        ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Somador_Completo_1bit.vhd  ;         ;
-; ULA_B31.vhd                      ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B31.vhd                ;         ;
-; ULA_Completa.vhd                 ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd           ;         ;
-; muxGenerico2x1_1bit.vhd          ; yes             ; User VHDL File  ; C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd    ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; Projeto2.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd               ;         ;
+; DecodBinario_7Seg.vhd            ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/DecodBinario_7Seg.vhd      ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd                ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd                ;         ;
+; UnidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd        ;         ;
+; UnidadeControle_ULA.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd    ;         ;
+; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd     ;         ;
+; edgeDetector.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/edgeDetector.vhd           ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd         ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd         ;         ;
+; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd ;         ;
+; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/somadorGenerico.vhd        ;         ;
+; ULA_B0_B30.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd             ;         ;
+; Somador_Completo_1bit.vhd        ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/Somador_Completo_1bit.vhd  ;         ;
+; ULA_B31.vhd                      ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B31.vhd                ;         ;
+; ULA_Completa.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd           ;         ;
+; muxGenerico2x1_1bit.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd    ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                   ;
-+---------------------------------------------+---------------------------------+
-; Resource                                    ; Usage                           ;
-+---------------------------------------------+---------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 288                             ;
-;                                             ;                                 ;
-; Combinational ALUT usage for logic          ; 501                             ;
-;     -- 7 input functions                    ; 1                               ;
-;     -- 6 input functions                    ; 66                              ;
-;     -- 5 input functions                    ; 93                              ;
-;     -- 4 input functions                    ; 195                             ;
-;     -- <=3 input functions                  ; 146                             ;
-;                                             ;                                 ;
-; Dedicated logic registers                   ; 159                             ;
-;                                             ;                                 ;
-; I/O pins                                    ; 218                             ;
-;                                             ;                                 ;
-; Total DSP Blocks                            ; 0                               ;
-;                                             ;                                 ;
-; Maximum fan-out node                        ; edgeDetector:detectorSub0|saida ;
-; Maximum fan-out                             ; 158                             ;
-; Total fan-out                               ; 2880                            ;
-; Average fan-out                             ; 2.63                            ;
-+---------------------------------------------+---------------------------------+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                           ;
++---------------------------------------------+-----------------------------------------+
+; Resource                                    ; Usage                                   ;
++---------------------------------------------+-----------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1547                                    ;
+;                                             ;                                         ;
+; Combinational ALUT usage for logic          ; 1259                                    ;
+;     -- 7 input functions                    ; 3                                       ;
+;     -- 6 input functions                    ; 824                                     ;
+;     -- 5 input functions                    ; 52                                      ;
+;     -- 4 input functions                    ; 142                                     ;
+;     -- <=3 input functions                  ; 238                                     ;
+;                                             ;                                         ;
+; Dedicated logic registers                   ; 2127                                    ;
+;                                             ;                                         ;
+; I/O pins                                    ; 57                                      ;
+;                                             ;                                         ;
+; Total DSP Blocks                            ; 0                                       ;
+;                                             ;                                         ;
+; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
+; Maximum fan-out                             ; 2126                                    ;
+; Total fan-out                               ; 12900                                   ;
+; Average fan-out                             ; 3.69                                    ;
++---------------------------------------------+-----------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -414,47 +421,46 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name            ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
-; |Projeto2                                    ; 501 (10)            ; 159 (0)                   ; 0                 ; 0          ; 218  ; 0            ; |Projeto2                                                                       ; Projeto2               ; work         ;
-;    |DecodBinario_7Seg:DECOD_HEX0|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX0                                          ; DecodBinario_7Seg      ; work         ;
+; |Projeto2                                    ; 1259 (11)           ; 2127 (0)                  ; 0                 ; 0          ; 57   ; 0            ; |Projeto2                                                                       ; Projeto2               ; work         ;
+;    |DecodBinario_7Seg:DECOD_HEX0|            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX0                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX1                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX2                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX3|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX3                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX4|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX4                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX5|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX5                                          ; DecodBinario_7Seg      ; work         ;
-;    |RAMMIPS:MEMORIA_DADOS|                   ; 18 (18)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:MEMORIA_DADOS                                                 ; RAMMIPS                ; work         ;
-;    |ROMMIPS:MEMORIA_INSTRUCAO|               ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:MEMORIA_INSTRUCAO                                             ; ROMMIPS                ; work         ;
-;    |ULA_Completa:ULA|                        ; 118 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA                                                      ; ULA_Completa           ; work         ;
+;    |RAMMIPS:MEMORIA_DADOS|                   ; 798 (798)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:MEMORIA_DADOS                                                 ; RAMMIPS                ; work         ;
+;    |ROMMIPS:MEMORIA_INSTRUCAO|               ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:MEMORIA_INSTRUCAO                                             ; ROMMIPS                ; work         ;
+;    |ULA_Completa:ULA|                        ; 157 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA                                                      ; ULA_Completa           ; work         ;
 ;       |ULA_B0_B30:ULA_B0|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B10|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B10|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B11|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B11|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B12|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B12|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B13|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B14|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B15|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B15|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B16|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B16|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16                                   ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B17|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
@@ -463,59 +469,58 @@ https://fpgasoftware.intel.com/eula.
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B19|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B19|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19                                   ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B1|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B1|                    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1                                    ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B20|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B20|                   ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B21|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B21|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21                                   ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B22|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B22|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B23|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23                                   ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B23|                   ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B24|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B25|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B25|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B26|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B26|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B27|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B28|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28                                   ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B28|                   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B29|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29                                   ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B2|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B30|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B30|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B3|                    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
@@ -524,39 +529,39 @@ https://fpgasoftware.intel.com/eula.
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B5|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B5|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5                                    ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B6|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6                                    ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B6|                    ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B7|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B7|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7                                    ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B8|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B9|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B31:ULA_B31|                      ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31                                      ; ULA_B31                ; work         ;
+;       |ULA_B31:ULA_B31|                      ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31                                      ; ULA_B31                ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|Somador_Completo_1bit:SOMA_SUB       ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|muxGenerico2x1_1bit:MUX_INVERTE_B    ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|muxGenerico4x1:MUX                   ; muxGenerico4x1         ; work         ;
-;    |UnidadeControle:UNIDADE_DE_CONTROLE|     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle:UNIDADE_DE_CONTROLE                                   ; UnidadeControle        ; work         ;
-;    |UnidadeControle_ULA:UNIDADE_CONT_ULA|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA                                  ; UnidadeControle_ULA    ; work         ;
-;    |bancoRegistradores:BANCO_REGISTRADORES|  ; 163 (163)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoRegistradores:BANCO_REGISTRADORES                                ; bancoRegistradores     ; work         ;
-;    |edgeDetector:detectorSub0|               ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|edgeDetector:detectorSub0                                             ; edgeDetector           ; work         ;
-;    |muxGenerico2x1:MUX_Prox_PC|              ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_Prox_PC                                            ; muxGenerico2x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|muxGenerico4x1:MUX                   ; muxGenerico4x1         ; work         ;
+;    |UnidadeControle:UNIDADE_DE_CONTROLE|     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle:UNIDADE_DE_CONTROLE                                   ; UnidadeControle        ; work         ;
+;    |UnidadeControle_ULA:UNIDADE_CONT_ULA|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA                                  ; UnidadeControle_ULA    ; work         ;
+;    |bancoRegistradores:BANCO_REGISTRADORES|  ; 132 (132)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoRegistradores:BANCO_REGISTRADORES                                ; bancoRegistradores     ; work         ;
+;    |edgeDetector:\gravar:detectorSub0|       ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|edgeDetector:\gravar:detectorSub0                                     ; edgeDetector           ; work         ;
+;    |muxGenerico2x1:MUX_DISP|                 ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_DISP                                               ; muxGenerico2x1         ; work         ;
+;    |muxGenerico2x1:MUX_Prox_PC|              ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_Prox_PC                                            ; muxGenerico2x1         ; work         ;
 ;    |muxGenerico2x1:MUX_RAM_ULA|              ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_RAM_ULA                                            ; muxGenerico2x1         ; work         ;
-;    |registradorGenerico_PC:PC|               ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico_PC:PC                                             ; registradorGenerico_PC ; work         ;
-;    |somadorGenerico:SOMADOR_beq|             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR_beq                                           ; somadorGenerico        ; work         ;
-;    |somadorGenerico:SOMADOR|                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                                               ; somadorGenerico        ; work         ;
+;    |registradorGenerico_PC:PC|               ; 0 (0)               ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico_PC:PC                                             ; registradorGenerico_PC ; work         ;
+;    |somadorGenerico:SOMADOR_beq|             ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR_beq                                           ; somadorGenerico        ; work         ;
+;    |somadorGenerico:SOMADOR|                 ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                                               ; somadorGenerico        ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1336,6 +1341,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1059 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1060 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1061 ; Lost fanout                                   ;
+; registradorGenerico_PC:PC|DOUT[16..31]                  ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~70   ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~326  ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~71   ; Stuck at GND due to stuck port clock_enable   ;
@@ -1528,58 +1534,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~132  ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~165  ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~133  ; Stuck at GND due to stuck port clock_enable   ;
-; Total Number of Removed Registers = 962                 ;                                               ;
+; Total Number of Removed Registers = 978                 ;                                               ;
 +---------------------------------------------------------+-----------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                       ;
-+--------------------------------------------------------+--------------------------------+---------------------------------------------------------+
-; Register name                                          ; Reason for Removal             ; Registers Removed due to This Register                  ;
-+--------------------------------------------------------+--------------------------------+---------------------------------------------------------+
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~73  ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~75,  ;
-;                                                        ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~331, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~79,  ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~335, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~395, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~363, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~399, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~367, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~139, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~107, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~143, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~111  ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~329 ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~83,  ;
-;                                                        ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~339, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~84,  ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~340, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~403, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~371, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~404, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~372, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~147, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~115, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~148, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~116  ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~70  ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~72,  ;
-;                                                        ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~328, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~392, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~360, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~136, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~104  ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~78  ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~80,  ;
-;                                                        ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~336, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~400, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~368, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~144, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~112  ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~87  ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~88,  ;
-;                                                        ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~344, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~408, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~376, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~152, ;
-;                                                        ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~120  ;
-+--------------------------------------------------------+--------------------------------+---------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                     ;
++-------------------------------------------------------+--------------------------------+------------------------------------------------------------------------+
+; Register name                                         ; Reason for Removal             ; Registers Removed due to This Register                                 ;
++-------------------------------------------------------+--------------------------------+------------------------------------------------------------------------+
+; bancoRegistradores:BANCO_REGISTRADORES|registrador~77 ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~78,                 ;
+;                                                       ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~334,                ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~398,                ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~366,                ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~142,                ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~110                 ;
+; registradorGenerico_PC:PC|DOUT[1]                     ; Stuck at GND                   ; registradorGenerico_PC:PC|DOUT[24], registradorGenerico_PC:PC|DOUT[25] ;
+;                                                       ; due to stuck port data_in      ;                                                                        ;
++-------------------------------------------------------+--------------------------------+------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1587,27 +1559,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 159   ;
+; Total registers                              ; 2127  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 128   ;
+; Number of registers using Clock Enable       ; 2112  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[22]                                              ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[3]                                               ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|muxGenerico2x1_1bit:MUX_INVERTE_B|saida_MUX ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA|ULActrl[1]                                 ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX|saida_MUX                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[27]                                             ;
+; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[13]                                             ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico2x1_1bit:MUX_INVERTE_B|saida_MUX ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA|ULActrl[1]                                ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico4x1:MUX|saida_MUX               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -2982,12 +2954,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +--------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: RAMMIPS:MEMORIA_DADOS ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; datawidth      ; 32    ; Signed Integer                            ;
-; addrwidth      ; 32    ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
++-----------------+-------+------------------------------------------+
+; Parameter Name  ; Value ; Type                                     ;
++-----------------+-------+------------------------------------------+
+; datawidth       ; 32    ; Signed Integer                           ;
+; addrwidth       ; 32    ; Signed Integer                           ;
+; memoryaddrwidth ; 6     ; Signed Integer                           ;
++-----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3028,6 +3001,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------+
 ; larguradados   ; 32    ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_DISP ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3097,6 +3080,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+----------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "muxGenerico2x1:MUX_DISP"                                                                         ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                             ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; saida_mux[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------+
 ; Port Connectivity Checks: "somadorGenerico:SOMADOR_beq" ;
 +----------------+-------+----------+---------------------+
@@ -3115,13 +3107,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+-------+----------+----------------+
 
 
-+---------------------------------------------------+
-; Port Connectivity Checks: "RAMMIPS:MEMORIA_DADOS" ;
-+----------+-------+----------+---------------------+
-; Port     ; Type  ; Severity ; Details             ;
-+----------+-------+----------+---------------------+
-; habilita ; Input ; Info     ; Stuck at VCC        ;
-+----------+-------+----------+---------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UnidadeControle:UNIDADE_DE_CONTROLE"                                                    ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; saida[3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -3424,43 +3416,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "edgeDetector:detectorSub1"                                                           ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; saida ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 159                         ;
-;     ENA               ; 128                         ;
-;     plain             ; 31                          ;
-; arriav_lcell_comb     ; 507                         ;
-;     arith             ; 60                          ;
-;         1 data inputs ; 30                          ;
-;         2 data inputs ; 25                          ;
-;         3 data inputs ; 2                           ;
+; arriav_ff             ; 2127                        ;
+;     ENA               ; 2112                        ;
+;     plain             ; 15                          ;
+; arriav_lcell_comb     ; 1262                        ;
+;     arith             ; 28                          ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 3                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 446                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 49                          ;
-;         3 data inputs ; 39                          ;
-;         4 data inputs ; 192                         ;
-;         5 data inputs ; 93                          ;
-;         6 data inputs ; 66                          ;
-; boundary_port         ; 218                         ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 1231                        ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 154                         ;
+;         4 data inputs ; 139                         ;
+;         5 data inputs ; 52                          ;
+;         6 data inputs ; 824                         ;
+; boundary_port         ; 57                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 11.70                       ;
+; Average LUT depth     ; 6.82                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3469,7 +3451,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -3479,148 +3461,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 10 18:01:13 2021
+    Info: Processing started: Thu Nov 11 15:49:38 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto2.vhd
-    Info (12022): Found design unit 1: Projeto2-arquitetura File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 36
-    Info (12023): Found entity 1: Projeto2 File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 4
+    Info (12022): Found design unit 1: Projeto2-arquitetura File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 37
+    Info (12023): Found entity 1: Projeto2 File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decodbinario_7seg.vhd
-    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/DecodBinario_7Seg.vhd Line: 17
-    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/DecodBinario_7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: DecodBinario_7Seg-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/DecodBinario_7Seg.vhd Line: 17
+    Info (12023): Found entity 1: DecodBinario_7Seg File: C:/Descomp/DesignComp-Projeto2/Projeto2/DecodBinario_7Seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-rtl File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 21
-    Info (12023): Found entity 1: RAMMIPS File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Descomp/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: RAMMIPS File: C:/Descomp/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 15
-    Info (12023): Found entity 1: ROMMIPS File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 15
+    Info (12023): Found entity 1: ROMMIPS File: C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULASomaSub.vhd Line: 15
-    Info (12023): Found entity 1: ULASomaSub File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULASomaSub.vhd Line: 5
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULASomaSub.vhd Line: 15
+    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULASomaSub.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrole.vhd
-    Info (12022): Found design unit 1: UnidadeControle-arch File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd Line: 10
-    Info (12023): Found entity 1: UnidadeControle File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd Line: 4
+    Info (12022): Found design unit 1: UnidadeControle-arch File: C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd Line: 10
+    Info (12023): Found entity 1: UnidadeControle File: C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrole_ula.vhd
-    Info (12022): Found design unit 1: UnidadeControle_ULA-arch File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd Line: 11
-    Info (12023): Found entity 1: UnidadeControle_ULA File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd Line: 4
+    Info (12022): Found design unit 1: UnidadeControle_ULA-arch File: C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd Line: 11
+    Info (12023): Found entity 1: UnidadeControle_ULA File: C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
-    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 30
-    Info (12023): Found entity 1: bancoRegistradores File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 7
+    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradores File: C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 7
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/DesignComp-Projeto2/Projeto2/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/DesignComp-Projeto2/Projeto2/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/DesignComp-Projeto2/Projeto2/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico_pc.vhd
-    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd Line: 16
-    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico_PC-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd Line: 16
+    Info (12023): Found entity 1: registradorGenerico_PC File: C:/Descomp/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somadorgenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/somadorGenerico.vhd Line: 17
-    Info (12023): Found entity 1: somadorGenerico File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/somadorGenerico.vhd Line: 5
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: C:/Descomp/DesignComp-Projeto2/Projeto2/somadorGenerico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula_b0_b30.vhd
-    Info (12022): Found design unit 1: ULA_B0_B30-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 14
-    Info (12023): Found entity 1: ULA_B0_B30 File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 5
+    Info (12022): Found design unit 1: ULA_B0_B30-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 14
+    Info (12023): Found entity 1: ULA_B0_B30 File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somador_completo_1bit.vhd
-    Info (12022): Found design unit 1: Somador_Completo_1bit-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Somador_Completo_1bit.vhd Line: 13
-    Info (12023): Found entity 1: Somador_Completo_1bit File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Somador_Completo_1bit.vhd Line: 5
+    Info (12022): Found design unit 1: Somador_Completo_1bit-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/Somador_Completo_1bit.vhd Line: 13
+    Info (12023): Found entity 1: Somador_Completo_1bit File: C:/Descomp/DesignComp-Projeto2/Projeto2/Somador_Completo_1bit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula_b31.vhd
-    Info (12022): Found design unit 1: ULA_B31-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B31.vhd Line: 14
-    Info (12023): Found entity 1: ULA_B31 File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B31.vhd Line: 5
+    Info (12022): Found design unit 1: ULA_B31-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B31.vhd Line: 14
+    Info (12023): Found entity 1: ULA_B31 File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B31.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula_completa.vhd
-    Info (12022): Found design unit 1: ULA_Completa-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 16
-    Info (12023): Found entity 1: ULA_Completa File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 5
+    Info (12022): Found design unit 1: ULA_Completa-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 16
+    Info (12023): Found entity 1: ULA_Completa File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_1bit.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_1bit-comportamento File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_1bit File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_1bit-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_1bit File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 4
 Info (12127): Elaborating entity "Projeto2" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Projeto2.vhd(55): object "Saida_DecBorda_KEY1" assigned a value but never read File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 55
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 69
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 76
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 79
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:MEMORIA_INSTRUCAO" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 82
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_BR" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 86
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BANCO_REGISTRADORES" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 92
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_ENTRADA_ULA" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 127
-Info (12128): Elaborating entity "UnidadeControle_ULA" for hierarchy "UnidadeControle_ULA:UNIDADE_CONT_ULA" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 135
-Info (12128): Elaborating entity "ULA_Completa" for hierarchy "ULA_Completa:ULA" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 142
-Info (12128): Elaborating entity "ULA_B0_B30" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 56
-Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 27
-Info (12128): Elaborating entity "Somador_Completo_1bit" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|Somador_Completo_1bit:SOMA_SUB" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 34
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico4x1:MUX" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 42
-Info (12128): Elaborating entity "ULA_B31" for hierarchy "ULA_Completa:ULA|ULA_B31:ULA_B31" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 366
-Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UNIDADE_DE_CONTROLE" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 153
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:MEMORIA_DADOS" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 159
-Warning (10639): VHDL warning at RAMMIPS.vhd(24): constant value overflow File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 24
-Warning (10445): VHDL Subtype or Type Declaration warning at RAMMIPS.vhd(24): subtype or type has null range File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 24
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 197
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 70
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 85
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 88
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:MEMORIA_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 91
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 18
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_BR" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 95
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BANCO_REGISTRADORES" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 101
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_ENTRADA_ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 136
+Info (12128): Elaborating entity "UnidadeControle_ULA" for hierarchy "UnidadeControle_ULA:UNIDADE_CONT_ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 144
+Info (12128): Elaborating entity "ULA_Completa" for hierarchy "ULA_Completa:ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 151
+Info (12128): Elaborating entity "ULA_B0_B30" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 56
+Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 27
+Info (12128): Elaborating entity "Somador_Completo_1bit" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|Somador_Completo_1bit:SOMA_SUB" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 34
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico4x1:MUX" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 42
+Info (12128): Elaborating entity "ULA_B31" for hierarchy "ULA_Completa:ULA|ULA_B31:ULA_B31" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 366
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UNIDADE_DE_CONTROLE" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 162
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 168
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 214
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276007): RAM logic "RAMMIPS:MEMORIA_DADOS|ram" is uninferred due to asynchronous read logic File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 27
-    Info (276007): RAM logic "bancoRegistradores:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 49
-    Info (276004): RAM logic "ROMMIPS:MEMORIA_INSTRUCAO|memROM" is uninferred due to inappropriate RAM size File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 18
-Warning (113028): 55 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.mif Line: 1
-    Warning (113027): Addresses ranging from 9 to 63 are not initialized File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.mif Line: 1
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[15]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[14]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[13]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[12]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[11]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[10]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[9]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[8]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[7]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[6]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[5]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[4]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[3]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[2]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[1]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[0]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[16]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[17]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[18]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[19]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[20]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[21]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[22]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[23]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[24]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[25]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[26]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[27]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[28]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[29]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[30]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "RAMMIPS:MEMORIA_DADOS|dado_out[31]" feeding internal logic into a wire File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 17
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 28
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 28
-    Warning (13410): Pin "PC_OUT[0]" is stuck at GND File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
-    Warning (13410): Pin "PC_OUT[1]" is stuck at GND File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
+    Info (276007): RAM logic "RAMMIPS:MEMORIA_DADOS|memRAM" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 22
+    Info (276007): RAM logic "bancoRegistradores:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 49
+    Info (276004): RAM logic "ROMMIPS:MEMORIA_INSTRUCAO|memROM" is uninferred due to inappropriate RAM size File: C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 768 registers lost all their fanouts during netlist optimizations.
+Info (17049): 784 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
-    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
-Info (21057): Implemented 847 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 212 output pins
-    Info (21061): Implemented 629 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Wed Nov 10 18:01:32 2021
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:41
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
+Info (21057): Implemented 3428 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 3371 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4913 megabytes
+    Info: Processing ended: Thu Nov 11 15:49:50 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:20
 
 

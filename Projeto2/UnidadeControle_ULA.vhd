@@ -11,8 +11,8 @@ end entity;
 architecture arch of UnidadeControle_ULA is
 begin
 
-		ULActrl <= "010" when (ULAop = "00" and funct = "000000") else 
-					  "110" when (ULAop = "01" and funct = "000000") else
+		ULActrl <= "010" when (ULAop = "00") else 
+					  "110" when (ULAop = "01") else
 					  "010" when (ULAop = "10" and funct = "100000") else
 					  "110" when (ULAop = "10" and funct = "100010") else
 					  "000" when (ULAop = "10" and funct = "100100") else
