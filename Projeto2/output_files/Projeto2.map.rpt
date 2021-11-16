@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Thu Nov 11 15:49:50 2021
+Fri Nov 12 11:26:16 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -165,46 +165,45 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 157. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX2"
 158. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX1"
 159. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
-160. Port Connectivity Checks: "muxGenerico2x1:MUX_DISP"
-161. Port Connectivity Checks: "somadorGenerico:SOMADOR_beq"
-162. Port Connectivity Checks: "muxGenerico2x1:MUX_Prox_PC"
-163. Port Connectivity Checks: "UnidadeControle:UNIDADE_DE_CONTROLE"
-164. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B31:ULA_B31"
-165. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B30"
-166. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B29"
-167. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B28"
-168. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B27"
-169. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B26"
-170. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B25"
-171. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B24"
-172. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B23"
-173. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B22"
-174. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B21"
-175. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B20"
-176. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B19"
-177. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B18"
-178. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B17"
-179. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B16"
-180. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B15"
-181. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B14"
-182. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B13"
-183. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B12"
-184. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B11"
-185. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B10"
-186. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B9"
-187. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B8"
-188. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B7"
-189. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B6"
-190. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B5"
-191. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B4"
-192. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B3"
-193. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B2"
-194. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B1"
-195. Port Connectivity Checks: "somadorGenerico:SOMADOR"
-196. Port Connectivity Checks: "registradorGenerico_PC:PC"
-197. Post-Synthesis Netlist Statistics for Top Partition
-198. Elapsed Time Per Partition
-199. Analysis & Synthesis Messages
+160. Port Connectivity Checks: "somadorGenerico:SOMADOR_beq"
+161. Port Connectivity Checks: "muxGenerico2x1:MUX_Prox_PC"
+162. Port Connectivity Checks: "UnidadeControle:UNIDADE_DE_CONTROLE"
+163. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B31:ULA_B31"
+164. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B30"
+165. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B29"
+166. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B28"
+167. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B27"
+168. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B26"
+169. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B25"
+170. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B24"
+171. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B23"
+172. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B22"
+173. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B21"
+174. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B20"
+175. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B19"
+176. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B18"
+177. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B17"
+178. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B16"
+179. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B15"
+180. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B14"
+181. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B13"
+182. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B12"
+183. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B11"
+184. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B10"
+185. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B9"
+186. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B8"
+187. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B7"
+188. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B6"
+189. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B5"
+190. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B4"
+191. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B3"
+192. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B2"
+193. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B1"
+194. Port Connectivity Checks: "somadorGenerico:SOMADOR"
+195. Port Connectivity Checks: "registradorGenerico_PC:PC"
+196. Post-Synthesis Netlist Statistics for Top Partition
+197. Elapsed Time Per Partition
+198. Analysis & Synthesis Messages
 
 
 
@@ -231,14 +230,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 11 15:49:50 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 12 11:26:16 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto2                                    ;
 ; Top-level Entity Name           ; Projeto2                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2127                                        ;
-; Total pins                      ; 57                                          ;
+; Total registers                 ; 2143                                        ;
+; Total pins                      ; 67                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -394,25 +393,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1547                                    ;
+; Estimate of Logic utilization (ALMs needed) ; 1567                                    ;
 ;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 1259                                    ;
-;     -- 7 input functions                    ; 3                                       ;
-;     -- 6 input functions                    ; 824                                     ;
-;     -- 5 input functions                    ; 52                                      ;
-;     -- 4 input functions                    ; 142                                     ;
-;     -- <=3 input functions                  ; 238                                     ;
+; Combinational ALUT usage for logic          ; 1320                                    ;
+;     -- 7 input functions                    ; 2                                       ;
+;     -- 6 input functions                    ; 844                                     ;
+;     -- 5 input functions                    ; 59                                      ;
+;     -- 4 input functions                    ; 151                                     ;
+;     -- <=3 input functions                  ; 264                                     ;
 ;                                             ;                                         ;
-; Dedicated logic registers                   ; 2127                                    ;
+; Dedicated logic registers                   ; 2143                                    ;
 ;                                             ;                                         ;
-; I/O pins                                    ; 57                                      ;
+; I/O pins                                    ; 67                                      ;
 ;                                             ;                                         ;
 ; Total DSP Blocks                            ; 0                                       ;
 ;                                             ;                                         ;
 ; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
-; Maximum fan-out                             ; 2126                                    ;
-; Total fan-out                               ; 12900                                   ;
-; Average fan-out                             ; 3.69                                    ;
+; Maximum fan-out                             ; 2142                                    ;
+; Total fan-out                               ; 13201                                   ;
+; Average fan-out                             ; 3.67                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
@@ -421,7 +420,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name            ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
-; |Projeto2                                    ; 1259 (11)           ; 2127 (0)                  ; 0                 ; 0          ; 57   ; 0            ; |Projeto2                                                                       ; Projeto2               ; work         ;
+; |Projeto2                                    ; 1320 (11)           ; 2143 (0)                  ; 0                 ; 0          ; 67   ; 0            ; |Projeto2                                                                       ; Projeto2               ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX0|            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX0                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX1                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX2                                          ; DecodBinario_7Seg      ; work         ;
@@ -429,12 +428,12 @@ https://fpgasoftware.intel.com/eula.
 ;    |DecodBinario_7Seg:DECOD_HEX4|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX4                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX5|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX5                                          ; DecodBinario_7Seg      ; work         ;
 ;    |RAMMIPS:MEMORIA_DADOS|                   ; 798 (798)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:MEMORIA_DADOS                                                 ; RAMMIPS                ; work         ;
-;    |ROMMIPS:MEMORIA_INSTRUCAO|               ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:MEMORIA_INSTRUCAO                                             ; ROMMIPS                ; work         ;
-;    |ULA_Completa:ULA|                        ; 157 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA                                                      ; ULA_Completa           ; work         ;
-;       |ULA_B0_B30:ULA_B0|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0                                    ; ULA_B0_B30             ; work         ;
+;    |ROMMIPS:MEMORIA_INSTRUCAO|               ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:MEMORIA_INSTRUCAO                                             ; ROMMIPS                ; work         ;
+;    |ULA_Completa:ULA|                        ; 155 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA                                                      ; ULA_Completa           ; work         ;
+;       |ULA_B0_B30:ULA_B0|                    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B10|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
@@ -458,38 +457,41 @@ https://fpgasoftware.intel.com/eula.
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B16|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16                                   ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B16|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B17|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B18|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18                                   ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B18|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B19|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B19|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B1|                    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1                                    ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B20|                   ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20                                   ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B20|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B21|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B21|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B22|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B22|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B23|                   ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23                                   ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B23|                   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B24|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
@@ -513,18 +515,18 @@ https://fpgasoftware.intel.com/eula.
 ;       |ULA_B0_B30:ULA_B29|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29                                   ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B2|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2                                    ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B2|                    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B30|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30                                   ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B3|                    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3                                    ; ULA_B0_B30             ; work         ;
+;       |ULA_B0_B30:ULA_B3|                    ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B4|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
@@ -556,12 +558,12 @@ https://fpgasoftware.intel.com/eula.
 ;    |UnidadeControle_ULA:UNIDADE_CONT_ULA|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA                                  ; UnidadeControle_ULA    ; work         ;
 ;    |bancoRegistradores:BANCO_REGISTRADORES|  ; 132 (132)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoRegistradores:BANCO_REGISTRADORES                                ; bancoRegistradores     ; work         ;
 ;    |edgeDetector:\gravar:detectorSub0|       ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|edgeDetector:\gravar:detectorSub0                                     ; edgeDetector           ; work         ;
-;    |muxGenerico2x1:MUX_DISP|                 ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_DISP                                               ; muxGenerico2x1         ; work         ;
-;    |muxGenerico2x1:MUX_Prox_PC|              ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_Prox_PC                                            ; muxGenerico2x1         ; work         ;
+;    |muxGenerico2x1:MUX_DISP|                 ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_DISP                                               ; muxGenerico2x1         ; work         ;
+;    |muxGenerico2x1:MUX_Prox_PC|              ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_Prox_PC                                            ; muxGenerico2x1         ; work         ;
 ;    |muxGenerico2x1:MUX_RAM_ULA|              ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_RAM_ULA                                            ; muxGenerico2x1         ; work         ;
-;    |registradorGenerico_PC:PC|               ; 0 (0)               ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico_PC:PC                                             ; registradorGenerico_PC ; work         ;
-;    |somadorGenerico:SOMADOR_beq|             ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR_beq                                           ; somadorGenerico        ; work         ;
-;    |somadorGenerico:SOMADOR|                 ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                                               ; somadorGenerico        ; work         ;
+;    |registradorGenerico_PC:PC|               ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico_PC:PC                                             ; registradorGenerico_PC ; work         ;
+;    |somadorGenerico:SOMADOR_beq|             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR_beq                                           ; somadorGenerico        ; work         ;
+;    |somadorGenerico:SOMADOR|                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                                               ; somadorGenerico        ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1341,7 +1343,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1059 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1060 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1061 ; Lost fanout                                   ;
-; registradorGenerico_PC:PC|DOUT[16..31]                  ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~70   ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~326  ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~71   ; Stuck at GND due to stuck port clock_enable   ;
@@ -1534,24 +1535,190 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~132  ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~165  ; Stuck at GND due to stuck port clock_enable   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~133  ; Stuck at GND due to stuck port clock_enable   ;
-; Total Number of Removed Registers = 978                 ;                                               ;
+; Total Number of Removed Registers = 962                 ;                                               ;
 +---------------------------------------------------------+-----------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                     ;
-+-------------------------------------------------------+--------------------------------+------------------------------------------------------------------------+
-; Register name                                         ; Reason for Removal             ; Registers Removed due to This Register                                 ;
-+-------------------------------------------------------+--------------------------------+------------------------------------------------------------------------+
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~77 ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~78,                 ;
-;                                                       ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~334,                ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~398,                ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~366,                ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~142,                ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~110                 ;
-; registradorGenerico_PC:PC|DOUT[1]                     ; Stuck at GND                   ; registradorGenerico_PC:PC|DOUT[24], registradorGenerico_PC:PC|DOUT[25] ;
-;                                                       ; due to stuck port data_in      ;                                                                        ;
-+-------------------------------------------------------+--------------------------------+------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                      ;
++-------------------------------------------------------+--------------------------------+---------------------------------------------------------+
+; Register name                                         ; Reason for Removal             ; Registers Removed due to This Register                  ;
++-------------------------------------------------------+--------------------------------+---------------------------------------------------------+
+; bancoRegistradores:BANCO_REGISTRADORES|registrador~70 ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~71,  ;
+;                                                       ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~327, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~72,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~328, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~73,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~329, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~74,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~330, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~75,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~331, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~76,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~332, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~77,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~333, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~78,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~334, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~79,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~335, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~80,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~336, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~81,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~337, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~82,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~338, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~83,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~339, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~84,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~340, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~85,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~341, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~86,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~342, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~87,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~343, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~88,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~344, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~89,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~345, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~90,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~346, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~91,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~92,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~348, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~93,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~94,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~95,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~351, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~97,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~98,  ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~354, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~100, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~391, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~359, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~392, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~360, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~393, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~361, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~394, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~362, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~395, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~363, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~396, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~364, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~397, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~365, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~398, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~366, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~399, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~367, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~400, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~368, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~401, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~369, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~402, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~370, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~403, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~371, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~404, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~372, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~405, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~373, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~406, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~374, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~407, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~375, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~408, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~376, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~409, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~377, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~410, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~378, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~411, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~379, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~412, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~380, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~413, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~381, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~414, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~382, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~415, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~383, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~416, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~384, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~417, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~385, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~418, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~386, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~419, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~387, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~420, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~388, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~389, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~135, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~103, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~136, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~104, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~137, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~105, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~138, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~106, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~139, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~107, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~140, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~108, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~141, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~109, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~142, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~110, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~143, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~111, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~144, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~112, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~145, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~113, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~146, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~114, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~147, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~115, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~148, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~116, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~149, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~117, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~150, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~118, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~151, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~119, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~152, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~120, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~153, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~121, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~154, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~122, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~155, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~123, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~156, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~124, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~157, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~125, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~158, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~126, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~159, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~127, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~160, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~128, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~161, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~129, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~162, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~130, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~163, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~131, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~164, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~132, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~165, ;
+;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~133  ;
++-------------------------------------------------------+--------------------------------+---------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1559,7 +1726,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2127  ;
+; Total registers                              ; 2143  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -1574,11 +1741,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[27]                                             ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[13]                                             ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico2x1_1bit:MUX_INVERTE_B|saida_MUX ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA|ULActrl[1]                                ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico4x1:MUX|saida_MUX               ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[22]                                             ;
+; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[7]                                              ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B|saida_MUX ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA|ULActrl[2]                                ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX|saida_MUX                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 
 
@@ -3080,15 +3247,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+----------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "muxGenerico2x1:MUX_DISP"                                                                         ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port              ; Type   ; Severity ; Details                                                                             ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
-; saida_mux[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +---------------------------------------------------------+
 ; Port Connectivity Checks: "somadorGenerico:SOMADOR_beq" ;
 +----------------+-------+----------+---------------------+
@@ -3421,28 +3579,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2127                        ;
+; arriav_ff             ; 2143                        ;
 ;     ENA               ; 2112                        ;
-;     plain             ; 15                          ;
-; arriav_lcell_comb     ; 1262                        ;
-;     arith             ; 28                          ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 1                           ;
+;     plain             ; 31                          ;
+; arriav_lcell_comb     ; 1322                        ;
+;     arith             ; 60                          ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 1231                        ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 58                          ;
-;         3 data inputs ; 154                         ;
-;         4 data inputs ; 139                         ;
-;         5 data inputs ; 52                          ;
-;         6 data inputs ; 824                         ;
-; boundary_port         ; 57                          ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 1260                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 54                          ;
+;         3 data inputs ; 152                         ;
+;         4 data inputs ; 148                         ;
+;         5 data inputs ; 59                          ;
+;         6 data inputs ; 844                         ;
+; boundary_port         ; 67                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 6.82                        ;
+; Average LUT depth     ; 6.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3451,7 +3610,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -3461,7 +3620,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 11 15:49:38 2021
+    Info: Processing started: Fri Nov 12 11:26:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto2.vhd
@@ -3520,6 +3679,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file muxgene
     Info (12022): Found design unit 1: muxGenerico2x1_1bit-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 14
     Info (12023): Found entity 1: muxGenerico2x1_1bit File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 4
 Info (12127): Elaborating entity "Projeto2" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at Projeto2.vhd(29) File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
 Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 70
 Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 85
 Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 88
@@ -3542,8 +3702,11 @@ Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:MEMORIA_DADOS|memRAM" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 22
     Info (276007): RAM logic "bancoRegistradores:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 49
     Info (276004): RAM logic "ROMMIPS:MEMORIA_INSTRUCAO|memROM" is uninferred due to inappropriate RAM size File: C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 18
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 784 registers lost all their fanouts during netlist optimizations.
+Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 12 input pin(s) that do not drive logic
@@ -3559,14 +3722,14 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
-Info (21057): Implemented 3428 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3499 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 3371 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Thu Nov 11 15:49:50 2021
-    Info: Elapsed time: 00:00:12
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 3432 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4907 megabytes
+    Info: Processing ended: Fri Nov 12 11:26:16 2021
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:20
 
 

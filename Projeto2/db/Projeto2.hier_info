@@ -56,6 +56,16 @@ KEY[0] => edgedetector:gravar:detectorSub0.entrada
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
+LEDR[0] <= muxgenerico2x1:MUX_DISP.saida_MUX[24]
+LEDR[1] <= muxgenerico2x1:MUX_DISP.saida_MUX[25]
+LEDR[2] <= muxgenerico2x1:MUX_DISP.saida_MUX[26]
+LEDR[3] <= muxgenerico2x1:MUX_DISP.saida_MUX[27]
+LEDR[4] <= muxgenerico2x1:MUX_DISP.saida_MUX[28]
+LEDR[5] <= muxgenerico2x1:MUX_DISP.saida_MUX[29]
+LEDR[6] <= muxgenerico2x1:MUX_DISP.saida_MUX[30]
+LEDR[7] <= muxgenerico2x1:MUX_DISP.saida_MUX[31]
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
 
 
 |Projeto2|edgeDetector:\gravar:detectorSub0

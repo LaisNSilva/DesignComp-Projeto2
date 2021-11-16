@@ -21,12 +21,12 @@ entity Projeto2 is
 	HEX4 : out std_logic_vector (6 DOWNTO 0);
 	HEX5 : out std_logic_vector (6 DOWNTO 0);
 	SW: in std_logic_vector(9 downto 0);
-	KEY: in std_logic_vector(3 downto 0)
+	KEY: in std_logic_vector(3 downto 0);
 	--FPGA_RESET_N: in std_logic;
 --	RESULTADO : out std_logic_vector(31 downto 0);
 --	REG_RS : out std_logic_vector(31 downto 0);
 --	REG_RT : out std_logic_vector(31 downto 0);
---	LEDR   : out std_logic_vector(9 downto 0);
+	LEDR   : out std_logic_vector(9 downto 0)
 --	PC_OUT: out std_logic_vector(31 downto 0);
 --	TESTE_ULA: out std_logic_vector(31 downto 0)	
    
@@ -252,7 +252,7 @@ DECOD_HEX3 :  entity work.DecodBinario_7seg
 
 			 
 DECOD_HEX4 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_ULA(19 downto 16),
+        port map(dadoHex => Saida_MUX_DSP(19 downto 16),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -262,7 +262,7 @@ DECOD_HEX4 :  entity work.DecodBinario_7seg
 
 			 
 DECOD_HEX5 :  entity work.DecodBinario_7seg
-        port map(dadoHex => Saida_ULA(23 downto 20),
+        port map(dadoHex => Saida_MUX_DSP(23 downto 20),
                  apaga =>  '0',
                  negativo => '0',
                  overFlow =>  '0',
@@ -270,16 +270,15 @@ DECOD_HEX5 :  entity work.DecodBinario_7seg
 					 
  
 					 
--- LEDR(0) <= Saida_PC(0);
--- LEDR(1) <= Saida_PC(1);
--- LEDR(2) <= Saida_PC(2);
--- LEDR(3) <= Saida_PC(3);
--- LEDR(4) <= Saida_PC(4);
--- LEDR(5) <= Saida_PC(5);
--- LEDR(6) <= Saida_PC(6);
--- LEDR(7) <= Saida_PC(7);
--- LEDR(8) <= Saida_PC(8);
--- LEDR(9) <= Saida_PC(9);
+LEDR(0) <= Saida_MUX_DSP(24);
+LEDR(1) <= Saida_MUX_DSP(25);
+LEDR(2) <= Saida_MUX_DSP(26);
+LEDR(3) <= Saida_MUX_DSP(27);
+LEDR(4) <= Saida_MUX_DSP(28);
+LEDR(5) <= Saida_MUX_DSP(29);
+LEDR(6) <= Saida_MUX_DSP(30);
+LEDR(7) <= Saida_MUX_DSP(31);
+
 		  
   
   
