@@ -10,7 +10,7 @@ entity Projeto2 is
 		  memoryAddrWidth:  natural := 6;
 		  larguraDados_PC : natural := 32;
 		  larguraEndRegs : natural := 5;
-        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
+        simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
    CLOCK_50 : in std_logic;
@@ -47,7 +47,7 @@ architecture arquitetura of Projeto2 is
 	 signal Saida_Mem_Dados : std_logic_vector(31 downto 0);
 	 signal flag : std_logic;
 	 signal Saida_Somador_Beq : std_logic_vector(31 downto 0);
-	 signal Saida_Unid_Cont : std_logic_vector(9 downto 0);
+	 signal Saida_Unid_Cont : std_logic_vector(11 downto 0);
 	 signal Saida_Mux_Beq : std_logic_vector(31 downto 0);
 	 signal Saida_Mux_Banco : std_logic_vector(4 downto 0);
 	 signal Saida_Mux_Entrada_ULA : std_logic_vector(31 downto 0);
@@ -57,6 +57,8 @@ architecture arquitetura of Projeto2 is
 	 signal Saida_Mux_Prox_PC : std_logic_vector(31 downto 0);
 	 signal Saida_Unid_Cont_ULA : std_logic_vector(2 downto 0);
 	 signal Saida_MUX_DSP : std_logic_vector(31 downto 0);
+	 signal Saida_LUI : std_logic_vector(31 downto 0);
+	 signal Saida_Mux_EXT_SIG : std_logic;
 	  
 
 begin
@@ -95,7 +97,7 @@ MEMORIA_INSTRUCAO : entity work.ROMMIPS   generic map (dataWidth => larguraInstr
 MUX_BR: entity work.muxGenerico2x1  generic map (larguraDados => larguraEndRegs)
         port map( entradaA_MUX => Saida_Mem_Instrucao(20 downto 16),
                  entradaB_MUX =>  Saida_Mem_Instrucao(15 downto 11),
-                 seletor_MUX => Saida_Unid_Cont(8),
+                 seletor_MUX => Saida_Unid_Cont(9),
                  saida_MUX => Saida_Mux_Banco); 
 					  
 BANCO_REGISTRADORES : entity work.bancoRegistradores generic map (larguraDados => larguraDados, larguraEndBancoRegs=>larguraEndRegs)
@@ -109,34 +111,43 @@ BANCO_REGISTRADORES : entity work.bancoRegistradores generic map (larguraDados =
 
         dadoEscritaC    => Saida_Mux_RAM_ULA,
 
-        escreveC        => Saida_Unid_Cont(7),
+        escreveC        => Saida_Unid_Cont(8),
         saidaA          => Dado_lido_RegA,
         saidaB          => Dado_lido_RegB
     );
 	 
 	
-Imediato_Estendido <= Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
-								Saida_Mem_Instrucao(15) &
+Imediato_Estendido <= Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
+								Saida_Mux_EXT_SIG &
 								Saida_Mem_Instrucao(15 downto 0);
+
+MUX_EXT_SIG: entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
+        port map( entradaA_MUX => '0',
+                 entradaB_MUX =>  Saida_Mem_Instrucao(15),
+                 seletor_MUX => Saida_Unid_Cont(11),
+                 saida_MUX => Saida_Mux_EXT_SIG); 
+								
+Saida_LUI <= "0000000000000000" & Saida_Mem_Instrucao(15 downto 0);
+
 								
 MUX_ENTRADA_ULA: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Dado_lido_RegB,
                  entradaB_MUX =>  Imediato_Estendido,
-                 seletor_MUX => Saida_Unid_Cont(6),
+                 seletor_MUX => Saida_Unid_Cont(7),
                  saida_MUX => Saida_Mux_Entrada_ULA); 								
 	
 
@@ -176,10 +187,12 @@ UNIDADE_DE_CONTROLE: entity work.UnidadeControle
 --			le => Saida_Unid_Cont(3),
         );
 		  
-MUX_RAM_ULA :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+MUX_RAM_ULA :  entity work.muxGenerico4x1_32b  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_ULA,
                  entradaB_MUX =>  Saida_Mem_Dados,
-                 seletor_MUX => Saida_Unid_Cont(5),
+					  entradaC_MUX => "00000000000000000000000000000000", 
+					  entradaD_MUX => Saida_LUI,
+                 seletor_MUX => Saida_Unid_Cont(6 downto 5),
                  saida_MUX => Saida_Mux_RAM_ULA); 	
 		  
 		  
@@ -192,7 +205,7 @@ MUX_beq :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados
 MUX_Prox_PC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_Mux_Beq,
                  entradaB_MUX =>  Saida_Somador(31 downto 28) & Saida_Mem_Instrucao(25 downto 0) & "00",
-                 seletor_MUX => Saida_Unid_Cont(9),
+                 seletor_MUX => Saida_Unid_Cont(10),
                  saida_MUX => Saida_Mux_Prox_PC);
 					  
 SOMADOR_beq :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)

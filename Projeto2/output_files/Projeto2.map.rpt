@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Fri Nov 12 11:26:16 2021
+Wed Nov 24 17:55:08 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,15 +14,15 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |Projeto2
- 13. Parameter Settings for User Entity Instance: registradorGenerico_PC:PC
- 14. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
- 15. Parameter Settings for User Entity Instance: ROMMIPS:MEMORIA_INSTRUCAO
- 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_BR
- 17. Parameter Settings for User Entity Instance: bancoRegistradores:BANCO_REGISTRADORES
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |Projeto2
+ 12. Parameter Settings for User Entity Instance: registradorGenerico_PC:PC
+ 13. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
+ 14. Parameter Settings for User Entity Instance: ROMMIPS:MEMORIA_INSTRUCAO
+ 15. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_BR
+ 16. Parameter Settings for User Entity Instance: bancoRegistradores:BANCO_REGISTRADORES
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1_1bit:MUX_EXT_SIG
  18. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_ENTRADA_ULA
  19. Parameter Settings for User Entity Instance: ULA_Completa:ULA
  20. Parameter Settings for User Entity Instance: ULA_Completa:ULA|ULA_B0_B30:ULA_B0
@@ -154,7 +154,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 146. Parameter Settings for User Entity Instance: ULA_Completa:ULA|ULA_B31:ULA_B31|Somador_Completo_1bit:SOMA_SUB
 147. Parameter Settings for User Entity Instance: ULA_Completa:ULA|ULA_B31:ULA_B31|muxGenerico4x1:MUX
 148. Parameter Settings for User Entity Instance: RAMMIPS:MEMORIA_DADOS
-149. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_RAM_ULA
+149. Parameter Settings for User Entity Instance: muxGenerico4x1_32b:MUX_RAM_ULA
 150. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_beq
 151. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_Prox_PC
 152. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR_beq
@@ -167,43 +167,45 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 159. Port Connectivity Checks: "DecodBinario_7Seg:DECOD_HEX0"
 160. Port Connectivity Checks: "somadorGenerico:SOMADOR_beq"
 161. Port Connectivity Checks: "muxGenerico2x1:MUX_Prox_PC"
-162. Port Connectivity Checks: "UnidadeControle:UNIDADE_DE_CONTROLE"
-163. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B31:ULA_B31"
-164. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B30"
-165. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B29"
-166. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B28"
-167. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B27"
-168. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B26"
-169. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B25"
-170. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B24"
-171. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B23"
-172. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B22"
-173. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B21"
-174. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B20"
-175. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B19"
-176. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B18"
-177. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B17"
-178. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B16"
-179. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B15"
-180. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B14"
-181. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B13"
-182. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B12"
-183. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B11"
-184. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B10"
-185. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B9"
-186. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B8"
-187. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B7"
-188. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B6"
-189. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B5"
-190. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B4"
-191. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B3"
-192. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B2"
-193. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B1"
-194. Port Connectivity Checks: "somadorGenerico:SOMADOR"
-195. Port Connectivity Checks: "registradorGenerico_PC:PC"
-196. Post-Synthesis Netlist Statistics for Top Partition
-197. Elapsed Time Per Partition
-198. Analysis & Synthesis Messages
+162. Port Connectivity Checks: "muxGenerico4x1_32b:MUX_RAM_ULA"
+163. Port Connectivity Checks: "UnidadeControle:UNIDADE_DE_CONTROLE"
+164. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B31:ULA_B31"
+165. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B30"
+166. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B29"
+167. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B28"
+168. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B27"
+169. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B26"
+170. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B25"
+171. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B24"
+172. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B23"
+173. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B22"
+174. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B21"
+175. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B20"
+176. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B19"
+177. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B18"
+178. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B17"
+179. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B16"
+180. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B15"
+181. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B14"
+182. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B13"
+183. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B12"
+184. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B11"
+185. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B10"
+186. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B9"
+187. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B8"
+188. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B7"
+189. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B6"
+190. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B5"
+191. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B4"
+192. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B3"
+193. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B2"
+194. Port Connectivity Checks: "ULA_Completa:ULA|ULA_B0_B30:ULA_B1"
+195. Port Connectivity Checks: "muxGenerico2x1_1bit:MUX_EXT_SIG"
+196. Port Connectivity Checks: "somadorGenerico:SOMADOR"
+197. Port Connectivity Checks: "registradorGenerico_PC:PC"
+198. Post-Synthesis Netlist Statistics for Top Partition
+199. Elapsed Time Per Partition
+200. Analysis & Synthesis Messages
 
 
 
@@ -230,13 +232,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 12 11:26:16 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 24 17:55:08 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto2                                    ;
 ; Top-level Entity Name           ; Projeto2                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2143                                        ;
+; Total registers                 ; 2590                                        ;
 ; Total pins                      ; 67                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -375,7 +377,6 @@ https://fpgasoftware.intel.com/eula.
 ; UnidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd        ;         ;
 ; UnidadeControle_ULA.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd    ;         ;
 ; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd     ;         ;
-; edgeDetector.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/edgeDetector.vhd           ;         ;
 ; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd         ;         ;
 ; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd         ;         ;
 ; registradorGenerico_PC.vhd       ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd ;         ;
@@ -385,34 +386,35 @@ https://fpgasoftware.intel.com/eula.
 ; ULA_B31.vhd                      ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B31.vhd                ;         ;
 ; ULA_Completa.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd           ;         ;
 ; muxGenerico2x1_1bit.vhd          ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd    ;         ;
+; muxGenerico4x1_32b.vhd           ; yes             ; User VHDL File  ; C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1_32b.vhd     ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                           ;
-+---------------------------------------------+-----------------------------------------+
-; Resource                                    ; Usage                                   ;
-+---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1567                                    ;
-;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 1320                                    ;
-;     -- 7 input functions                    ; 2                                       ;
-;     -- 6 input functions                    ; 844                                     ;
-;     -- 5 input functions                    ; 59                                      ;
-;     -- 4 input functions                    ; 151                                     ;
-;     -- <=3 input functions                  ; 264                                     ;
-;                                             ;                                         ;
-; Dedicated logic registers                   ; 2143                                    ;
-;                                             ;                                         ;
-; I/O pins                                    ; 67                                      ;
-;                                             ;                                         ;
-; Total DSP Blocks                            ; 0                                       ;
-;                                             ;                                         ;
-; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
-; Maximum fan-out                             ; 2142                                    ;
-; Total fan-out                               ; 13201                                   ;
-; Average fan-out                             ; 3.67                                    ;
-+---------------------------------------------+-----------------------------------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 1962         ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 1623         ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 1182         ;
+;     -- 5 input functions                    ; 85           ;
+;     -- 4 input functions                    ; 127          ;
+;     -- <=3 input functions                  ; 229          ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 2590         ;
+;                                             ;              ;
+; I/O pins                                    ; 67           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 2590         ;
+; Total fan-out                               ; 16408        ;
+; Average fan-out                             ; 3.77         ;
++---------------------------------------------+--------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -420,147 +422,147 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name            ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+------------------------+--------------+
-; |Projeto2                                    ; 1320 (11)           ; 2143 (0)                  ; 0                 ; 0          ; 67   ; 0            ; |Projeto2                                                                       ; Projeto2               ; work         ;
+; |Projeto2                                    ; 1623 (11)           ; 2590 (0)                  ; 0                 ; 0          ; 67   ; 0            ; |Projeto2                                                                       ; Projeto2               ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX0|            ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX0                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX1                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX2                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX3|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX3                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX4|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX4                                          ; DecodBinario_7Seg      ; work         ;
 ;    |DecodBinario_7Seg:DECOD_HEX5|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|DecodBinario_7Seg:DECOD_HEX5                                          ; DecodBinario_7Seg      ; work         ;
-;    |RAMMIPS:MEMORIA_DADOS|                   ; 798 (798)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:MEMORIA_DADOS                                                 ; RAMMIPS                ; work         ;
-;    |ROMMIPS:MEMORIA_INSTRUCAO|               ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:MEMORIA_INSTRUCAO                                             ; ROMMIPS                ; work         ;
-;    |ULA_Completa:ULA|                        ; 155 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA                                                      ; ULA_Completa           ; work         ;
+;    |RAMMIPS:MEMORIA_DADOS|                   ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:MEMORIA_DADOS                                                 ; RAMMIPS                ; work         ;
+;    |ROMMIPS:MEMORIA_INSTRUCAO|               ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:MEMORIA_INSTRUCAO                                             ; ROMMIPS                ; work         ;
+;    |ULA_Completa:ULA|                        ; 162 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA                                                      ; ULA_Completa           ; work         ;
 ;       |ULA_B0_B30:ULA_B0|                    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B10|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B10|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B11|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B10|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B11|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B11|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B12|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B12|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B12|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B13|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B13|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B14|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B14|                   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B15|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B15|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B16|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B17|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B15|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B16|                   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B16|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B17|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B18|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B17|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B18|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B18|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B19|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B19|                   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B1|                    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1                                    ; ULA_B0_B30             ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B19|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B1|                    ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1                                    ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B1|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B20|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B20|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B21|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B21|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B21|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B22|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B22|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B23|                   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B22|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B23|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B24|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B23|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B24|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B25|                   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B24|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B25|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25                                   ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B26|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B25|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B26|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B27|                   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B26|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B27|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B28|                   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B27|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B28|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B29|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29                                   ; ULA_B0_B30             ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B28|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B29|                   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29                                   ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B29|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B2|                    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2                                    ; ULA_B0_B30             ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B30|                   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30                                   ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|Somador_Completo_1bit:SOMA_SUB    ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B30|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30                                   ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|muxGenerico2x1_1bit:MUX_INVERTE_B ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B30|muxGenerico4x1:MUX                ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B3|                    ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B3|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B4|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B5|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B4|                    ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4                                    ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B4|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B5|                    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5                                    ; ULA_B0_B30             ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B6|                    ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B5|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;       |ULA_B0_B30:ULA_B6|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6                                    ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B6|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
 ;       |ULA_B0_B30:ULA_B7|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B7|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B8|                    ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;       |ULA_B0_B30:ULA_B8|                    ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8                                    ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
 ;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B8|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B0_B30:ULA_B9|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9                                    ; ULA_B0_B30             ; work         ;
-;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
-;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|muxGenerico2x1_1bit:MUX_INVERTE_B  ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
-;       |ULA_B31:ULA_B31|                      ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31                                      ; ULA_B31                ; work         ;
+;       |ULA_B0_B30:ULA_B9|                    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9                                    ; ULA_B0_B30             ; work         ;
+;          |Somador_Completo_1bit:SOMA_SUB|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|Somador_Completo_1bit:SOMA_SUB     ; Somador_Completo_1bit  ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B9|muxGenerico4x1:MUX                 ; muxGenerico4x1         ; work         ;
+;       |ULA_B31:ULA_B31|                      ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31                                      ; ULA_B31                ; work         ;
 ;          |Somador_Completo_1bit:SOMA_SUB|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|Somador_Completo_1bit:SOMA_SUB       ; Somador_Completo_1bit  ; work         ;
 ;          |muxGenerico2x1_1bit:MUX_INVERTE_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|muxGenerico2x1_1bit:MUX_INVERTE_B    ; muxGenerico2x1_1bit    ; work         ;
-;          |muxGenerico4x1:MUX|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|muxGenerico4x1:MUX                   ; muxGenerico4x1         ; work         ;
-;    |UnidadeControle:UNIDADE_DE_CONTROLE|     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle:UNIDADE_DE_CONTROLE                                   ; UnidadeControle        ; work         ;
-;    |UnidadeControle_ULA:UNIDADE_CONT_ULA|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA                                  ; UnidadeControle_ULA    ; work         ;
-;    |bancoRegistradores:BANCO_REGISTRADORES|  ; 132 (132)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoRegistradores:BANCO_REGISTRADORES                                ; bancoRegistradores     ; work         ;
-;    |edgeDetector:\gravar:detectorSub0|       ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|edgeDetector:\gravar:detectorSub0                                     ; edgeDetector           ; work         ;
-;    |muxGenerico2x1:MUX_DISP|                 ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_DISP                                               ; muxGenerico2x1         ; work         ;
-;    |muxGenerico2x1:MUX_Prox_PC|              ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_Prox_PC                                            ; muxGenerico2x1         ; work         ;
-;    |muxGenerico2x1:MUX_RAM_ULA|              ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_RAM_ULA                                            ; muxGenerico2x1         ; work         ;
+;          |muxGenerico4x1:MUX|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA_Completa:ULA|ULA_B31:ULA_B31|muxGenerico4x1:MUX                   ; muxGenerico4x1         ; work         ;
+;    |UnidadeControle:UNIDADE_DE_CONTROLE|     ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle:UNIDADE_DE_CONTROLE                                   ; UnidadeControle        ; work         ;
+;    |UnidadeControle_ULA:UNIDADE_CONT_ULA|    ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA                                  ; UnidadeControle_ULA    ; work         ;
+;    |bancoRegistradores:BANCO_REGISTRADORES|  ; 407 (407)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoRegistradores:BANCO_REGISTRADORES                                ; bancoRegistradores     ; work         ;
+;    |muxGenerico2x1:MUX_BR|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_BR                                                 ; muxGenerico2x1         ; work         ;
+;    |muxGenerico2x1:MUX_DISP|                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_DISP                                               ; muxGenerico2x1         ; work         ;
+;    |muxGenerico2x1:MUX_Prox_PC|              ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_Prox_PC                                            ; muxGenerico2x1         ; work         ;
+;    |muxGenerico4x1_32b:MUX_RAM_ULA|          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1_32b:MUX_RAM_ULA                                        ; muxGenerico4x1_32b     ; work         ;
 ;    |registradorGenerico_PC:PC|               ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico_PC:PC                                             ; registradorGenerico_PC ; work         ;
 ;    |somadorGenerico:SOMADOR_beq|             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR_beq                                           ; somadorGenerico        ; work         ;
 ;    |somadorGenerico:SOMADOR|                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                                               ; somadorGenerico        ; work         ;
@@ -575,262 +577,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------+-----------------------------------------------+
 ; registradorGenerico_PC:PC|DOUT[0]                       ; Merged with registradorGenerico_PC:PC|DOUT[1] ;
 ; registradorGenerico_PC:PC|DOUT[1]                       ; Stuck at GND due to stuck port data_in        ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~166  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~167  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~168  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~169  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~170  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~171  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~172  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~173  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~174  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~175  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~176  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~177  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~178  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~179  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~180  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~181  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~182  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~183  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~184  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~185  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~186  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~187  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~188  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~189  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~190  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~191  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~192  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~193  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~194  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~195  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~196  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~197  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~198  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~199  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~200  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~201  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~202  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~203  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~204  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~205  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~206  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~207  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~208  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~209  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~210  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~211  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~212  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~213  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~214  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~215  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~216  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~217  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~218  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~219  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~220  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~221  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~222  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~223  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~224  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~225  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~226  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~227  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~228  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~229  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~230  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~231  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~232  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~233  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~234  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~235  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~236  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~237  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~238  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~239  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~240  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~241  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~242  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~243  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~244  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~245  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~246  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~247  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~248  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~249  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~250  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~251  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~252  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~253  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~254  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~255  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~256  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~257  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~258  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~259  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~260  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~261  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~262  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~263  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~264  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~265  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~266  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~267  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~268  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~269  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~270  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~271  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~272  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~273  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~274  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~275  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~276  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~277  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~278  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~279  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~280  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~281  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~282  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~283  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~284  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~285  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~286  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~287  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~288  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~289  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~290  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~291  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~292  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~293  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~422  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~423  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~424  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~425  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~426  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~427  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~428  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~429  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~430  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~431  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~432  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~433  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~434  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~435  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~436  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~437  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~438  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~439  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~440  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~441  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~442  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~443  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~444  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~445  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~446  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~447  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~448  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~449  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~450  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~451  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~452  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~453  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~454  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~455  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~456  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~457  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~458  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~459  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~460  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~461  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~462  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~463  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~464  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~465  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~466  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~467  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~468  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~469  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~470  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~471  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~472  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~473  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~474  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~475  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~476  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~477  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~478  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~479  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~480  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~481  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~482  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~483  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~484  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~485  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~486  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~487  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~488  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~489  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~490  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~491  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~492  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~493  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~494  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~495  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~496  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~497  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~498  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~499  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~500  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~501  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~502  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~503  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~504  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~505  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~506  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~507  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~508  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~509  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~510  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~511  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~512  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~513  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~514  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~515  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~516  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~517  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~518  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~519  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~520  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~521  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~522  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~523  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~524  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~525  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~526  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~527  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~528  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~529  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~530  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~531  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~532  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~533  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~534  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~535  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~536  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~537  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~538  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~539  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~540  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~541  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~542  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~543  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~544  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~545  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~546  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~547  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~548  ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~549  ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~550  ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~551  ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~552  ; Lost fanout                                   ;
@@ -1343,382 +1089,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1059 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1060 ; Lost fanout                                   ;
 ; bancoRegistradores:BANCO_REGISTRADORES|registrador~1061 ; Lost fanout                                   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~70   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~326  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~71   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~327  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~72   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~328  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~73   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~329  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~74   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~330  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~75   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~331  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~76   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~332  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~77   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~333  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~78   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~334  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~79   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~335  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~80   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~336  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~81   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~337  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~82   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~338  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~83   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~339  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~84   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~340  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~85   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~341  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~86   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~342  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~87   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~343  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~88   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~344  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~89   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~345  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~90   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~346  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~91   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~347  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~92   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~348  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~93   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~349  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~94   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~350  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~95   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~351  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~96   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~352  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~97   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~353  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~98   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~354  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~99   ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~355  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~100  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~356  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~101  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~357  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~390  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~358  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~391  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~359  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~392  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~360  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~393  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~361  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~394  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~362  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~395  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~363  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~396  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~364  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~397  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~365  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~398  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~366  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~399  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~367  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~400  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~368  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~401  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~369  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~402  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~370  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~403  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~371  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~404  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~372  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~405  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~373  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~406  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~374  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~407  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~375  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~408  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~376  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~409  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~377  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~410  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~378  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~411  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~379  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~412  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~380  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~413  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~381  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~414  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~382  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~415  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~383  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~416  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~384  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~417  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~385  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~418  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~386  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~419  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~387  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~420  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~388  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~421  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~389  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~134  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~102  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~135  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~103  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~136  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~104  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~137  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~105  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~138  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~106  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~139  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~107  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~140  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~108  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~141  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~109  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~142  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~110  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~143  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~111  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~144  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~112  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~145  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~113  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~146  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~114  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~147  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~115  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~148  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~116  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~149  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~117  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~150  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~118  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~151  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~119  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~152  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~120  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~153  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~121  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~154  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~122  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~155  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~123  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~156  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~124  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~157  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~125  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~158  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~126  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~159  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~127  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~160  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~128  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~161  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~129  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~162  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~130  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~163  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~131  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~164  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~132  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~165  ; Stuck at GND due to stuck port clock_enable   ;
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~133  ; Stuck at GND due to stuck port clock_enable   ;
-; Total Number of Removed Registers = 962                 ;                                               ;
+; Total Number of Removed Registers = 514                 ;                                               ;
 +---------------------------------------------------------+-----------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                      ;
-+-------------------------------------------------------+--------------------------------+---------------------------------------------------------+
-; Register name                                         ; Reason for Removal             ; Registers Removed due to This Register                  ;
-+-------------------------------------------------------+--------------------------------+---------------------------------------------------------+
-; bancoRegistradores:BANCO_REGISTRADORES|registrador~70 ; Stuck at GND                   ; bancoRegistradores:BANCO_REGISTRADORES|registrador~71,  ;
-;                                                       ; due to stuck port clock_enable ; bancoRegistradores:BANCO_REGISTRADORES|registrador~327, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~72,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~328, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~73,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~329, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~74,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~330, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~75,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~331, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~76,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~332, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~77,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~333, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~78,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~334, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~79,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~335, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~80,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~336, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~81,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~337, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~82,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~338, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~83,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~339, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~84,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~340, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~85,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~341, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~86,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~342, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~87,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~343, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~88,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~344, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~89,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~345, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~90,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~346, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~91,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~92,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~348, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~93,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~94,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~95,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~351, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~97,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~98,  ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~354, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~100, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~391, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~359, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~392, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~360, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~393, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~361, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~394, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~362, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~395, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~363, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~396, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~364, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~397, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~365, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~398, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~366, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~399, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~367, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~400, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~368, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~401, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~369, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~402, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~370, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~403, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~371, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~404, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~372, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~405, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~373, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~406, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~374, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~407, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~375, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~408, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~376, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~409, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~377, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~410, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~378, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~411, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~379, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~412, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~380, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~413, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~381, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~414, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~382, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~415, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~383, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~416, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~384, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~417, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~385, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~418, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~386, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~419, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~387, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~420, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~388, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~389, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~135, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~103, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~136, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~104, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~137, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~105, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~138, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~106, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~139, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~107, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~140, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~108, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~141, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~109, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~142, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~110, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~143, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~111, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~144, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~112, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~145, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~113, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~146, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~114, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~147, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~115, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~148, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~116, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~149, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~117, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~150, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~118, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~151, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~119, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~152, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~120, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~153, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~121, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~154, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~122, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~155, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~123, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~156, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~124, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~157, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~125, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~158, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~126, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~159, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~127, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~160, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~128, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~161, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~129, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~162, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~130, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~163, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~131, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~164, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~132, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~165, ;
-;                                                       ;                                ; bancoRegistradores:BANCO_REGISTRADORES|registrador~133  ;
-+-------------------------------------------------------+--------------------------------+---------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1726,27 +1098,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2143  ;
+; Total registers                              ; 2590  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2112  ;
+; Number of registers using Clock Enable       ; 2560  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[22]                                             ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[7]                                              ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B|saida_MUX ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA|ULActrl[2]                                ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B2|muxGenerico4x1:MUX|saida_MUX                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[22]                                              ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico_PC:PC|DOUT[11]                                              ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B20|muxGenerico2x1_1bit:MUX_INVERTE_B|saida_MUX ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1_32b:MUX_RAM_ULA|saida_MUX[17]                                    ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1_32b:MUX_RAM_ULA|saida_MUX[13]                                    ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA_Completa:ULA|ULA_B0_B30:ULA_B14|muxGenerico4x1:MUX|saida_MUX                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1_32b:MUX_RAM_ULA|saida_MUX[3]                                     ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Projeto2|UnidadeControle_ULA:UNIDADE_CONT_ULA|ULActrl[2]                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1761,7 +1136,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memoryAddrWidth    ; 6     ; Signed Integer                              ;
 ; larguraDados_PC    ; 32    ; Signed Integer                              ;
 ; larguraEndRegs     ; 5     ; Signed Integer                              ;
-; simulacao          ; false ; Enumerated                                  ;
+; simulacao          ; true  ; Enumerated                                  ;
 +--------------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1816,6 +1191,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; larguradados        ; 32    ; Signed Integer                                        ;
 ; larguraendbancoregs ; 5     ; Signed Integer                                        ;
 +---------------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1_1bit:MUX_EXT_SIG ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3131,13 +2516,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_RAM_ULA ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; larguradados   ; 32    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico4x1_32b:MUX_RAM_ULA ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3263,6 +2648,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+-------+----------+----------------+
 ; entradab_mux[1..0] ; Input ; Info     ; Stuck at GND   ;
 +--------------------+-------+----------+----------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "muxGenerico4x1_32b:MUX_RAM_ULA" ;
++----------------------+-------+----------+------------------+
+; Port                 ; Type  ; Severity ; Details          ;
++----------------------+-------+----------+------------------+
+; entradac_mux         ; Input ; Info     ; Stuck at GND     ;
+; entradad_mux[31..16] ; Input ; Info     ; Stuck at GND     ;
++----------------------+-------+----------+------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -3553,6 +2948,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+-------+----------+-------------------------------+
 
 
++-------------------------------------------------------------+
+; Port Connectivity Checks: "muxGenerico2x1_1bit:MUX_EXT_SIG" ;
++--------------+-------+----------+---------------------------+
+; Port         ; Type  ; Severity ; Details                   ;
++--------------+-------+----------+---------------------------+
+; entradaa_mux ; Input ; Info     ; Stuck at GND              ;
++--------------+-------+----------+---------------------------+
+
+
 +-----------------------------------------------------+
 ; Port Connectivity Checks: "somadorGenerico:SOMADOR" ;
 +-----------------+-------+----------+----------------+
@@ -3579,29 +2983,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2143                        ;
-;     ENA               ; 2112                        ;
-;     plain             ; 31                          ;
-; arriav_lcell_comb     ; 1322                        ;
+; arriav_ff             ; 2590                        ;
+;     ENA               ; 2560                        ;
+;     plain             ; 30                          ;
+; arriav_lcell_comb     ; 1625                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
-;         2 data inputs ; 25                          ;
-;         3 data inputs ; 2                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 5                           ;
 ;         4 data inputs ; 3                           ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 1260                        ;
+;         5 data inputs ; 14                          ;
+;     normal            ; 1565                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 54                          ;
-;         3 data inputs ; 152                         ;
-;         4 data inputs ; 148                         ;
-;         5 data inputs ; 59                          ;
-;         6 data inputs ; 844                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 151                         ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 124                         ;
+;         5 data inputs ; 71                          ;
+;         6 data inputs ; 1182                        ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 6.89                        ;
+; Max LUT depth         ; 20.00                       ;
+; Average LUT depth     ; 8.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3610,7 +3013,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -3620,7 +3023,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 12 11:26:03 2021
+    Info: Processing started: Wed Nov 24 17:54:54 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file projeto2.vhd
@@ -3678,38 +3081,43 @@ Info (12021): Found 2 design units, including 1 entities, in source file ula_com
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_1bit.vhd
     Info (12022): Found design unit 1: muxGenerico2x1_1bit-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 14
     Info (12023): Found entity 1: muxGenerico2x1_1bit File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1_32b.vhd
+    Info (12022): Found design unit 1: muxGenerico4x1_32b-comportamento File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1_32b.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1_32b File: C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1_32b.vhd Line: 4
 Info (12127): Elaborating entity "Projeto2" for the top level hierarchy
 Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at Projeto2.vhd(29) File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 70
-Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 85
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 88
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:MEMORIA_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 91
+Info (12128): Elaborating entity "registradorGenerico_PC" for hierarchy "registradorGenerico_PC:PC" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 87
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 90
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:MEMORIA_INSTRUCAO" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 93
 Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_BR" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 95
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BANCO_REGISTRADORES" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 101
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_ENTRADA_ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 136
-Info (12128): Elaborating entity "UnidadeControle_ULA" for hierarchy "UnidadeControle_ULA:UNIDADE_CONT_ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 144
-Info (12128): Elaborating entity "ULA_Completa" for hierarchy "ULA_Completa:ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 151
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_BR" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 97
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:BANCO_REGISTRADORES" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 103
+Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "muxGenerico2x1_1bit:MUX_EXT_SIG" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 138
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_ENTRADA_ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 147
+Info (12128): Elaborating entity "UnidadeControle_ULA" for hierarchy "UnidadeControle_ULA:UNIDADE_CONT_ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 155
+Info (12128): Elaborating entity "ULA_Completa" for hierarchy "ULA_Completa:ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 162
 Info (12128): Elaborating entity "ULA_B0_B30" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 56
 Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico2x1_1bit:MUX_INVERTE_B" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 27
 Info (12128): Elaborating entity "Somador_Completo_1bit" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|Somador_Completo_1bit:SOMA_SUB" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 34
 Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_Completa:ULA|ULA_B0_B30:ULA_B0|muxGenerico4x1:MUX" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd Line: 42
 Info (12128): Elaborating entity "ULA_B31" for hierarchy "ULA_Completa:ULA|ULA_B31:ULA_B31" File: C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd Line: 366
-Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UNIDADE_DE_CONTROLE" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 162
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 168
-Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 214
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UNIDADE_DE_CONTROLE" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 173
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:MEMORIA_DADOS" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 179
+Info (12128): Elaborating entity "muxGenerico4x1_32b" for hierarchy "muxGenerico4x1_32b:MUX_RAM_ULA" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 190
+Info (12128): Elaborating entity "DecodBinario_7Seg" for hierarchy "DecodBinario_7Seg:DECOD_HEX0" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 227
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:MEMORIA_DADOS|memRAM" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd Line: 22
-    Info (276007): RAM logic "bancoRegistradores:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 49
+    Info (276007): RAM logic "bancoRegistradores:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd Line: 36
     Info (276004): RAM logic "ROMMIPS:MEMORIA_INSTRUCAO|memROM" is uninferred due to inappropriate RAM size File: C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd Line: 18
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 29
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 768 registers lost all their fanouts during netlist optimizations.
+Info (17049): 512 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
+Warning (21074): Design contains 13 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 16
     Warning (15610): No output dependent on input pin "SW[1]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
     Warning (15610): No output dependent on input pin "SW[2]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
     Warning (15610): No output dependent on input pin "SW[3]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 23
@@ -3722,14 +3130,14 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd Line: 24
-Info (21057): Implemented 3499 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4250 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 3432 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4907 megabytes
-    Info: Processing ended: Fri Nov 12 11:26:16 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 4183 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4903 megabytes
+    Info: Processing ended: Wed Nov 24 17:55:08 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:23
 
 

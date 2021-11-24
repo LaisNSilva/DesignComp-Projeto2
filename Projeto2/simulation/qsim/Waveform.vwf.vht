@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/11/2021 15:02:55"
+-- Generated on "11/24/2021 16:16:06"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Projeto2
 -- 
@@ -35,7 +35,6 @@ ARCHITECTURE Projeto2_arch OF Projeto2_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL CLOCK_50 : STD_LOGIC;
-SIGNAL FPGA_RESET_N : STD_LOGIC;
 SIGNAL HEX0 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX1 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX2 : STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -44,15 +43,10 @@ SIGNAL HEX4 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX5 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
-SIGNAL PC_OUT : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL REG_RS : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL REG_RT : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL RESULTADO : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL TESTE_ULA : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
 COMPONENT Projeto2
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
-	FPGA_RESET_N : IN STD_LOGIC;
 	HEX0 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	HEX1 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	HEX2 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -61,11 +55,7 @@ COMPONENT Projeto2
 	HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-	PC_OUT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	REG_RS : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	REG_RT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	RESULTADO : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	TESTE_ULA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -73,7 +63,6 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	CLOCK_50 => CLOCK_50,
-	FPGA_RESET_N => FPGA_RESET_N,
 	HEX0 => HEX0,
 	HEX1 => HEX1,
 	HEX2 => HEX2,
@@ -82,11 +71,7 @@ BEGIN
 	HEX5 => HEX5,
 	KEY => KEY,
 	LEDR => LEDR,
-	PC_OUT => PC_OUT,
-	REG_RS => REG_RS,
-	REG_RT => REG_RT,
-	RESULTADO => RESULTADO,
-	TESTE_ULA => TESTE_ULA
+	SW => SW
 	);
 
 -- KEY[0]
