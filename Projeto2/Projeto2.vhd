@@ -47,7 +47,7 @@ architecture arquitetura of Projeto2 is
 	 signal Saida_Mem_Dados : std_logic_vector(31 downto 0);
 	 signal flag : std_logic;
 	 signal Saida_Somador_Beq : std_logic_vector(31 downto 0);
-	 signal Saida_Unid_Cont : std_logic_vector(12 downto 0);
+	 signal Saida_Unid_Cont : std_logic_vector(13 downto 0);
 	 signal Saida_Mux_Beq : std_logic_vector(31 downto 0);
 	 signal Saida_Mux_Banco : std_logic_vector(4 downto 0);
 	 signal Saida_Mux_Entrada_ULA : std_logic_vector(31 downto 0);
@@ -92,7 +92,7 @@ PC : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDa
 MUX_JR: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_Mux_Prox_PC,
                  entradaB_MUX =>  Dado_lido_RegA,
-                 seletor_MUX => Saida_Unid_Cont(12),
+                 seletor_MUX => Saida_Unid_Cont(13),
                  saida_MUX => Saida_Mux_JR); 
 			 
 SOMADOR :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
@@ -102,10 +102,12 @@ MEMORIA_INSTRUCAO : entity work.ROMMIPS   generic map (dataWidth => larguraInstr
           port map (Endereco => Saida_PC, Dado => Saida_Mem_Instrucao, clk => CLK);
 			 
 
-MUX_BR: entity work.muxGenerico2x1  generic map (larguraDados => larguraEndRegs)
+MUX_BR: entity work.muxGenerico4x1_5b  generic map (larguraDados => larguraEndRegs)
         port map( entradaA_MUX => Saida_Mem_Instrucao(20 downto 16),
                  entradaB_MUX =>  Saida_Mem_Instrucao(15 downto 11),
-                 seletor_MUX => Saida_Unid_Cont(8),
+					  entradaC_MUX => "11111",
+					  entradaD_MUX => open,
+                 seletor_MUX => Saida_Unid_Cont(9 downto 8),
                  saida_MUX => Saida_Mux_Banco); 
 					  
 BANCO_REGISTRADORES : entity work.bancoRegistradores generic map (larguraDados => larguraDados, larguraEndBancoRegs=>larguraEndRegs)
@@ -146,7 +148,7 @@ Imediato_Estendido <= Saida_Mux_EXT_SIG &
 MUX_EXT_SIG: entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => '0',
                  entradaB_MUX =>  Saida_Mem_Instrucao(15),
-                 seletor_MUX => Saida_Unid_Cont(10),
+                 seletor_MUX => Saida_Unid_Cont(11),
                  saida_MUX => Saida_Mux_EXT_SIG); 
 								
 Saida_LUI <= "0000000000000000" & Saida_Mem_Instrucao(15 downto 0);
@@ -186,6 +188,7 @@ MUX_FLAG :  entity work.muxGenerico2x1_1bit  generic map (larguraDados => largur
 UNIDADE_DE_CONTROLE: entity work.UnidadeControle 
 		port map (
 			CodigoBinario => Saida_Mem_Instrucao(31 downto 26),
+			Funct => Saida_Mem_Instrucao(5 downto 0),
 			Saida => Saida_Unid_Cont
 			);
  
@@ -203,7 +206,7 @@ UNIDADE_DE_CONTROLE: entity work.UnidadeControle
 MUX_RAM_ULA :  entity work.muxGenerico4x1_32b  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_ULA,
                  entradaB_MUX =>  Saida_Mem_Dados,
-					  entradaC_MUX => "00000000000000000000000000000000", 
+					  entradaC_MUX => Saida_Somador, 
 					  entradaD_MUX => Saida_LUI,
                  seletor_MUX => Saida_Unid_Cont(5 downto 4),
                  saida_MUX => Saida_Mux_RAM_ULA); 	
@@ -212,13 +215,13 @@ MUX_RAM_ULA :  entity work.muxGenerico4x1_32b  generic map (larguraDados => larg
 MUX_beq :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_Somador,
                  entradaB_MUX =>  Saida_Somador_Beq,
-                 seletor_MUX => Saida_MUX_Flag and (Saida_Unid_Cont(3) or Saida_Unid_Cont(11)),
+                 seletor_MUX => Saida_MUX_Flag and (Saida_Unid_Cont(3) or Saida_Unid_Cont(12)),
                  saida_MUX => Saida_Mux_Beq);
 					  
 MUX_Prox_PC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_Mux_Beq,
                  entradaB_MUX =>  Saida_Somador(31 downto 28) & Saida_Mem_Instrucao(25 downto 0) & "00",
-                 seletor_MUX => Saida_Unid_Cont(9),
+                 seletor_MUX => Saida_Unid_Cont(10),
                  saida_MUX => Saida_Mux_Prox_PC);
 					  
 SOMADOR_beq :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
