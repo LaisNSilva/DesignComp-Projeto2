@@ -312,10 +312,10 @@ LEDR(7) <= Saida_MUX_DSP(31);
   
   
  --RESULTADO <= Saida_ULA;
--- REG_RS <= Dado_lido_RegA;
--- REG_RT <= Dado_lido_RegB;
--- Pc_OUT <= Saida_PC;
--- TESTE_ULA <= Saida_ULA;
+ -- REG_RS <= Dado_lido_RegA;
+ -- REG_RT <= Dado_lido_RegB;
+ -- Pc_OUT <= Saida_PC;
+ -- TESTE_ULA <= Saida_ULA;
   
   
   end architecture;
