@@ -181,7 +181,7 @@ ULA : entity work.ULA_Completa  generic map(larguraDados => larguraDados)
 MUX_FLAG :  entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => NOT(flag),
                  entradaB_MUX =>  flag,
-                 seletor_MUX => Saida_Unid_Cont(2),
+                 seletor_MUX => Saida_Unid_Cont(3),
                  saida_MUX => Saida_MUX_Flag);		 
   
  

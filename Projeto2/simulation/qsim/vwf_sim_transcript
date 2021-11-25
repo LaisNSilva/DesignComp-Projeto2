@@ -26,11 +26,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Nov 24 16:16:05 2021
+    Info: Processing started: Thu Nov 25 19:08:39 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Projeto2 -c Projeto2 --vector_source=Waveform.vwf --testbench_file=simulation/qsim/Waveform.vwf.vht
 Info (119006): Selected device 5CEBA4F23C7 for design "Projeto2"
 
-hen writing test bench files
+]" in vector source file when writing test bench files
+
+in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -55,13 +57,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Nov 24 16:16:06 2021
+    Info: Processing started: Thu Nov 25 19:08:41 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=simulation/qsim/ Projeto2 -c Projeto2
 Info (119006): Selected device 5CEBA4F23C7 for design "Projeto2"
-Info (204019): Generated file Projeto2.vho in folder "C:/Descomp/DesignComp-Projeto2/Projeto2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Projeto2.vho in folder "C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4727 megabytes
-    Info: Processing ended: Wed Nov 24 16:16:07 2021
+    Info: Peak virtual memory: 4731 megabytes
+    Info: Processing ended: Thu Nov 25 19:08:42 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -69,7 +71,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Descomp/DesignComp-Projeto2/Projeto2/simulation/qsim/Projeto2.do generated.
+C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/simulation/qsim/Projeto2.do generated.
 
 Completed successfully. 
 
@@ -85,41 +87,39 @@ Reading pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:08 on Nov 24,2021
+# Start time: 19:08:43 on Nov 25,2021
 # vcom -work work Projeto2.vho 
-
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
+
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
-
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity Projeto2
 # -- Compiling architecture structure of Projeto2
 
-# End time: 16:16:10 on Nov 24,2021, Elapsed time: 0:00:02
+# End time: 19:08:45 on Nov 25,2021, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:10 on Nov 24,2021
+# Start time: 19:08:45 on Nov 25,2021
 # vcom -work work Waveform.vwf.vht 
+
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Projeto2_vhd_vec_tst
 # -- Compiling architecture Projeto2_arch of Projeto2_vhd_vec_tst
-
-# End time: 16:16:10 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:08:45 on Nov 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Projeto2_vhd_vec_tst 
-# Start time: 16:16:10 on Nov 24,2021
+# Start time: 19:08:45 on Nov 25,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -137,284 +137,36 @@ Reading pref.tcl
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 622632 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 842868 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 
-# Simulation time: 120000 ps
+# Simulation time: 0 ps
 
-# Simulation time: 120000 ps
+# Simulation time: 0 ps
 
-# End time: 16:16:17 on Nov 24,2021, Elapsed time: 0:00:07
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# End time: 19:09:03 on Nov 25,2021, Elapsed time: 0:00:18
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Descomp/DesignComp-Projeto2/Projeto2/Waveform.vwf...
+Reading C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/Waveform.vwf...
 
-Reading C:/Descomp/DesignComp-Projeto2/Projeto2/simulation/qsim/Projeto2.msim.vcd...
+Reading C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/simulation/qsim/Projeto2.msim.vcd...
 
 Processing channel transitions... 
 
-Warning: PC_OUT[31] - signal not found in VCD.
-
-Warning: PC_OUT[30] - signal not found in VCD.
-
-Warning: PC_OUT[29] - signal not found in VCD.
-
-Warning: PC_OUT[28] - signal not found in VCD.
-
-Warning: PC_OUT[27] - signal not found in VCD.
-
-Warning: PC_OUT[26] - signal not found in VCD.
-
-Warning: PC_OUT[25] - signal not found in VCD.
-
-Warning: PC_OUT[24] - signal not found in VCD.
-
-Warning: PC_OUT[23] - signal not found in VCD.
-
-Warning: PC_OUT[22] - signal not found in VCD.
-
-Warning: PC_OUT[21] - signal not found in VCD.
-
-Warning: PC_OUT[20] - signal not found in VCD.
-
-Warning: PC_OUT[19] - signal not found in VCD.
-
-Warning: PC_OUT[18] - signal not found in VCD.
-
-Warning: PC_OUT[17] - signal not found in VCD.
-
-Warning: PC_OUT[16] - signal not found in VCD.
-
-Warning: PC_OUT[15] - signal not found in VCD.
-
-Warning: PC_OUT[14] - signal not found in VCD.
-
-Warning: PC_OUT[13] - signal not found in VCD.
-
-Warning: PC_OUT[12] - signal not found in VCD.
-
-Warning: PC_OUT[11] - signal not found in VCD.
-
-Warning: PC_OUT[10] - signal not found in VCD.
-
-Warning: PC_OUT[9] - signal not found in VCD.
-
-Warning: PC_OUT[8] - signal not found in VCD.
-
-Warning: PC_OUT[7] - signal not found in VCD.
-
-Warning: PC_OUT[6] - signal not found in VCD.
-
-Warning: PC_OUT[5] - signal not found in VCD.
-
-Warning: PC_OUT[4] - signal not found in VCD.
-
-Warning: PC_OUT[3] - signal not found in VCD.
-
-Warning: PC_OUT[2] - signal not found in VCD.
-
-Warning: PC_OUT[1] - signal not found in VCD.
-
-Warning: PC_OUT[0] - signal not found in VCD.
-
-Warning: REG_RS[31] - signal not found in VCD.
-
-Warning: REG_RS[30] - signal not found in VCD.
-
-Warning: REG_RS[29] - signal not found in VCD.
-
-Warning: REG_RS[28] - signal not found in VCD.
-
-Warning: REG_RS[27] - signal not found in VCD.
-
-Warning: REG_RS[26] - signal not found in VCD.
-
-Warning: REG_RS[25] - signal not found in VCD.
-
-Warning: REG_RS[24] - signal not found in VCD.
-
-Warning: REG_RS[23] - signal not found in VCD.
-
-Warning: REG_RS[22] - signal not found in VCD.
-
-Warning: REG_RS[21] - signal not found in VCD.
-
-Warning: REG_RS[20] - signal not found in VCD.
-
-Warning: REG_RS[19] - signal not found in VCD.
-
-Warning: REG_RS[18] - signal not found in VCD.
-
-Warning: REG_RS[17] - signal not found in VCD.
-
-Warning: REG_RS[16] - signal not found in VCD.
-
-Warning: REG_RS[15] - signal not found in VCD.
-
-Warning: REG_RS[14] - signal not found in VCD.
-
-Warning: REG_RS[13] - signal not found in VCD.
-
-Warning: REG_RS[12] - signal not found in VCD.
-
-Warning: REG_RS[11] - signal not found in VCD.
-
-Warning: REG_RS[10] - signal not found in VCD.
-
-Warning: REG_RS[9] - signal not found in VCD.
-
-Warning: REG_RS[8] - signal not found in VCD.
-
-Warning: REG_RS[7] - signal not found in VCD.
-
-Warning: REG_RS[6] - signal not found in VCD.
-
-Warning: REG_RS[5] - signal not found in VCD.
-
-Warning: REG_RS[4] - signal not found in VCD.
-
-Warning: REG_RS[3] - signal not found in VCD.
-
-Warning: REG_RS[2] - signal not found in VCD.
-
-Warning: REG_RS[1] - signal not found in VCD.
-
-Warning: REG_RS[0] - signal not found in VCD.
-
-Warning: REG_RT[31] - signal not found in VCD.
-
-Warning: REG_RT[30] - signal not found in VCD.
-
-Warning: REG_RT[29] - signal not found in VCD.
-
-Warning: REG_RT[28] - signal not found in VCD.
-
-Warning: REG_RT[27] - signal not found in VCD.
-
-Warning: REG_RT[26] - signal not found in VCD.
-
-Warning: REG_RT[25] - signal not found in VCD.
-
-Warning: REG_RT[24] - signal not found in VCD.
-
-Warning: REG_RT[23] - signal not found in VCD.
-
-Warning: REG_RT[22] - signal not found in VCD.
-
-Warning: REG_RT[21] - signal not found in VCD.
-
-Warning: REG_RT[20] - signal not found in VCD.
-
-Warning: REG_RT[19] - signal not found in VCD.
-
-Warning: REG_RT[18] - signal not found in VCD.
-
-Warning: REG_RT[17] - signal not found in VCD.
-
-Warning: REG_RT[16] - signal not found in VCD.
-
-Warning: REG_RT[15] - signal not found in VCD.
-
-Warning: REG_RT[14] - signal not found in VCD.
-
-Warning: REG_RT[13] - signal not found in VCD.
-
-Warning: REG_RT[12] - signal not found in VCD.
-
-Warning: REG_RT[11] - signal not found in VCD.
-
-Warning: REG_RT[10] - signal not found in VCD.
-
-Warning: REG_RT[9] - signal not found in VCD.
-
-Warning: REG_RT[8] - signal not found in VCD.
-
-Warning: REG_RT[7] - signal not found in VCD.
-
-Warning: REG_RT[6] - signal not found in VCD.
-
-Warning: REG_RT[5] - signal not found in VCD.
-
-Warning: REG_RT[4] - signal not found in VCD.
-
-Warning: REG_RT[3] - signal not found in VCD.
-
-Warning: REG_RT[2] - signal not found in VCD.
-
-Warning: REG_RT[1] - signal not found in VCD.
-
-Warning: REG_RT[0] - signal not found in VCD.
-
-Warning: TESTE_ULA[31] - signal not found in VCD.
-
-Warning: TESTE_ULA[30] - signal not found in VCD.
-
-Warning: TESTE_ULA[29] - signal not found in VCD.
-
-Warning: TESTE_ULA[28] - signal not found in VCD.
-
-Warning: TESTE_ULA[27] - signal not found in VCD.
-
-Warning: TESTE_ULA[26] - signal not found in VCD.
-
-Warning: TESTE_ULA[25] - signal not found in VCD.
-
-Warning: TESTE_ULA[24] - signal not found in VCD.
-
-Warning: TESTE_ULA[23] - signal not found in VCD.
-
-Warning: TESTE_ULA[22] - signal not found in VCD.
-
-Warning: TESTE_ULA[21] - signal not found in VCD.
-
-Warning: TESTE_ULA[20] - signal not found in VCD.
-
-Warning: TESTE_ULA[19] - signal not found in VCD.
-
-Warning: TESTE_ULA[18] - signal not found in VCD.
-
-Warning: TESTE_ULA[17] - signal not found in VCD.
-
-Warning: TESTE_ULA[16] - signal not found in VCD.
-
-Warning: TESTE_ULA[15] - signal not found in VCD.
-
-Warning: TESTE_ULA[14] - signal not found in VCD.
-
-Warning: TESTE_ULA[13] - signal not found in VCD.
-
-Warning: TESTE_ULA[12] - signal not found in VCD.
-
-Warning: TESTE_ULA[11] - signal not found in VCD.
-
-Warning: TESTE_ULA[10] - signal not found in VCD.
-
-Warning: TESTE_ULA[9] - signal not found in VCD.
-
-Warning: TESTE_ULA[8] - signal not found in VCD.
-
-Warning: TESTE_ULA[7] - signal not found in VCD.
-
-Warning: TESTE_ULA[6] - signal not found in VCD.
-
-Warning: TESTE_ULA[5] - signal not found in VCD.
-
-Warning: TESTE_ULA[4] - signal not found in VCD.
-
-Warning: TESTE_ULA[3] - signal not found in VCD.
-
-Warning: TESTE_ULA[2] - signal not found in VCD.
-
-Warning: TESTE_ULA[1] - signal not found in VCD.
-
-Warning: TESTE_ULA[0] - signal not found in VCD.
-
-Writing the resulting VWF to C:/Descomp/DesignComp-Projeto2/Projeto2/simulation/qsim/Projeto2_20211124161617.sim.vwf
+Writing the resulting VWF to C:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/simulation/qsim/Projeto2_20211125190903.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -8,38 +8,37 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/simulation/qsim
+Z0 dC:/Users/willi/Downloads/DesignComp-Projeto2/Projeto2/simulation/qsim
 Eprojeto2
-Z0 w1637781367
-Z1 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
-Z2 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
-Z3 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
-Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z5 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
-Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-Z9 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 28
-Z10 dC:/Descomp/DesignComp-Projeto2/Projeto2/simulation/qsim
+Z1 w1637878122
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 46
+R0
 Z11 8Projeto2.vho
 Z12 FProjeto2.vho
 l0
 L39 1
-V?9jhFG`f`5VKEGki^b7Zg3
-!s100 B7AL^femIzQ<VZMfeF70@1
+VA<TU>]ZRMZ3OIhPYK1U>A2
+!s100 ?Y[GC_`VQz9oO07VPT8B60
 Z13 OV;C;2020.1;71
 32
-!s110 1637781368
+!s110 1637878123
 !i10b 1
-Z14 !s108 1637781368.000000
+Z14 !s108 1637878123.000000
 Z15 !s90 -work|work|Projeto2.vho|
 Z16 !s107 Projeto2.vho|
 !i113 1
 Z17 o-work work
 Z18 tExplicit 1 CvgOpt 0
 Astructure
-R1
 R2
 R3
 R4
@@ -48,15 +47,16 @@ R6
 R7
 R8
 R9
-DEx4 work 8 projeto2 0 22 ?9jhFG`f`5VKEGki^b7Zg3
-!i122 28
-l6872
-L54 66805
-VQO;cG2gK8l2aGohLzOi?l2
-!s100 :KL`5gjD1JOzh<8X2?SE>3
+R10
+DEx4 work 8 projeto2 0 22 A<TU>]ZRMZ3OIhPYK1U>A2
+!i122 46
+l9297
+L58 91748
+V>S7R?f7XNg?0JfR@0m:`f3
+!s100 EHo2W83_BkPI>O:GBcX<<2
 R13
 32
-!s110 1637781369
+!s110 1637878124
 !i10b 1
 R14
 R15
@@ -65,11 +65,11 @@ R16
 R17
 R18
 Eprojeto2_vhd_vec_tst
-Z19 w1637781366
-R7
+Z19 w1637878120
 R8
-!i122 29
-R10
+R9
+!i122 47
+R0
 Z20 8Waveform.vwf.vht
 Z21 FWaveform.vwf.vht
 l0
@@ -78,23 +78,23 @@ V@c39NbYOD]ebzmTNLUjDF0
 !s100 Bjo0aCEmA``gXQGi?<An90
 R13
 32
-Z22 !s110 1637781370
+Z22 !s110 1637878125
 !i10b 1
-Z23 !s108 1637781370.000000
+Z23 !s108 1637878125.000000
 Z24 !s90 -work|work|Waveform.vwf.vht|
 Z25 !s107 Waveform.vwf.vht|
 !i113 1
 R17
 R18
 Aprojeto2_arch
-R7
 R8
+R9
 Z26 DEx4 work 20 projeto2_vhd_vec_tst 0 22 @c39NbYOD]ebzmTNLUjDF0
-!i122 29
-l61
-L34 63
-VJT42E5zRPDgQ]1z_b^z@i3
-!s100 gGJ^Y5JMozBPROob5LhYH2
+!i122 47
+l69
+Z27 L34 75
+Z28 VM8bHn7]LL?1>HJE8PjDPF1
+Z29 !s100 A8Z9WMXWl`XPUez2gd1@m0
 R13
 32
 R22

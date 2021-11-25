@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/24/2021 16:16:06"
+-- Generated on "11/25/2021 19:08:40"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Projeto2
 -- 
@@ -43,7 +43,11 @@ SIGNAL HEX4 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX5 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL PC_OUT : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL REG_RS : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL REG_RT : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL TESTE_ULA : STD_LOGIC_VECTOR(31 DOWNTO 0);
 COMPONENT Projeto2
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
@@ -55,7 +59,11 @@ COMPONENT Projeto2
 	HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
+	PC_OUT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	REG_RS : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	REG_RT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	TESTE_ULA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -71,7 +79,11 @@ BEGIN
 	HEX5 => HEX5,
 	KEY => KEY,
 	LEDR => LEDR,
-	SW => SW
+	PC_OUT => PC_OUT,
+	REG_RS => REG_RS,
+	REG_RT => REG_RT,
+	SW => SW,
+	TESTE_ULA => TESTE_ULA
 	);
 
 -- KEY[0]
