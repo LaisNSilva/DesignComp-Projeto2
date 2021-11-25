@@ -106,7 +106,7 @@ MUX_BR: entity work.muxGenerico4x1_5b  generic map (larguraDados => larguraEndRe
         port map( entradaA_MUX => Saida_Mem_Instrucao(20 downto 16),
                  entradaB_MUX =>  Saida_Mem_Instrucao(15 downto 11),
 					  entradaC_MUX => "11111",
-					  entradaD_MUX => open,
+					  entradaD_MUX => "00000",
                  seletor_MUX => Saida_Unid_Cont(9 downto 8),
                  saida_MUX => Saida_Mux_Banco); 
 					  

@@ -11,7 +11,7 @@ entity muxGenerico4x1_5b is
   );
 end entity;
 
-architecture comportamento of muxGenerico4x1_5b is
+architecture comportamento of muxGenerico4x1_32b is
   begin
     saida_MUX <= entradaA_MUX  when (seletor_MUX = "00") else
 	              entradaB_MUX when (seletor_MUX = "01") else 
