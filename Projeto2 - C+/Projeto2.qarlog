@@ -1,0 +1,32 @@
+Quartus Prime Archive log --	C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.qarlog
+
+Archive:	C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.qar
+Date:		Mon Nov 15 21:51:53 2021
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Descomp/DesignComp-Projeto2/Projeto2/DecodBinario_7Seg.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.qpf
+C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.qsf
+C:/Descomp/DesignComp-Projeto2/Projeto2/Projeto2.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/RAMMIPS.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/ROMMIPS.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/Somador_Completo_1bit.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/ULASomaSub.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B0_B30.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_B31.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/ULA_Completa.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/UnidadeControle_ULA.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/bancoRegistradores.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/edgeDetector.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico2x1_1bit.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/muxGenerico4x1.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/registradorGenerico_PC.vhd
+C:/Descomp/DesignComp-Projeto2/Projeto2/somadorGenerico.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 21 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

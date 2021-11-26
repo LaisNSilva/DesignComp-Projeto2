@@ -86,20 +86,20 @@ end generate;
 --        port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => Saida_DecBorda_KEY1);
 
 
-PC : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
-          port map (DIN => Saida_Mux_JR, DOUT => Saida_PC, ENABLE => '1', RST => '0', CLK => CLK);
+--PC : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
+--          port map (DIN => Saida_Mux_JR, DOUT => Saida_PC, ENABLE => '1', RST => '0', CLK => CLK);
 			 
-MUX_JR: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Saida_Mux_Prox_PC,
-                 entradaB_MUX =>  Dado_lido_RegA,
-                 seletor_MUX => Saida_Unid_Cont(13),
-                 saida_MUX => Saida_Mux_JR); 
+--MUX_JR: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+--        port map( entradaA_MUX => Saida_Mux_Prox_PC,
+--                 entradaB_MUX =>  Dado_lido_RegA,
+--                 seletor_MUX => Saida_Unid_Cont(13),
+--                 saida_MUX => Saida_Mux_JR); 
 			 
-SOMADOR :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
-        port map( entradaA => "00000000000000000000000000000100", entradaB =>  Saida_PC, saida => Saida_Somador);
+--SOMADOR :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
+--        port map( entradaA => "00000000000000000000000000000100", entradaB =>  Saida_PC, saida => Saida_Somador);
 		  
-MEMORIA_INSTRUCAO : entity work.ROMMIPS   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM, memoryAddrWidth => memoryAddrWidth)
-          port map (Endereco => Saida_PC, Dado => Saida_Mem_Instrucao, clk => CLK);
+--MEMORIA_INSTRUCAO : entity work.ROMMIPS   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM, memoryAddrWidth => memoryAddrWidth)
+--          port map (Endereco => Saida_PC, Dado => Saida_Mem_Instrucao, clk => CLK);
 			 
 
 MUX_BR: entity work.muxGenerico4x1_5b  generic map (larguraDados => larguraEndRegs)
