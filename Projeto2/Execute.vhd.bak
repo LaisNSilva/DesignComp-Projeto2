@@ -1,0 +1,76 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Execute is
+  generic   (
+    DATA_WIDTH  : natural :=  8;
+    ADDR_WIDTH  : natural :=  8
+  );
+
+  port   (
+    -- Input ports
+    dataIN  :  in  std_logic_vector(DATA_WIDTH-1 downto 0);
+    enable  : in  std_logic;
+    clk     : in  std_logic;
+    <name>  : in  <type> := <default_value>;
+
+    -- Inout ports
+    <name>  : inout <type>;
+
+    -- Output ports
+    dataOUT :  out  std_logic_vector(DATA_WIDTH-1 downto 0);
+    <name>  : out <type> := <default_value>
+  );
+end entity;
+
+
+architecture arch_name of Execute is
+
+  -- Declarations (optional):
+  -- signal <name> : std_logic;
+  -- signal <name> : std_logic_vector(<msb_index> downto <lsb_index>);
+  -- constant FUNCT_WIDTH : natural := 6;
+  -- subtype funct_t  is  std_logic_vector(FUNCT_WIDTH-1 downto 0);
+  -- constant functADD   : funct_t := "100000";
+  -- constant functSUB   : funct_t := "100010";
+  -- alias memWRsignal: std_logic is controlWord(0);
+  -- alias ulaOPvalue:  std_logic_vector(1 downto 0) is controlWord(5 downto 4);
+
+begin
+
+MUX_ENTRADA_ULA: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+        port map( entradaA_MUX => Dado_lido_RegB,
+                 entradaB_MUX =>  Imediato_Estendido,
+                 seletor_MUX => Saida_Unid_Cont(6),
+                 saida_MUX => Saida_Mux_Entrada_ULA); 	
+
+ULA : entity work.ULA_Completa  generic map(larguraDados => larguraDados)
+          port map (
+				entradaA => Dado_lido_RegA,
+				entradaB => Saida_Mux_Entrada_ULA,  
+				seletor => Saida_Unid_Cont_ULA(1 downto 0),
+				inverte_B => Saida_Unid_Cont_ULA(2), 
+				saida => Saida_ULA,  
+				flag_0 => flag
+			 );
+			 
+MUX_FLAG :  entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
+        port map( entradaA_MUX => NOT(flag),
+                 entradaB_MUX =>  flag,
+                 seletor_MUX => Saida_Unid_Cont(3),
+                 saida_MUX => Saida_MUX_Flag);	
+					  
+					  
+MUX_beq :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+        port map( entradaA_MUX => Saida_Somador,
+                 entradaB_MUX =>  Saida_Somador_Beq,
+                 seletor_MUX => Saida_MUX_Flag and (Saida_Unid_Cont(3) or Saida_Unid_Cont(12)),
+                 saida_MUX => Saida_Mux_Beq);
+					  
+
+  -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
+  -- regA:  entity work.nome_do_componente generic map (DATA_WIDTH => DATA_WIDTH)
+  --        port map (dataIN => dataIN, dataOUT =>  RegAmuxA, enable =>  habRegA, clk =>  clk, rst => rst);
+
+end architecture;

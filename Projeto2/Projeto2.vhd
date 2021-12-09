@@ -37,36 +37,49 @@ end entity;
 architecture arquitetura of Projeto2 is
 
 	 signal CLK : std_logic;
-	 signal Saida_Somador : std_logic_vector(31 downto 0);
+	 
 	 signal Saida_PC : std_logic_vector(31 downto 0);
-	 signal Saida_Mem_Instrucao : std_logic_vector(31 downto 0);
-	 signal Saida_ULA : std_logic_vector(31 downto 0);
-	 signal Dado_lido_RegA : std_logic_vector(31 downto 0);
-	 signal Dado_lido_RegB : std_logic_vector(31 downto 0);
-	 signal Imediato_Estendido : std_logic_vector(31 downto 0);
-	 signal Saida_Mem_Dados : std_logic_vector(31 downto 0);
-	 signal flag : std_logic;
+	 
+	 
+	 
+	 
+	 
 	 signal Saida_Somador_Beq : std_logic_vector(31 downto 0);
-	 signal Saida_Unid_Cont : std_logic_vector(13 downto 0);
-	 signal Saida_Mux_Beq : std_logic_vector(31 downto 0);
-	 signal Saida_Mux_Banco : std_logic_vector(4 downto 0);
-	 signal Saida_Mux_Entrada_ULA : std_logic_vector(31 downto 0);
-	 signal Saida_Mux_RAM_ULA : std_logic_vector(31 downto 0);
+	 
+	 
+	 
 	 signal Saida_DecBorda_KEY0 : std_logic;
 	 signal Saida_DecBorda_KEY1 : std_logic;
-	 signal Saida_Mux_Prox_PC : std_logic_vector(31 downto 0);
-	 signal Saida_Unid_Cont_ULA : std_logic_vector(2 downto 0);
 	 signal Saida_MUX_DSP : std_logic_vector(31 downto 0);
-	 signal Saida_LUI : std_logic_vector(31 downto 0);
+	 
 	 signal Saida_Mux_EXT_SIG : std_logic;
-	 signal Saida_MUX_Flag : std_logic;
-	 signal Saida_Mux_JR : std_logic_vector(31 downto 0);
-	  
+	 
+	 
+	 
+	 
+	 signal Saida_MUX_Prox_PC: std_logic_vector(31 downto 0);
+	 signal Saida_Somador_PC : std_logic_vector(31 downto 0);
+	 signal Saida_Mem_Instrucao : std_logic_vector(31 downto 0);
+	 signal Saida_Unid_Cont : std_logic_vector(13 downto 0);
+	 signal Imediato_Estendido : std_logic_vector(31 downto 0);
+	 signal Reg_Selecionado : std_logic_vector(4 downto 0);
+	 signal Dado_lido_RegA : std_logic_vector(31 downto 0);
+	 signal Dado_lido_RegB : std_logic_vector(31 downto 0);
+	 
+	 signal Saida_LUI : std_logic_vector(31 downto 0);
+	 signal Saida_Mux_Beq : std_logic_vector(31 downto 0);
+	 signal Saida_ULA : std_logic_vector(31 downto 0);
+	 
+	 signal Saida_IF_ID: std_logic_vector(63 downto 0);
+	 signal Saida_ID_EX: std_logic_vector(213 downto 0);
+	 signal Saida_EX_MEM: std_logic_vector(178 downto 0);
+	 signal Saida_MEM_WB: std_logic_vector(146 downto 0);
+	 
+	 signal Saida_Mem_Dados : std_logic_vector(31 downto 0);
+	 signal Saida_Mux_RAM_ULA : std_logic_vector(31 downto 0);
+	 signal Saida_Unid_Cont_ULA: std_logic_vector(2 downto 0);
 
 begin
-
--- Instanciando os componentes:
-
 
 gravar:  if simulacao generate
 CLK <= KEY(0);
@@ -75,161 +88,147 @@ detectorSub0: work.edgeDetector(bordaSubida)
         port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
 end generate;
 
-----CLK <= CLOCK_50;
---CLK <= Saida_DecBorda_KEY0;
---
----- port map completo edgeDetector
---detectorSub0: work.edgeDetector(bordaSubida) -- clock
---        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => Saida_DecBorda_KEY0);
---
---detectorSub1: work.edgeDetector(bordaSubida) -- reset PC
---        port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => Saida_DecBorda_KEY1);
+INST_FETCH: entity work.Instruction_Fetch 
+		generic map(larguraDados => larguraDados,
+				  larguraEnderecoRAM => larguraEnderecoRAM,
+				  larguraInstrucao => larguraInstrucao,
+				  larguraEnderecoROM => larguraEnderecoROM,
+				  memoryAddrWidth  => memoryAddrWidth,
+				  larguraDados_PC => larguraDados_PC,
+				  larguraEndRegs => larguraEndRegs)
+		  port map(CLK => CLK,
+					 prox_PC=> Saida_MUX_Prox_PC,
+					 Saida_Somador=> Saida_Somador_PC,
+					 Saida_Memoria_Instrucao=> Saida_Mem_Instrucao
+					);
 
-
---PC : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
---          port map (DIN => Saida_Mux_JR, DOUT => Saida_PC, ENABLE => '1', RST => '0', CLK => CLK);
-			 
---MUX_JR: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
---        port map( entradaA_MUX => Saida_Mux_Prox_PC,
---                 entradaB_MUX =>  Dado_lido_RegA,
---                 seletor_MUX => Saida_Unid_Cont(13),
---                 saida_MUX => Saida_Mux_JR); 
-			 
---SOMADOR :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
---        port map( entradaA => "00000000000000000000000000000100", entradaB =>  Saida_PC, saida => Saida_Somador);
-		  
---MEMORIA_INSTRUCAO : entity work.ROMMIPS   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM, memoryAddrWidth => memoryAddrWidth)
---          port map (Endereco => Saida_PC, Dado => Saida_Mem_Instrucao, clk => CLK);
-			 
-
-MUX_BR: entity work.muxGenerico4x1_5b  generic map (larguraDados => larguraEndRegs)
-        port map( entradaA_MUX => Saida_Mem_Instrucao(20 downto 16),
-                 entradaB_MUX =>  Saida_Mem_Instrucao(15 downto 11),
-					  entradaC_MUX => "11111",
-					  entradaD_MUX => "00000",
-                 seletor_MUX => Saida_Unid_Cont(9 downto 8),
-                 saida_MUX => Saida_Mux_Banco); 
-					  
-BANCO_REGISTRADORES : entity work.bancoRegistradores generic map (larguraDados => larguraDados, larguraEndBancoRegs=>larguraEndRegs)
-				port map 
-    (
-        clk        => CLK,
-
-        enderecoA       => Saida_Mem_Instrucao(25 downto 21),
-        enderecoB       => Saida_Mem_Instrucao(20 downto 16),
-        enderecoC       => Saida_Mux_Banco,
-
-        dadoEscritaC    => Saida_Mux_RAM_ULA,
-
-        escreveC        => Saida_Unid_Cont(7),
-        saidaA          => Dado_lido_RegA,
-        saidaB          => Dado_lido_RegB
-    );
-	 
-	
-Imediato_Estendido <= Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mux_EXT_SIG &
-								Saida_Mem_Instrucao(15 downto 0);
-
-MUX_EXT_SIG: entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => '0',
-                 entradaB_MUX =>  Saida_Mem_Instrucao(15),
-                 seletor_MUX => Saida_Unid_Cont(11),
-                 saida_MUX => Saida_Mux_EXT_SIG); 
-								
-Saida_LUI <= "0000000000000000" & Saida_Mem_Instrucao(15 downto 0);
-
-								
-MUX_ENTRADA_ULA: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Dado_lido_RegB,
-                 entradaB_MUX =>  Imediato_Estendido,
-                 seletor_MUX => Saida_Unid_Cont(6),
-                 saida_MUX => Saida_Mux_Entrada_ULA); 								
-	 
-UNIDADE_CONT_ULA: entity work.UnidadeControle_ULA 
-		port map (
-			Tipo_R => Saida_Unid_Cont(0),
-			funct => Saida_Mem_Instrucao(5 downto 0),
-			OpCode => Saida_Mem_Instrucao(31 downto 26),
-			ULActrl => Saida_Unid_Cont_ULA
-			); 			 
-
-ULA : entity work.ULA_Completa  generic map(larguraDados => larguraDados)
+IF_ID : entity work.register_IF_ID   generic map (larguraDados => 64)
           port map (
-				entradaA => Dado_lido_RegA,
-				entradaB => Saida_Mux_Entrada_ULA,  
-				seletor => Saida_Unid_Cont_ULA(1 downto 0),
-				inverte_B => Saida_Unid_Cont_ULA(2), 
-				saida => Saida_ULA,  
-				flag_0 => flag
-			 );
+			 DIN => Saida_Mem_Instrucao &
+			 Saida_Somador_PC,
+			 DOUT => Saida_IF_ID, ENABLE => '1', RST => '0', CLK => CLK);
 			 
-MUX_FLAG :  entity work.muxGenerico2x1_1bit  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => NOT(flag),
-                 entradaB_MUX =>  flag,
-                 seletor_MUX => Saida_Unid_Cont(3),
-                 saida_MUX => Saida_MUX_Flag);		 
-  
- 
-UNIDADE_DE_CONTROLE: entity work.UnidadeControle 
-		port map (
-			CodigoBinario => Saida_Mem_Instrucao(31 downto 26),
-			Funct => Saida_Mem_Instrucao(5 downto 0),
-			Saida => Saida_Unid_Cont
+INST_DECODE: entity work.Instruction_Decode 
+			generic map(larguraDados => larguraDados,
+							  larguraEnderecoRAM => larguraEnderecoRAM,
+							  larguraInstrucao => larguraInstrucao,
+							  larguraEnderecoROM => larguraEnderecoROM,
+							  memoryAddrWidth  => memoryAddrWidth,
+							  larguraDados_PC => larguraDados_PC,
+							  larguraEndRegs => larguraEndRegs)
+			port map(
+				 CLK  => CLK,
+				 Saida_Mux_Beq => Saida_EX_MEM(95 downto 64),
+				 Saida_Somador => Saida_IF_ID(31 downto 0),
+				 Saida_Mux_RAM_ULA => Saida_Mux_RAM_ULA,
+				 Saida_Mem_Instrucao => Saida_IF_ID(63 downto 32),
+				 
+				 Saida_Prox_PC => Saida_MUX_Prox_PC,
+				 Control => Saida_Unid_Cont,
+				 Dado_lido_RegA => Dado_lido_RegA,
+				 Dado_lido_RegB => Dado_lido_RegB,
+				 Imediato_Estendido => Imediato_Estendido,
+				 Registrador_Destino => Reg_Selecionado,
+				 Saida_LUI => Saida_LUI,
+				 Saida_Unid_Cont_ULA => Saida_Unid_Cont_ULA
+				 );
+						 
+
+ID_EX : entity work.register_ID_EX   generic map (larguraDados => 214)
+          port map (
+			 DIN => 
+			 Saida_MUX_Prox_PC &
+			 Saida_Unid_Cont_ULA &
+			 Saida_IF_ID(31 downto 0) & -- saida_somador
+			 Saida_Unid_Cont & 
+			 Dado_lido_RegA &
+			 Dado_lido_RegB &
+			 Imediato_Estendido &
+			 Reg_Selecionado &
+			 Saida_LUI, 
+			 DOUT => Saida_ID_EX, ENABLE => '1', RST => '0', CLK => CLK);
+			
+		
+EXECUTE: entity work.Execute 
+			generic map(larguraDados => larguraDados,
+							  larguraEnderecoRAM => larguraEnderecoRAM,
+							  larguraInstrucao => larguraInstrucao,
+							  larguraEnderecoROM => larguraEnderecoROM,
+							  memoryAddrWidth  => memoryAddrWidth,
+							  larguraDados_PC => larguraDados_PC,
+							  larguraEndRegs => larguraEndRegs)
+			port map(
+				 clk  => CLK,
+				 Saida_Unid_Cont_ULA => Saida_ID_EX(181 downto 179),
+				 Saida_Unid_Cont => Saida_ID_EX(146 downto 133),
+				 Dado_lido_RegA=> Saida_ID_EX(132 downto 101),
+				 Dado_lido_RegB=> Saida_ID_EX(100 downto 69),
+				 Saida_Prox_PC => Saida_ID_EX(213 downto 182),
+				 Imediato_Estendido=> Saida_ID_EX(68 downto 37),
+				 Saida_Somador=> Saida_ID_EX(178 downto 147),	 
+				 Saida_Mux_Beq=> Saida_Mux_Beq,
+				 Saida_ULA=> Saida_ULA
 			);
- 
- MEMORIA_DADOS : entity work.RAMMIPS generic map (dataWidth => larguraDados, addrWidth => larguraEnderecoRAM)
-   port map 
-			(
-			clk => CLK,
-			Endereco => Saida_ULA,
-			Dado_in => Dado_lido_RegB,
-			Dado_out => Saida_Mem_Dados,
-			we => Saida_Unid_Cont(1)
---			le => Saida_Unid_Cont(2),
-        );
-		  
-MUX_RAM_ULA :  entity work.muxGenerico4x1_32b  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Saida_ULA,
-                 entradaB_MUX =>  Saida_Mem_Dados,
-					  entradaC_MUX => Saida_Somador, 
-					  entradaD_MUX => Saida_LUI,
-                 seletor_MUX => Saida_Unid_Cont(5 downto 4),
-                 saida_MUX => Saida_Mux_RAM_ULA); 	
-		  
-		  
-MUX_beq :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Saida_Somador,
-                 entradaB_MUX =>  Saida_Somador_Beq,
-                 seletor_MUX => Saida_MUX_Flag and (Saida_Unid_Cont(3) or Saida_Unid_Cont(12)),
-                 saida_MUX => Saida_Mux_Beq);
-					  
-MUX_Prox_PC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Saida_Mux_Beq,
-                 entradaB_MUX =>  Saida_Somador(31 downto 28) & Saida_Mem_Instrucao(25 downto 0) & "00",
-                 seletor_MUX => Saida_Unid_Cont(10),
-                 saida_MUX => Saida_Mux_Prox_PC);
-					  
-SOMADOR_beq :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
-        port map( entradaA => Saida_Somador, entradaB => Imediato_Estendido(29 downto 0) & "00" , saida => Saida_Somador_Beq);
-		  
-		  
-		  
-		  
+
+	
+EX_MEM : entity work.register_EX_MEM   generic map (larguraDados => 179)
+          port map (DIN => 
+			 Saida_ID_EX(208 downto 177) & -- Saida_Somador
+			 Saida_ID_EX(31 downto 0) & --Saida_LUI
+			 Saida_ID_EX(36 downto 32) & -- Reg_Selecionado
+			 Saida_ID_EX(146 downto 133) & -- SaidaUnidadeControle
+			 Saida_Mux_Beq &
+			 Saida_ULA & 
+			 Saida_ID_EX(100 downto 69), -- DadoLidoRegB
+			 DOUT => Saida_EX_MEM, ENABLE => '1', RST => '0', CLK => CLK);
+		
+
+MEMORY_ACCESS: entity work.Memory_Access 
+			generic map(larguraDados => larguraDados,
+							  larguraEnderecoRAM => larguraEnderecoRAM,
+							  larguraInstrucao => larguraInstrucao,
+							  larguraEnderecoROM => larguraEnderecoROM,
+							  memoryAddrWidth  => memoryAddrWidth,
+							  larguraDados_PC => larguraDados_PC,
+							  larguraEndRegs => larguraEndRegs)
+			port map(
+			 CLK     => CLK,
+			 Saida_ULA => Saida_EX_MEM(63 downto 32),
+			 Dado_lido_RegB => Saida_EX_MEM(31 downto 0),
+			 Saida_Unid_Cont => Saida_EX_MEM(109 downto 96),
+			 Saida_Mem_Dados => Saida_Mem_Dados
+			);
+		
+MEM_WB : entity work.register_MEM_WB   generic map (larguraDados => 147)
+          port map (
+			 DIN => 
+			 Saida_EX_MEM(63 downto 32) & -- Saida_ULA
+			 Saida_EX_MEM(178 downto 147) & --Saida Somador
+			 Saida_EX_MEM(146 downto 115) & -- Saida_Lui
+			 Saida_EX_MEM(114 downto 110) & -- Reg_Selecionado
+			 Saida_Mem_Dados &
+			 Saida_EX_MEM(109 downto 96), -- SaidaUnidadeControle
+			 DOUT => Saida_MEM_WB, ENABLE => '1', RST => '0', CLK => CLK);
+	
+WRITE_BACK: entity work.Write_Back 
+			generic map(larguraDados => larguraDados,
+							  larguraEnderecoRAM => larguraEnderecoRAM,
+							  larguraInstrucao => larguraInstrucao,
+							  larguraEnderecoROM => larguraEnderecoROM,
+							  memoryAddrWidth  => memoryAddrWidth,
+							  larguraDados_PC => larguraDados_PC,
+							  larguraEndRegs => larguraEndRegs)
+			port map(
+				 clk   => CLK,
+				 Saida_ULA => Saida_MEM_WB(146 downto 115),
+				 Saida_Mem_Dados => Saida_MEM_WB(45 downto 14),
+				 Saida_Somador => Saida_MEM_WB(114 downto 83),
+				 Saida_LUI => Saida_MEM_WB(82 downto 51),
+				 Saida_Unid_Cont => Saida_MEM_WB(13 downto 0),
+				 Saida_Mux_RAM_ULA => Saida_Mux_RAM_ULA
+			);
+
+	
 MUX_DISP :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map( entradaA_MUX => Saida_ULA,
                  entradaB_MUX =>  Saida_PC,

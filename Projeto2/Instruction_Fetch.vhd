@@ -4,66 +4,40 @@ use ieee.numeric_std.all;
 
 entity Instruction_Fetch is
   generic   (
-    DATA_WIDTH  : natural :=  8;
-    ADDR_WIDTH  : natural :=  8
+    larguraDados : natural := 32; -- AGORA É 8 
+	  larguraEnderecoRAM : natural := 32; 
+	  larguraInstrucao : natural := 32; 
+	  larguraEnderecoROM : natural := 32;
+	  memoryAddrWidth:  natural := 6;
+	  larguraDados_PC : natural := 32;
+	  larguraEndRegs : natural := 5
   );
 
   port   (
-    -- Input ports
-    dataIN  :  in  std_logic_vector(DATA_WIDTH-1 downto 0);
-    enable  : in  std_logic;
-    clk     : in  std_logic;
-    <name>  : in  <type> := <default_value>;
-
-    -- Inout ports
-    <name>  : inout <type>;
-
-    -- Output ports
-    dataOUT :  out  std_logic_vector(DATA_WIDTH-1 downto 0);
-    <name>  : out <type> := <default_value>
+    CLK     : in  std_logic;
+	 prox_PC: in std_logic_vector(31 downto 0);
+	
+    Saida_Somador: out std_logic_vector(31 downto 0);
+	 Saida_Memoria_Instrucao: out std_logic_vector(31 downto 0)
   );
 end entity;
 
 
 architecture arch_name of Instruction_Fetch is
 
-  -- Declarations (optional):
-  -- signal <name> : std_logic;
-  -- signal <name> : std_logic_vector(<msb_index> downto <lsb_index>);
-  -- constant FUNCT_WIDTH : natural := 6;
-  -- subtype funct_t  is  std_logic_vector(FUNCT_WIDTH-1 downto 0);
-  -- constant functADD   : funct_t := "100000";
-  -- constant functSUB   : funct_t := "100010";
-  -- alias memWRsignal: std_logic is controlWord(0);
-  -- alias ulaOPvalue:  std_logic_vector(1 downto 0) is controlWord(5 downto 4);
+  signal Saida_PC: std_logic_vector(31 downto 0);
 
 begin
 
-
 PC : entity work.registradorGenerico_PC   generic map (larguraDados => larguraDados_PC)
-          port map (DIN => Saida_Mux_JR, DOUT => Saida_PC, ENABLE => '1', RST => '0', CLK => CLK);
+          port map (DIN => prox_PC, DOUT => Saida_PC, ENABLE => '1', RST => '0', CLK => CLK);
 			 
-MUX_JR: entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Saida_Mux_Prox_PC,
-                 entradaB_MUX =>  Dado_lido_RegA,
-                 seletor_MUX => Saida_Unid_Cont(13),
-                 saida_MUX => Saida_Mux_JR);
 					  
 SOMADOR :  entity work.somadorGenerico  generic map (larguraDados => larguraDados)
         port map( entradaA => "00000000000000000000000000000100", entradaB =>  Saida_PC, saida => Saida_Somador);
 		  
 		  
 MEMORIA_INSTRUCAO : entity work.ROMMIPS   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM, memoryAddrWidth => memoryAddrWidth)
-          port map (Endereco => Saida_PC, Dado => Saida_Mem_Instrucao, clk => CLK);
+          port map (Endereco => Saida_PC, Dado => Saida_Memoria_Instrucao, clk => CLK);
 			 
-MUX_Prox_PC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map( entradaA_MUX => Saida_Mux_Beq,
-                 entradaB_MUX =>  Saida_Somador(31 downto 28) & Saida_Mem_Instrucao(25 downto 0) & "00",
-                 seletor_MUX => Saida_Unid_Cont(10),
-                 saida_MUX => Saida_Mux_Prox_PC);
-
-  -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
-  -- regA:  entity work.nome_do_componente generic map (DATA_WIDTH => DATA_WIDTH)
-  --        port map (dataIN => dataIN, dataOUT =>  RegAmuxA, enable =>  habRegA, clk =>  clk, rst => rst);
-
 end architecture;
